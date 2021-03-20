@@ -13,8 +13,15 @@
 
             <li class="nav-item">
                 <a class="nav-link {{active_class(Route::is('admin/projects'))}}" href="{{ route('admin.projects.index') }}">
-                    <i class="nav-icon fas fa-tachometer-alt"></i>
+                    <i class="nav-icon fas fa-file-signature"></i>
                     Projects
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link {{active_class(Route::is('admin/awards'))}}" href="{{ route('admin.awards.index') }}">
+                    <i class="nav-icon fas fa-award"></i>
+                    Awards
                 </a>
             </li>
 
