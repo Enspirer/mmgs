@@ -10,8 +10,8 @@
                     {{csrf_field()}}
 
                     <div class="row">
-                        <div class="col-6">
-                            <div class="container">
+                        <div class="col-12">
+                            <div class="">
                                 <div class="form-group">
                                     <label>Project Name</label>
                                     <input type="text" class="form-control" name="project_name" required>
@@ -24,20 +24,30 @@
                                     </select>
                                 </div>
 
-                                @include('backend.file_manager.file_manager')
+                                @include('backend.file_manager.file_manager',['file_caption' => 'Hello','file_input_name' => 'feature_image'])
                             </div>
                         </div>
-                        <div class="col-6">
+                    </div>
+                    <br><br>
+                    <div class="row">
+                        <div class="col-md-12">
                             <div class="form-group">
                                 <label>Description</label>
                                 <textarea class="form-control" rows="11" name="description"></textarea>
                             </div>
+                            <div class="">
+                                <div class="card" style="padding: 10px;">
+                                    <div class="form-group">
+                                        <label>Name:</label>
+                                        <input type="text" name="" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
-                    </div>
-                    <div class="row">
+
 
                     </div>
-
                 </form>
 
             </div>

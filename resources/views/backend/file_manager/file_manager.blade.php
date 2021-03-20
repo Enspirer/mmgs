@@ -1,15 +1,15 @@
 <div class="form-group">
-    <label class="form-label">Upload Images</label>
+    <label class="form-label">{{$file_caption}}</label>
     <div id="select_img" type="text" class="" style="border-color: grey;color: grey; padding: 10px;text-align: center;border-style: dashed;border-width: 1px;">
         <br>
         <div class="" id="upload_content">
-            <h3>Upload Images</h3>
+            <h3>Upload Image</h3>
             <small>Upload Images</small>
         </div>
 
         <div class="" id="image_content" style="display: none">
-            <input type="hidden" name="image" id="image">
-            <img src="" id="image_preview" style="height: 250px;">
+            <input type="hidden" name="{{$file_input_name}}" id="image">
+            <img src="" id="image_preview" style="height: 200px;">
         </div>
 
     </div>
