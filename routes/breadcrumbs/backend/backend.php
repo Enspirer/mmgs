@@ -8,8 +8,8 @@ Breadcrumbs::for('admin.projects.index', function ($trail) {
     $trail->push('Projects', route('admin.projects.index'));
 });
 
-Breadcrumbs::for('admin.projects.create', function ($trail) {
-    $trail->push('Projects Create', route('admin.projects.create'));
+Breadcrumbs::for('admin.project.create', function ($trail) {
+    $trail->push('Projects Create', route('admin.project.create'));
 });
 
 Breadcrumbs::for('admin.projects.edit', function ($trail) {
