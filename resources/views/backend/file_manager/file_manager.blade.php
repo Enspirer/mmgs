@@ -87,7 +87,7 @@
             order: [[ 0, "desc" ]],
             bAutoWidth: false,
             scrollCollapse: true,
-            ajax: "",
+            ajax: "{{route('admin.get_dialog_data.json')}}",
             columns: [
                 {data: 'id', name: 'id'},
                 {data: 'file', name: 'file',orderable: false, searchable: false},

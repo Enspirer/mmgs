@@ -16,6 +16,9 @@ Breadcrumbs::for('admin.projects.edit', function ($trail) {
     $trail->push('Projects Edit', route('admin.projects.edit',1));
 });
 
+Breadcrumbs::for('admin.file_manager.index', function ($trail) {
+    $trail->push('File Manager', route('admin.file_manager.index'));
+});
 
 
 

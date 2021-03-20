@@ -3,7 +3,7 @@
 use App\Http\Controllers\Backend\DashboardController;
 use App\Http\Controllers\Backend\ProjectController;
 use App\Http\Controllers\Backend\AwardsController;
-use App\Models\FileManager;
+use App\Http\Controllers\Backend\FileManagerController;
 // All route names are prefixed with 'admin.'.
 Route::redirect('/', '/admin/dashboard', 301);
 Route::get('dashboard', [DashboardController::class, 'index'])->name('dashboard');
@@ -20,8 +20,8 @@ Route::get('project/create', [ProjectController::class, 'create'])->name('projec
 Route::get('project/get_tableDetails', [ProjectController::class, 'getDetails'])->name('project.getDetails');
 Route::get('project/delete/{id}', [ProjectController::class, 'delete'])->name('project.delete');
 
-Route::get('file_manager/index', [FileManager::class, 'index'])->name('file_manager.index');
-Route::get('file_manager/get-details', [FileManager::class, 'getData'])->name('file_manager.json');
-Route::get('file_manager/get-details-dialog', [FileManager::class, 'getDialogData'])->name('get_dialog_data.json');
-Route::get('file_manager/create', [FileManager::class, 'create'])->name('file_manager.create');
-Route::post('file_manager/store_file', 'FileManagerController@store')->name('file_manager.store');
+Route::get('file_manager/index', [FileManagerController::class, 'index'])->name('file_manager.index');
+Route::get('file_manager/get-details', [FileManagerController::class, 'getData'])->name('file_manager.json');
+Route::get('file_manager/get-details-dialog', [FileManagerController::class, 'getDialogData'])->name('get_dialog_data.json');
+Route::get('file_manager/create', [FileManagerController::class, 'create'])->name('file_manager.create');
+Route::post('file_manager/store_file', [FileManagerController::class,'store'])->name('file_manager.store');

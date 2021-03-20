@@ -6,5 +6,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class FileManager extends Model
 {
-    //
+    public $table = 'file_managers';
 }
