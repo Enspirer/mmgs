@@ -25,6 +25,13 @@
                 </a>
             </li>
 
+            <li class="nav-item">
+                <a class="nav-link {{active_class(Route::is('admin/file_manager'))}}" href="{{ route('admin.file_manager.index') }}">
+                    <i class="nav-icon fas fa-folder"></i>
+                    File Manager
+                </a>
+            </li>
+
 
 
             @if ($logged_in_user->isAdmin())
