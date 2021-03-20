@@ -5,13 +5,20 @@
                 @lang('menus.backend.sidebar.general')
             </li>
             <li class="nav-item">
-                <a class="nav-link {{
-                    active_class(Route::is('admin/dashboard'))
-                }}" href="{{ route('admin.dashboard') }}">
+                <a class="nav-link {{active_class(Route::is('admin/dashboard'))}}" href="{{ route('admin.dashboard') }}">
                     <i class="nav-icon fas fa-tachometer-alt"></i>
                     @lang('menus.backend.sidebar.dashboard')
                 </a>
             </li>
+
+            <li class="nav-item">
+                <a class="nav-link {{active_class(Route::is('admin/projects'))}}" href="{{ route('admin.projects.index') }}">
+                    <i class="nav-icon fas fa-tachometer-alt"></i>
+                    Projects
+                </a>
+            </li>
+
+
 
             @if ($logged_in_user->isAdmin())
                 <li class="nav-title">
