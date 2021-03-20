@@ -2,7 +2,7 @@
 
 use App\Http\Controllers\Backend\DashboardController;
 use App\Http\Controllers\Backend\ProjectController;
-use App\Http\Controllers\Bakend\AwardsController;
+use App\Http\Controllers\Backend\AwardsController;
 
 // All route names are prefixed with 'admin.'.
 Route::redirect('/', '/admin/dashboard', 301);
