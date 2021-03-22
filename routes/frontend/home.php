@@ -5,12 +5,20 @@ use App\Http\Controllers\Frontend\HomeController;
 use App\Http\Controllers\Frontend\User\AccountController;
 use App\Http\Controllers\Frontend\User\DashboardController;
 use App\Http\Controllers\Frontend\User\ProfileController;
+use App\Http\Controllers\Frontend\AboutController;
+use App\Http\Controllers\Frontend\ProjectsController;
+use App\Http\Controllers\Frontend\GalleryController;
+use App\Http\Controllers\Frontend\AwardsController;
 
 /*
  * Frontend Controllers
  * All route names are prefixed with 'frontend.'.
  */
 Route::get('/', [HomeController::class, 'index'])->name('index');
+Route::get('about', [AboutController::class, 'index'])->name('about');
+Route::get('projects', [ProjectsController::class, 'index'])->name('projects');
+Route::get('gallery', [GalleryController::class, 'index'])->name('gallery');
+Route::get('awards', [AwardsController::class, 'index'])->name('awards');
 Route::get('contact', [ContactController::class, 'index'])->name('contact');
 Route::post('contact/send', [ContactController::class, 'send'])->name('contact.send');
 
