@@ -28,7 +28,7 @@
                                     <label>Description</label>
                                     <textarea class="form-control" rows="11" name="description"></textarea>
                                 </div>
-                                @include('backend.file_manager.file_manager',['file_caption' => 'Project Images','file_input_name' => 'images','multiple' => true])
+                                @include('backend.file_manager.file_manager',['file_caption' => 'Project Images','file_input_name' => 'images','multiple' => true ])
 
                             </div>
                         </div>

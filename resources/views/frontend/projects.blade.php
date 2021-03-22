@@ -16,52 +16,32 @@
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <div class="card-image">
-                    <img
-                      src="https://source.unsplash.com/1280x720/?nature"
-                      data-toggle="modal"
-                      data-target="#exampleModalCenter"
-                      alt="Image Slider"
-                    />
+                    <img src="https://source.unsplash.com/1280x720/?nature" data-toggle="modal" data-target="#exampleModalCenter" alt="Image Slider">
                   </div>
                 </div>
                 <div class="swiper-slide">
                   <div class="card-image">
-                    <img
-                      src="https://source.unsplash.com/1280x720/?nature,water,animal"
-                      alt="Image Slider"
-                    />
+                    <img src="https://source.unsplash.com/1280x720/?nature,water,animal" alt="Image Slider">
                   </div>
                 </div>
                 <div class="swiper-slide">
                   <div class="card-image">
-                    <img
-                      src="https://source.unsplash.com/1280x720/?water"
-                      alt="Image Slider"
-                    />
+                    <img src="https://source.unsplash.com/1280x720/?water" alt="Image Slider">
                   </div>
                 </div>
                 <div class="swiper-slide">
                   <div class="card-image">
-                    <img
-                      src="https://source.unsplash.com/1280x720/?animal"
-                      alt="Image Slider"
-                    />
+                    <img src="https://source.unsplash.com/1280x720/?animal" alt="Image Slider"/>
                   </div>
                 </div>
                 <div class="swiper-slide">
                   <div class="card-image">
-                    <img
-                      src="https://source.unsplash.com/1280x720/?travel"
-                      alt="Image Slider"
-                    />
+                    <img src="https://source.unsplash.com/1280x720/?travel" alt="Image Slider">
                   </div>
                 </div>
                 <div class="swiper-slide">
                   <div class="card-image">
-                    <img
-                      src="https://source.unsplash.com/1280x720/?flower"
-                      alt="Image Slider"
-                    />
+                    <img src="https://source.unsplash.com/1280x720/?flower" alt="Image Slider">
                   </div>
                 </div>
               </div>
@@ -72,69 +52,37 @@
               <div class="swiper-button-prev"></div>
             </div>
 
-            <div
-              class="swiper-container swiper-container3 swiper-mobile d-none"
-            >
-              <div
-                class="top-btn"
-                style="
+            <div class="swiper-container swiper-container3 swiper-mobile d-none">
+              <div class="top-btn" style="
                   padding: 0 0 20px 0;
                   margin: auto;
                   display: flex;
                   justify-content: center;
-                "
-              >
-                <i
-                  class="fa fa-angle-up swiper-button-prev3"
-                  aria-hidden="true"
-                  style="font-size: 40px; text-align: center"
-                ></i>
+                ">
+                <i class="fa fa-angle-up swiper-button-prev3" aria-hidden="true" style="font-size: 40px; text-align: center"></i>
               </div>
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <img
-                    src="https://source.unsplash.com/1280x720/?girl"
-                    alt="Image Slider"
-                    style="width: 100%"
-                  />
+                  <img src="https://source.unsplash.com/1280x720/?girl" alt="Image Slider" style="width: 100%">
                 </div>
                 <div class="swiper-slide">
-                  <img
-                    src="https://source.unsplash.com/1280x720/?nature,water,animal"
-                    alt="Image Slider"
-                    style="width: 100%"
-                  />
+                  <img src="https://source.unsplash.com/1280x720/?nature,water,animal" alt="Image Slider" style="width: 100%">
                 </div>
                 <div class="swiper-slide">
-                  <img
-                    src="https://source.unsplash.com/1280x720/?water,animal"
-                    alt="Image Slider"
-                    style="width: 100%"
-                  />
+                  <img src="https://source.unsplash.com/1280x720/?water,animal" alt="Image Slider" style="width: 100%">
                 </div>
                 <div class="swiper-slide">
-                  <img
-                    src="https://source.unsplash.com/1280x720/?nature,animal"
-                    alt="Image Slider"
-                    style="width: 100%"
-                  />
+                  <img src="https://source.unsplash.com/1280x720/?nature,animal" alt="Image Slider" style="width: 100%">
                 </div>
               </div>
 
-              <div
-                class="top-btn"
-                style="
+              <div class="top-btn" style="
                   padding: 20px 0 0 0;
                   margin: auto;
                   display: flex;
                   justify-content: center;
-                "
-              >
-                <i
-                  class="fa fa-angle-down swiper-button-next3"
-                  aria-hidden="true"
-                  style="font-size: 40px; text-align: center"
-                ></i>
+                ">
+                <i class="fa fa-angle-down swiper-button-next3" aria-hidden="true" style="font-size: 40px; text-align: center"></i>
               </div>
             </div>
           </main>
@@ -148,27 +96,13 @@
     </section>
 
     <!-- Modal -->
-    <div
-      class="modal-project-center modal fade bd-example-modal-lg"
-      id="exampleModalCenter"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="exampleModalCenterTitle"
-      aria-hidden="true"
-    >
+    <div class="modal-project-center modal fade bd-example-modal-lg" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
-        <div
-          class="modal-content"
-          style="width: 90%; background: transparent; border: none"
-        >
+        <div class="modal-content" style="width: 90%; background: transparent; border: none">
           <div class="swiper-container swiper-container2">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <img
-                  src="https://source.unsplash.com/1280x720/?water"
-                  alt="Image Slider"
-                  style="width: 100%"
-                />
+                <img src="https://source.unsplash.com/1280x720/?water" alt="Image Slider" style="width: 100%">
                 <div class="dark-layer"></div>
 
                 <!-- <div class="b-text">
@@ -194,11 +128,7 @@
               </div>
 
               <div class="swiper-slide">
-                <img
-                  src="https://source.unsplash.com/1280x720/?girl"
-                  alt="Image Slider"
-                  style="width: 100%"
-                />
+                <img src="https://source.unsplash.com/1280x720/?girl" alt="Image Slider" style="width: 100%">
                 <div class="dark-layer"></div>
 
                 <!-- <div class="b-text">
@@ -229,11 +159,10 @@
               <div class="row b-text-row">
                 <div class="col-md-11">
                   <p>
-                    <span class="title-project">Amaya Hotel</span><br />
+                    <span class="title-project">Amaya Hotel</span><br/>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Phasellus imperdiet, nulla et dictum interdum, nisi lorem
-                    egestas vitae scel<span id="dots">... <span onclick="myFunction()" id="myBtn" class="btn-read-more">Read more</span> </span
-                    ><span id="more"
+                    egestas vitae scel<span id="dots">... <span onclick="myFunction()" id="myBtn" class="btn-read-more">Read more</span> </span><span id="more"
                       >erisque enim ligula venenatis dolor. Maecenas nisl est,
                       ultrices nec congue eget, auctor vitae massa. Fusce luctus
                       vestibulum augue ut aliquet. Nunc sagittis dictum nisi,
@@ -241,16 +170,11 @@
                       venenatis imperdiet sed ornare turpis. Donec vitae dui
                       eget tellus gravida venenatis. Integer fringilla congue
                       eros non fermentum. Sed dapibus pulvinar nibh tempor
-                      porta.<span onclick="myFunction()" id="myBtn" class="btn-read-more"> &nbsp; Read Less</span></span
-                    >
+                      porta.<span onclick="myFunction()" id="myBtn" class="btn-read-more"> &nbsp; Read Less</span></span>
                   </p>
                 </div>
                 <div class="col-md-1">
-                  <i
-                    class="fa fa-times"
-                    aria-hidden="true"
-                    data-dismiss="modal"
-                  ></i>
+                  <i class="fa fa-times" aria-hidden="true" data-dismiss="modal"></i>
                 </div>
               </div>
             </div>
@@ -260,14 +184,8 @@
             <!-- <div class="swiper-pagination"></div> -->
             <!-- Add Arrows -->
           </div>
-          <div
-            id="swiper-button-next2"
-            class="swiper-button-next swiper-button-next2"
-          ></div>
-          <div
-            id="swiper-button-prev2"
-            class="swiper-button-prev swiper-button-prev2"
-          ></div>
+          <div id="swiper-button-next2" class="swiper-button-next swiper-button-next2"></div>
+          <div id="swiper-button-prev2" class="swiper-button-prev swiper-button-prev2"></div>
         </div>
       </div>
     </div>
