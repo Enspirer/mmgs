@@ -20,7 +20,7 @@
           <div class="details-box-mobile d-none">
             <div class="container">
               <div class="row">
-                <div class="col-md-6 col-sm-6 col-6">
+              <div class="col-md-6 col-sm-6 col-6" style="margin: 0;padding: 0;">
                   <p>
                     MMGS ARCHITECTS (PVT) LTD <br />
                     26 A, <br />
@@ -34,10 +34,10 @@
                   </p>
                   <p>mmgs@mmgs.lk</p>
                 </div>
-                <div class="col-md-1 col-sm-1 col-1" style="width: 12px;">
+                <div class="col-md-1 col-sm-1 col-1" style="width: 12px;margin: 0;padding: 0;">
                   <hr/>
                 </div>
-                <div class="col-md-5 col-sm-5 col-5">
+                <div class="col-md-5 col-sm-5 col-5" style="margin: 0;padding: 0;">
                   <p>
                     <span>GODRIDGE SAMUEL </span> <br />
                     +94 77 7766511 <br />

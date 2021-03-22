@@ -88,19 +88,19 @@
             <div class="main-left-about col-md-12 col-sm-12">
               <div class="second-row row">
                 <div class="single-image col-md-4 col">
-                  <img class="gray-image-full-width" src="assets/team/9.jpg" />
+                  <img class="gray-image-full-width" src="{{asset('img/assets/team/9.jpg')}}" />
                 </div>
                 <div class="single-image col-md-4 col">
-                  <img class="gray-image-full-width" src="assets/team/5.jpg" />
+                  <img class="gray-image-full-width" src="{{asset('img/assets/team/5.jpg')}}" />
                 </div>
                 <div class="single-image col-md-4 col">
-                  <img class="gray-image-full-width" src="assets/team/3.jpg" />
+                  <img class="gray-image-full-width" src="{{asset('img/assets/team/3.jpg')}}" />
                 </div>
               </div>
             </div>
-            <div class="main-right-about col-md-6">
+            <div class="main-right-about col-md-12">
               <div class="row">
-                <div class="text-col col-md-9">
+                <div class="text-col col-md-12">
                   <br />
                   <p>
                     Mathew Mangaladaz Godridge Samuel (MMGS), born in Colombo in
@@ -140,26 +140,26 @@
             <div class="main-left-about col-md-12 col-sm-12">
               <div class="second-row row">
                 <div class="single-image col-md-4 col">
-                  <img class="gray-image-full-width" src="assets/team/4.jpg" />
+                  <img class="gray-image-full-width" src="{{asset('img/assets/team/4.jpg')}}" />
                 </div>
                 <div class="single-image col-md-4 col">
-                  <img class="gray-image-full-width" src="assets/team/1.jpg" />
+                  <img class="gray-image-full-width" src="{{asset('img/assets/team/1.jpg')}}" />
                 </div>
                 <div class="single-image col-md-4 col">
-                  <img class="gray-image-full-width" src="assets/team/10.jpg" />
+                  <img class="gray-image-full-width" src="{{asset('img/assets/team/10.jpg')}}" />
                 </div>
               </div>
             </div>
             <div class="main-left-about col-md-12 col-sm-12">
               <div class="second-row row">
                 <div class="single-image col-md-4 col">
-                  <img class="gray-image-full-width" src="assets/team/6.jpg" />
+                  <img class="gray-image-full-width" src="{{asset('img/assets/team/6.jpg')}}" />
                 </div>
                 <div class="single-image col-md-4 col">
-                  <img class="gray-image-full-width" src="assets/team/7.jpg" />
+                  <img class="gray-image-full-width" src="{{asset('img/assets/team/7.jpg')}}" />
                 </div>
                 <div class="single-image col-md-4 col">
-                  <img class="gray-image-full-width" src="assets/team/8.jpg" />
+                  <img class="gray-image-full-width" src="{{asset('img/assets/team/8.jpg')}}" />
                 </div>
               </div>
             </div>

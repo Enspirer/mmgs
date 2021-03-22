@@ -2,11 +2,11 @@
 <html lang="en">
 
 <head>
-    <title>MMGS ARCHITECTS</title>
+    <title>MMGS Architects - Godridge Samuel</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <link rel="icon" type="image/png" href="{{asset('img/assets/mmgs sm fav.png')}}"/>
+    <link rel="icon" type="image/png" href="{{asset('img/assets/mmgs sm fav.png')}}" />
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
@@ -15,6 +15,14 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <!-- Theame Style    -->
     <link rel="stylesheet" href="{{url('css/style.css')}}" />
+    <style>
+        @font-face {
+            font-family: "Candara";
+            /* src: url('{{ public_path('/assets/font/Candara.ttf') }}') format("truetype"); */
+            src: url("{{url('img/assets/font/Candara.ttf')}}") format("truetype");
+            /* Safari, Android, iOS */
+        }
+    </style>
 </head>
 
 <body>
@@ -92,25 +100,25 @@
             }
         }
     </script>
-        <script>
-      var swiper = new Swiper('.swiper-container4', {
-        direction: 'vertical',
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true,
-        },
-        mousewheel: true,
-      });
+    <script>
+        var swiper = new Swiper('.swiper-container4', {
+            direction: 'vertical',
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            mousewheel: true,
+        });
     </script>
 
-<script>
-  var swiper = new Swiper(".swiper-container5", {
-    navigation: {
-      nextEl: ".swiper-button-next3",
-      prevEl: ".swiper-button-prev3",
-    },
-  });
-</script>
+    <script>
+        var swiper = new Swiper(".swiper-container5", {
+            navigation: {
+                nextEl: ".swiper-button-next3",
+                prevEl: ".swiper-button-prev3",
+            },
+        });
+    </script>
 
 </body>
 

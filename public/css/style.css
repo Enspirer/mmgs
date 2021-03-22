@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;300;400;500;700;900&display=swap");
 @font-face {
   font-family: "Candara";
-  /* src: url('{{ public_path('/assets/font/Candara.ttf') }}') format("truetype"); */
   src: url("/assets/font/Candara.ttf") format("truetype");
   /* Safari, Android, iOS */
 }
@@ -35,6 +34,10 @@ a {
   color: #d3c441 !important;
 }
 
+nav .nav-link {
+  text-align: center;
+}
+
 .navbar {
   padding: 40px 0px 20px 0;
 }
@@ -52,8 +55,32 @@ a {
   padding: 0 20px;
 }
 
+@media (max-width: 360px) {
+  .navbar img {
+    width: 250px !important;
+  }
+}
+
+@media (max-width: 320px) and (max-width: 375px) {
+  .navbar img {
+    width: 200px !important;
+  }
+}
+
+@media (max-width: 375px) {
+  .navbar img {
+    width: 200px !important;
+  }
+}
+
+@media (max-width: 280px) {
+  .navbar img {
+    width: 150px !important;
+  }
+}
+
 #home-page-background {
-  /* background-image: url(/assets/HOMEPAGEimage.jpg); */
+  background-image: url(/assets/HOMEPAGEimage.jpg);
   width: 100%;
   height: 100vh;
   -o-object-fit: cover;
@@ -104,9 +131,78 @@ a {
   }
 }
 
+@media (max-width: 640px) and (orientation: landscape) {
+  #home-page-background .home-page-text .web-p {
+    display: block !important;
+    font-size: 20px;
+  }
+  #home-page-background .home-page-text .web-p span {
+    font-size: 25px;
+  }
+  #home-page-background .home-page-text .mobile-p {
+    display: none !important;
+  }
+}
+
+@media (max-width: 731px) and (orientation: landscape) {
+  #home-page-background .home-page-text .web-p {
+    display: block !important;
+    font-size: 20px;
+  }
+  #home-page-background .home-page-text .web-p span {
+    font-size: 25px;
+  }
+  #home-page-background .home-page-text .mobile-p {
+    display: none !important;
+  }
+}
+
+@media (max-width: 823px) and (orientation: landscape) {
+  #home-page-background .home-page-text .web-p {
+    display: block !important;
+    font-size: 25px;
+  }
+  #home-page-background .home-page-text .web-p span {
+    font-size: 30px;
+  }
+  #home-page-background .home-page-text .mobile-p {
+    display: none !important;
+  }
+}
+
 @media (max-width: 768px) {
   #home-page-background {
     background-position: 75% 80px;
+  }
+}
+
+@media (max-width: 360px) {
+  #home-page-background {
+    background-position: 75% 120px !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  #home-page-background {
+    background-position: 75% 120px;
+  }
+}
+
+@media (max-width: 640px) and (orientation: landscape) {
+  #home-page-background {
+    background-position: center;
+  }
+}
+
+@media (max-width: 731px) and (orientation: landscape) {
+  #home-page-background {
+    background-position: center;
+  }
+}
+
+@media (max-width: 823px) and (orientation: landscape) {
+  #home-page-background {
+    background-position: center;
   }
 }
 
@@ -139,6 +235,15 @@ a {
 }
 
 @media (max-width: 768px) {
+  #about-us-page .about-web {
+    display: none;
+  }
+  #about-us-page .about-mobile {
+    display: block !important;
+  }
+}
+
+@media (max-width: 1025px) {
   #about-us-page .about-web {
     display: none;
   }
@@ -362,6 +467,18 @@ a {
   text-align: center;
 }
 
+@media (max-width: 1025px) {
+  #projects-page .swiper-web {
+    display: none;
+  }
+  #projects-page .swiper-mobile {
+    display: block !important;
+  }
+  #projects-page h1 {
+    display: none !important;
+  }
+}
+
 @media (max-width: 768px) {
   #projects-page .swiper-web {
     display: none;
@@ -490,6 +607,15 @@ a {
 }
 
 @media (max-width: 768px) {
+  #gallery-page .gallery-web {
+    display: none;
+  }
+  #gallery-page .gallery-mobile {
+    display: block !important;
+  }
+}
+
+@media (max-width: 1025px) {
   #gallery-page .gallery-web {
     display: none;
   }
