@@ -19,9 +19,10 @@ Route::get('projects/edit/{id}', [ProjectController::class, 'edit'])->name('proj
 Route::get('project/create', [ProjectController::class, 'create'])->name('project.create');
 Route::get('project/get_tableDetails', [ProjectController::class, 'getDetails'])->name('project.getDetails');
 Route::get('project/delete/{id}', [ProjectController::class, 'delete'])->name('project.delete');
+Route::post('project/store', [ProjectController::class, 'store'])->name('project.store');
 
 Route::get('file_manager/index', [FileManagerController::class, 'index'])->name('file_manager.index');
 Route::get('file_manager/get-details', [FileManagerController::class, 'getData'])->name('file_manager.json');
-Route::get('file_manager/get-details-dialog', [FileManagerController::class, 'getDialogData'])->name('get_dialog_data.json');
+Route::get('file_manager/get-details-dialog/{name}', [FileManagerController::class, 'getDialogData'])->name('get_dialog_data.json');
 Route::get('file_manager/create', [FileManagerController::class, 'create'])->name('file_manager.create');
 Route::post('file_manager/store_file', [FileManagerController::class,'store'])->name('file_manager.store');

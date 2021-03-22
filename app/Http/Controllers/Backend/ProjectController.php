@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Backend;
 
 use App\Http\Controllers\Controller;
+use App\Models\FileManager;
 use Illuminate\Http\Request;
 use DataTables;
 use App\Models\Projects;
@@ -11,6 +12,25 @@ class ProjectController extends Controller
     public function index()
     {
         return view('backend.projects.index');
+    }
+
+
+    public function store(Request $request)
+    {
+        $projects = new Projects;
+        $projects->project_name = $request->project_name;
+        $projects->description = $request->description;
+        $projects->images = json_encode($request->images);
+        $projects->status = $request->status;
+        if($request->feature_image)
+        {
+          $imageFiles = FileManager::where('id',$request->feature_image)->first();
+
+          $projects->feature_images = $imageFiles->file_name;
+        }
+        $projects->status = $request->status;
+        $projects->save();
+        return redirect()->route('admin.projects.index');
     }
 
     public function delete($id)
@@ -34,7 +54,7 @@ class ProjectController extends Controller
             })
 
             ->addColumn('action', function($row){
-                $btn = '<a href="" class="edit btn btn-primary btn-sm" style="margin-right: 10px"><i class="fa fa-edit"></i> Edit </a>';
+                $btn = '<a href="'.route('admin.projects.edit',$row->id).'" class="edit btn btn-primary btn-sm" style="margin-right: 10px"><i class="fa fa-edit"></i> Edit </a>';
                 $btn2 = '<a href="'.route('admin.project.delete',$row->id).'" class="edit btn btn-danger btn-sm"><i class="fa fa-trash"></i> Delete </a>';
                 return  $btn.$btn2;
             })
@@ -44,7 +64,11 @@ class ProjectController extends Controller
 
     public function edit($id)
     {
+        $projedtDetails = Projects::where('id',$id)->first();
 
+        return view('backend.projects.edit',[
+            'projectDetails' => $projedtDetails
+        ]);
     }
 
     public function create()

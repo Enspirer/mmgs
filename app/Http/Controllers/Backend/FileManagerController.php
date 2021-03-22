@@ -30,7 +30,7 @@ class FileManagerController extends Controller
             ->make();
     }
 
-    public function getDialogData()
+    public function getDialogData($name)
     {
         $files = Filemanager::all();
         return Datatables::of($files)
@@ -38,8 +38,8 @@ class FileManagerController extends Controller
                 return '<img src="'.$row->url.'" style="height: 40px;">';
             })
 
-            ->addColumn('action', function($row){
-                $btn1 = '<a href="#"  onclick="select_item('.$row->id.',\''.$row->url.'\')" class="edit btn btn-primary btn-sm"><i class="fa fa-check-circle"></i></a>';
+            ->addColumn('action', function($row) use ($name){
+                $btn1 = '<a href="#"  onclick="select_item'.$name.'('.$row->id.',\''.$row->url.'\')" class="edit btn btn-primary btn-sm"><i class="fa fa-check-circle"></i></a>';
                 return $btn1;
             })
             ->rawColumns(['action','file'])

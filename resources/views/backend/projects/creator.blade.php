@@ -6,11 +6,11 @@
     <div class="">
         <div class="card">
             <div class="card-body">
-                <form action="" method="post" enctype="multipart/form-data">
+                <form action="{{route('admin.project.store')}}" method="post" enctype="multipart/form-data">
                     {{csrf_field()}}
 
                     <div class="row">
-                        <div class="col-12">
+                        <div class="col-9">
                             <div class="">
                                 <div class="form-group">
                                     <label>Project Name</label>
@@ -18,35 +18,34 @@
                                 </div>
                                 <div class="form-group">
                                     <label>Status</label>
-                                    <select class="form-control">
+                                    <select class="form-control" name="status">
                                         <option value="1">Enabled</option>
                                         <option value="0">Disabled</option>
                                     </select>
                                 </div>
 
-                                @include('backend.file_manager.file_manager',['file_caption' => 'Hello','file_input_name' => 'feature_image'])
+                                <div class="form-group">
+                                    <label>Description</label>
+                                    <textarea class="form-control" rows="11" name="description"></textarea>
+                                </div>
+                                @include('backend.file_manager.file_manager',['file_caption' => 'Project Images','file_input_name' => 'images','multiple' => true])
+
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="col-md-12">
+                                @include('backend.file_manager.file_manager',['file_caption' => 'Feature Image','file_input_name' => 'feature_image','multiple' => false])
+
+
                             </div>
                         </div>
                     </div>
                     <br><br>
                     <div class="row">
                         <div class="col-md-12">
-                            <div class="form-group">
-                                <label>Description</label>
-                                <textarea class="form-control" rows="11" name="description"></textarea>
-                            </div>
-                            <div class="">
-                                <div class="card" style="padding: 10px;">
-                                    <div class="form-group">
-                                        <label>Name:</label>
-                                        <input type="text" name="" class="form-control">
-                                    </div>
-                                </div>
-                            </div>
-
+                        <button  class="btn btn-primary" type="submit">Add Project</button>
                         </div>
-
-
                     </div>
                 </form>
 
