@@ -12,7 +12,11 @@ Route::get('dashboard', [DashboardController::class, 'index'])->name('dashboard'
 Route::get('awards', [AwardsController::class, 'index'])->name('awards.index');
 Route::get('awards/edit/{id}', [AwardsController::class, 'edit'])->name('awards.edit');
 Route::get('awards/create', [AwardsController::class, 'create'])->name('awards.create');
+Route::post('awards/store', [AwardsController::class, 'store'])->name('awards.store');
 Route::get('awards/get_tableDetails', [AwardsController::class, 'getDetails'])->name('awards.getDetails');
+Route::get('awards/delete/{id}', [AwardsController::class, 'delete'])->name('awards.delete');
+Route::get('awards/edit/{id}', [AwardsController::class, 'edit'])->name('awards.edit');
+Route::post('awards/update', [AwardsController::class, 'update'])->name('awards.update');
 
 
 Route::get('projects', [ProjectController::class, 'index'])->name('projects.index');

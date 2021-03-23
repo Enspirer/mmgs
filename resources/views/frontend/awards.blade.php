@@ -4,15 +4,20 @@
 
 @section('content')
 <section id="awards-section">
-      <div class="container">
-      @include('frontend.layouts.menu')
+  <div class="container">
+    @include('frontend.layouts.menu')
 
-      <div class="awards-section">
-          <h1>awards</h1>
-   
-          <p>
-            <ul>
-              <li>
+    <div class="awards-section">
+      <h1>awards</h1>
+
+      <p>
+      <ul>
+        @foreach($awardsDetails as $awards)
+        <li>
+          {{$awards->description}}
+        </li>
+        @endforeach
+        <!-- <li>
                 SLIA Design Award 1999 Personalized Housing 	- House for Dr.Gamini Wijesinghe at Siebel Avenue, Colombo 06.
               </li>
               <li>
@@ -65,13 +70,13 @@
               </li>
               <li>
                 3rd Place for Proposed Building for City School of Architecture - Design Competition conducted by the SLIA on behalf of the City School of Architecture - 2019.
-              </li>
-            </ul> 
+              </li> -->
+      </ul>
 
-            
-           
-            </p>
-        </div>
-      </div>
-    </section>
-    @endsection
+
+
+      </p>
+    </div>
+  </div>
+</section>
+@endsection

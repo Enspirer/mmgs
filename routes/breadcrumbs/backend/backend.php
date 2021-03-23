@@ -23,6 +23,15 @@ Breadcrumbs::for('admin.file_manager.index', function ($trail) {
 Breadcrumbs::for('admin.gallery.index', function ($trail) {
     $trail->push('Gallery', route('admin.gallery.index'));
 });
+Breadcrumbs::for('admin.awards.index', function ($trail) {
+    $trail->push('Awards', route('admin.awards.index'));
+});
+Breadcrumbs::for('admin.awards.create', function ($trail) {
+    $trail->push('Awards', route('admin.awards.create'));
+});
+Breadcrumbs::for('admin.awards.edit', function ($trail) {
+    $trail->push('Awards', route('admin.awards.edit',1));
+});
 
 
 

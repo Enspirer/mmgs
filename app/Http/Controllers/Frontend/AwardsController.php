@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Frontend;
 
 use App\Http\Controllers\Controller;
+use App\Models\Awards;
 use Illuminate\Http\Request;
 
 class AwardsController extends Controller
@@ -12,6 +13,10 @@ class AwardsController extends Controller
      */
     public function index()
     {
-        return view('frontend.awards');
+        $awardsDetails = Awards::get();
+        return view('frontend.awards',[
+            'awardsDetails' => $awardsDetails
+        ]);
+        // return view('frontend.awards');
     }
 }
