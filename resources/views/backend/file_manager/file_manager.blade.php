@@ -1,8 +1,8 @@
 @if($multiple)
     <div class="form-group">
         <label class="form-label">{{$file_caption}}</label>
-        <div class="row" id="select_img_{{$file_input_name}}">
-            <div class="col-md-3">
+        <div class="row" id="img_list{{$file_input_name}}">
+            <div class="col-md-3" id="select_img_{{$file_input_name}}">
                 <div  type="text" class="" style="border-color: grey;color: grey; padding: 45px;text-align: center;border-style: dashed;border-width: 1px;">
                     <br>
                     <div class="" id="upload_content_{{$file_input_name}}">
@@ -17,8 +17,8 @@
             </div>
             @if($data)
                 @foreach($data as $imgDat)
-                    <div class="col-md-3">
-                        <a class="btn btn-primary">X</a>
+                    <div class="col-md-3" id="impack_{{$imgDat}}">
+                        <a class="" onclick="delete_image('impack_{{$imgDat}}')" style="background-color: #e91e63;padding: 2px;padding-left: 5px;padding-right: 16px;color: white;border-radius: 0px 19px 0px 0px;padding-left: 20px;">X</a>
 
                         <div class="card">
 
@@ -75,10 +75,20 @@
                 <small>Upload Images</small>
             </div>
 
-            <div class="" id="image_content_{{$file_input_name}}" style="display: none">
-                <input type="hidden" name="{{$file_input_name}}" id="image_{{$file_input_name}}">
-                <img src="" id="image_preview_{{$file_input_name}}" style="height: 200px;">
-            </div>
+            @if($data)
+                <div class="" id="image_content_{{$file_input_name}}" style="display: none">
+                    <input type="hidden" name="{{$file_input_name}}" id="image_{{$file_input_name}}">
+                    <img src="" id="image_preview_{{$file_input_name}}" style="height: 200px;">
+                </div>
+
+            @else
+                <div class="" id="image_content_{{$file_input_name}}" style="display: none">
+                    <input type="hidden" name="{{$file_input_name}}" value="{{$data}}" id="image_{{$file_input_name}}">
+                    <img src="{{url('files/'.$data)}}" id="image_preview_{{$file_input_name}}" style="height: 200px;">
+                </div>
+            @endif
+
+
 
         </div>
     </div>
@@ -124,6 +134,10 @@
 
 <script>
 
+    function delete_image(element_id) {
+        $('#'+element_id).remove();
+    }
+
     $("#select_img_{{$file_input_name}}").click(function(){
         distroy_table{{$file_input_name}}();
         load_tables{{$file_input_name}}();
@@ -138,9 +152,11 @@
 
     @if($multiple)
         function select_item{{$file_input_name}}(id,url) {
-        $("#select_img_{{$file_input_name}}").append('' +
-            '<div class="col-md-3">' +
-                    '<div class="card">' +
+        $("#img_list{{$file_input_name}}").append('' +
+            '<div class="col-md-3" id="'+ id +'">' +
+            '<a class="" onclick="delete_image('+ id +')" style="background-color: #e91e63;padding: 2px;padding-left: 5px;padding-right: 16px;color: white;border-radius: 0px 19px 0px 0px;padding-left: 20px;">X</a>' +
+
+            '<div class="card">' +
                         '<div class="" style="height: 200px;background-image: url(\''+ url +'\');background-repeat: no-repeat;background-size: cover;"></div>' +
                     ' </div>' +
                 '<input type="hidden" value="'+ id +'" name="{{$file_input_name}}[]">'+

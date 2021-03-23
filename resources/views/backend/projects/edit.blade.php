@@ -35,7 +35,7 @@
 
                         <div class="col-md-3">
                             <div class="col-md-12">
-                                @include('backend.file_manager.file_manager',['file_caption' => 'Feature Image','file_input_name' => 'feature_image','multiple' => false,'data' => null])
+                                @include('backend.file_manager.file_manager',['file_caption' => 'Feature Image','file_input_name' => 'feature_image','multiple' => false,'data' => $projectDetails->feature_images])
 
 
                             </div>
