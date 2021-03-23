@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;300;400;500;700;900&display=swap");
 @font-face {
   font-family: "Candara";
@@ -40,13 +41,13 @@ nav .nav-link {
 }
 
 .dark-layer {
-  background: -webkit-gradient(linear, left bottom, left top, from(black), color-stop(39%, rgba(108, 0, 52, 0)));
-  background: linear-gradient(0deg, black 0%, rgba(108, 0, 52, 0) 39%);
+  background: -webkit-gradient(linear, left bottom, left top, from(black), color-stop(89%, rgba(108, 0, 52, 0)));
+  background: linear-gradient(0deg, black 0%, rgba(108, 0, 52, 0) 89%);
   width: 100%;
-  height: 100%;
+  height: 200px;
   position: absolute;
   z-index: 9999;
-  top: 0;
+  bottom: 0;
 }
 
 .b-text {
@@ -90,6 +91,21 @@ nav .nav-link {
   padding: 20px;
   bottom: 20px;
   right: 0;
+}
+
+.slick-arrow::before {
+  font-size: 60px;
+  color: #d3c441;
+}
+
+.slick-prev::before {
+  font-family: FontAwesome;
+  content: "" !important;
+}
+
+.slick-next::before {
+  font-family: FontAwesome;
+  content: "" !important;
 }
 
 .navbar {
