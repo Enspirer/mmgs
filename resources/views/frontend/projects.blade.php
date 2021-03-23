@@ -3,11 +3,11 @@
 @section('title', app_name() . ' | ' . __('navs.general.home'))
 
 @section('content')
-  <style>
-    .slick-slide {
-      width: 500px;
-    }
-  </style>
+<style>
+  .slick-slide {
+    width: 500px;
+  }
+</style>
 
 <section id="projects-page">
   <div class="container">
@@ -21,11 +21,11 @@
           <div class="swiper-wrapper">
             @foreach($projects as $proj)
             <div class="swiper-slide">
-                <div class="card-image">
-                  <img src="{{url('files/'.$proj->feature_images)}}" data-toggle="modal" data-target="#exampleModalCenter{{$proj->id}}" alt="">
+              <div class="card-image">
+                <img src="{{url('files/'.$proj->feature_images)}}" data-toggle="modal" data-target="#exampleModalCenter{{$proj->id}}" style="height: 500px;" alt="">
                 <!-- <div class="" style="background-image: url('{{url('files/'.$proj->feature_images)}}');height: 500px;background-position:center;background-size: cover;" data-toggle="modal" data-target="#exampleModalCenter{{$proj->id}}"></div> -->
-                </div>
               </div>
+            </div>
             @endforeach
           </div>
           <div class="swiper-pagination"></div>
@@ -68,25 +68,25 @@
 
   @foreach($projects as $projt)
 
-    <div class="modal fade bd-example-modal-lg" id="exampleModalCenter{{$projt->id}}" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg modal-dialog-centered" style="max-width: 70%;">
-        <div class="modal-content">
-          <div class="wrap-modal-slider" style="padding-left: 0px;padding-right: 0px;">
-            <div class="your-class">
-              @foreach(json_decode($projt->images) as $prject_img)
-                <div>
-                  <img src="{{file_manager_get_url($prject_img)}}" style="width: 100%;height: 700px;object-fit: cover;" alt="">
-                </div>
-              @endforeach
+  <div class="modal fade bd-example-modal-lg" id="exampleModalCenter{{$projt->id}}" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" style="max-width: 65%;">
+      <div class="modal-content">
+        <div class="wrap-modal-slider" style="padding-left: 0px;padding-right: 0px;">
+          <div class="your-class">
+            @foreach(json_decode($projt->images) as $prject_img)
+            <div>
+              <img src="{{file_manager_get_url($prject_img)}}" style="width: 100%;height: 650px;object-fit: cover;" alt="">
             </div>
-            <div class="dark-layer" style="padding: 20px;">
-              <div class="b-text">
-                <div class="row b-text-row">
-                  <div class="col-md-11">
-                    <p>
-                      <span class="title-project">{{$projt->project_name}}</span><br />
-                      <br>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            @endforeach
+          </div>
+          <div class="dark-layer" style="padding: 20px;">
+            <div class="b-text">
+              <div class="row b-text-row">
+                <div class="col-md-11">
+                  <p>
+                    <span class="title-project">{{$projt->project_name}}</span><br />
+                    <br>
+                    <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                       Phasellus imperdiet, nulla et dictum interdum, nisi lorem
                       egestas vitae scel<span id="dots">... <span onclick="myFunction()" id="myBtn" class="btn-read-more">Read more</span> </span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est,
                       ultrices nec congue eget, auctor vitae massa. Fusce luctus
@@ -95,23 +95,25 @@
                       venenatis imperdiet sed ornare turpis. Donec vitae dui
                       eget tellus gravida venenatis. Integer fringilla congue
                       eros non fermentum. Sed dapibus pulvinar nibh tempor
-                      porta.<span onclick="myFunction()" id="myBtn" class="btn-read-more"> &nbsp; Read Less</span></span>
-                      {{$projt->description}}
-                      @if(strlen($projt->description) > 150)
-                        {{ substr($projt->description, 0, 150)}}
-                        <span onclick="myFunction()" id="myBtn" class="btn-read-more"> &nbsp; Read Less</span></span>
-                        {{$projt->description}}
+                      porta.<span onclick="myFunction()" id="myBtn" class="btn-read-more"> &nbsp; Read Less</span></span> -->
 
-                        <span onclick="myFunction()" id="myBtn" class="btn-read-more"> &nbsp; Read Less</span></span>
-                      @else
+                    <!-- {{$projt->description}} -->
+                    @if(strlen($projt->description) > 200)
+                    <span id="short-text"> {{ substr($projt->description, 0, 200)}}</span>
+                    <span id="dots">... </span><span onclick="myFunction()" id="myBtn" class="btn-read-more"> &nbsp; Read More</span>
+                    <span id="long-text" class="d-none"> {{$projt->description}}</span>
+                    <span onclick="myFunction()" id="myBtnLess" class="btn-read-more d-none"> &nbsp; Read Less</span>
 
-                      @endif
 
-                    </p>
-                  </div>
-                  <div class="col-md-1">
-                    <i class="fa fa-times" aria-hidden="true" data-dismiss="modal"></i>
-                  </div>
+                    <!-- <span onclick="myFunction()" id="myBtn" class="btn-read-more"> &nbsp; Read Less</span></span> -->
+                    @else
+
+                    @endif
+
+                  </p>
+                </div>
+                <div class="col-md-1">
+                  <i class="fa fa-times" aria-hidden="true" data-dismiss="modal"></i>
                 </div>
               </div>
             </div>
@@ -119,6 +121,7 @@
         </div>
       </div>
     </div>
+  </div>
   @endforeach
 
 

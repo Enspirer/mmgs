@@ -84,21 +84,44 @@
     </script>
 
     <script>
-        function myFunction() {
-            var dots = document.getElementById("dots");
-            var moreText = document.getElementById("more");
-            var btnText = document.getElementById("myBtn");
+        $("#myBtn").click(function() {
+            $("#short-text").addClass("d-none");
+            $("#dots").addClass("d-none");
+            $("#myBtn").addClass("d-none");
+            $("#long-text").removeClass("d-none"); 
+            $("#myBtnLess").removeClass("d-none"); 
+        });
+        $("#myBtnLess").click(function() {
+            $("#short-text").removeClass("d-none");
+            $("#dots").removeClass("d-none");
+            $("#myBtn").removeClass("d-none");
+            $("#long-text").addClass("d-none"); 
+            $("#myBtnLess").addClass("d-none"); 
+        });
+        // function myFunction() {
+        //     var dots = document.getElementById("dots");
+        //     var moreText = document.getElementById("more");
+        //     var btnText = document.getElementById("myBtn");
+        //     var btnTextLess = document.getElementById("myBtnLess");
+        //     var shorttext = document.getElementById("short-text");
+        //     var longtext = document.getElementById("long-text");
 
-            if (dots.style.display === "none") {
-                dots.style.display = "inline";
-                btnText.innerHTML = "Read more";
-                moreText.style.display = "none";
-            } else {
-                dots.style.display = "none";
-                btnText.innerHTML = "Read less";
-                moreText.style.display = "inline";
-            }
-        }
+        //     if(btnText.click()){
+        //         shorttext.style.display="none";
+        //     }
+        //     if (dots.style.display === "none") {
+        //         btnText.style.display = "none";
+        //         shorttext.style.display = "none";
+        //         longtext
+        //         dots.style.display = "inline";
+        //         btnText.innerHTML = "Read more";
+        //         moreText.style.display = "none";
+        //     } else {
+        //         dots.style.display = "none";
+        //         btnText.innerHTML = "Read less";
+        //         moreText.style.display = "inline";
+        //     }
+        // }
     </script>
     <script>
         var swiper = new Swiper('.swiper-container4', {
@@ -121,11 +144,11 @@
     </script>
 
     <script>
-        $(document).ready(function(){
+        $(document).ready(function() {
             $('.your-class').slick();
         });
 
-        $('.modal').on('shown.bs.modal', function (e) {
+        $('.modal').on('shown.bs.modal', function(e) {
             $('.your-class').slick('setPosition');
             $('.wrap-modal-slider').addClass('open');
         })
