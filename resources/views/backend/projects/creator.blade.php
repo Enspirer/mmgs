@@ -28,14 +28,14 @@
                                     <label>Description</label>
                                     <textarea class="form-control" rows="11" name="description"></textarea>
                                 </div>
-                                @include('backend.file_manager.file_manager',['file_caption' => 'Project Images','file_input_name' => 'images','multiple' => true ])
+                                @include('backend.file_manager.file_manager',['file_caption' => 'Project Images','file_input_name' => 'images','multiple' => true, 'data' =>null ])
 
                             </div>
                         </div>
 
                         <div class="col-md-3">
                             <div class="col-md-12">
-                                @include('backend.file_manager.file_manager',['file_caption' => 'Feature Image','file_input_name' => 'feature_image','multiple' => false])
+                                @include('backend.file_manager.file_manager',['file_caption' => 'Feature Image','file_input_name' => 'feature_image','multiple' => false,'data' => null])
 
 
                             </div>
