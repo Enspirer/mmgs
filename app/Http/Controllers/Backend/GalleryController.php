@@ -22,7 +22,7 @@ class GalleryController extends Controller
 
         return Datatables::of($files)
             ->addColumn('file', function($row){
-                return '<img src="" style="height: 40px;">';
+                return '<img src="'.file_manager_get_url($row->image_id).'" style="height: 100px;">';
             })
             ->rawColumns(['action','file'])
             ->make();
@@ -31,7 +31,6 @@ class GalleryController extends Controller
     public function store(Request $request)
     {
         $fileManager = FileManager::where('id',$request->images)->first();
-        dd($fileManager);
         $gallayr = new Gallery;
         $gallayr->image_id = $request->images;
         $gallayr->image_name = $fileManager->file_name;
