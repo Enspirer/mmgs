@@ -3,6 +3,11 @@
 @section('title', app_name() . ' | ' . __('navs.general.home'))
 
 @section('content')
+  <style>
+    .slick-slide {
+      width: 500px;
+    }
+  </style>
 
 <section id="projects-page">
   <div class="container">

@@ -20,6 +20,9 @@ Breadcrumbs::for('admin.file_manager.index', function ($trail) {
     $trail->push('File Manager', route('admin.file_manager.index'));
 });
 
+Breadcrumbs::for('admin.gallery.index', function ($trail) {
+    $trail->push('Gallery', route('admin.gallery.index'));
+});
 
 
 

@@ -32,6 +32,13 @@
                 </a>
             </li>
 
+            <li class="nav-item">
+                <a class="nav-link {{active_class(Route::is('admin/gallery'))}}" href="{{ route('admin.gallery.index') }}">
+                    <i class="nav-icon fas fa-photo-video"></i>
+                    Gallery
+                </a>
+            </li>
+
 
 
             @if ($logged_in_user->isAdmin())
