@@ -39,6 +39,59 @@ nav .nav-link {
   text-align: center;
 }
 
+.dark-layer {
+  background: -webkit-gradient(linear, left bottom, left top, from(black), color-stop(39%, rgba(108, 0, 52, 0)));
+  background: linear-gradient(0deg, black 0%, rgba(108, 0, 52, 0) 39%);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 9999;
+  top: 0;
+}
+
+.b-text {
+  height: 100%;
+  z-index: 99999999;
+  position: absolute;
+  width: 100%;
+  top: 0;
+}
+
+.b-text .b-text-row {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.b-text .b-text-row .col-md-11 .title-project {
+  font-size: 30px;
+  font-family: Candara;
+}
+
+.b-text .b-text-row .col-md-11 p {
+  z-index: 999999999;
+  position: absolute;
+  padding: 20px;
+  bottom: 0;
+  font-family: "Yantramanav", sans-serif;
+  color: #fff;
+}
+
+.b-text .b-text-row .col-md-11 p .btn-read-more {
+  cursor: pointer;
+  color: #d3c441;
+}
+
+.b-text .b-text-row .col-md-1 i {
+  font-size: 15px;
+  color: #fff;
+  position: absolute;
+  padding: 20px;
+  bottom: 20px;
+  right: 0;
+}
+
 .navbar {
   padding: 40px 0px 20px 0;
 }
