@@ -6,7 +6,7 @@
     <div class="">
         <div class="card">
             <div class="card-body">
-                <form action="{{route('admin.project.store')}}" method="post" enctype="multipart/form-data">
+                <form action="{{route('admin.project.update')}}" method="post" enctype="multipart/form-data">
                     {{csrf_field()}}
 
                     <div class="row">
@@ -14,6 +14,7 @@
                             <div class="">
                                 <div class="form-group">
                                     <label>Project Name</label>
+                                    <input type="hidden" value="{{$projectDetails->id}}" name="item_id">
                                     <input type="text" class="form-control" value="{{$projectDetails->project_name}}" name="project_name" required>
                                 </div>
                                 <div class="form-group">
@@ -35,7 +36,7 @@
 
                         <div class="col-md-3">
                             <div class="col-md-12">
-                                @include('backend.file_manager.file_manager',['file_caption' => 'Feature Image','file_input_name' => 'feature_image','multiple' => false,'data' => null])
+                                @include('backend.file_manager.file_manager',['file_caption' => 'Feature Image','file_input_name' => 'feature_image','multiple' => false,'data' => $projectDetails->feature_images])
 
 
                             </div>
@@ -44,7 +45,7 @@
                     <br><br>
                     <div class="row">
                         <div class="col-md-12">
-                            <button  class="btn btn-primary" type="submit">Add Project</button>
+                            <button  class="btn btn-primary" type="submit">Edit Project</button>
                         </div>
                     </div>
                 </form>

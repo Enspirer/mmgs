@@ -20,6 +20,7 @@ Route::get('project/create', [ProjectController::class, 'create'])->name('projec
 Route::get('project/get_tableDetails', [ProjectController::class, 'getDetails'])->name('project.getDetails');
 Route::get('project/delete/{id}', [ProjectController::class, 'delete'])->name('project.delete');
 Route::post('project/store', [ProjectController::class, 'store'])->name('project.store');
+Route::post('project/update', [ProjectController::class, 'update'])->name('project.update');
 
 Route::get('file_manager/index', [FileManagerController::class, 'index'])->name('file_manager.index');
 Route::get('file_manager/get-details', [FileManagerController::class, 'getData'])->name('file_manager.json');
