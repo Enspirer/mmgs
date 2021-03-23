@@ -9,14 +9,27 @@
                         <h3>Upload Image</h3>
                         <small>Upload Images</small>
                     </div>
-
                     <div class="" id="image_content_{{$file_input_name}}" style="display: none">
                         <input type="hidden" name="{{$file_input_name}}" id="image_{{$file_input_name}}">
                         <img src="" id="image_preview_{{$file_input_name}}" style="height: 200px;">
                     </div>
-
                 </div>
             </div>
+            @if($data)
+                @foreach($data as $imgDat)
+                    <div class="col-md-3">
+                        <a class="btn btn-primary">X</a>
+
+                        <div class="card">
+
+                            <div class="" style="height: 200px;background-image: url('{{file_manager_get_url($imgDat)}}');background-repeat: no-repeat;background-size: cover;"></div>
+                        </div>
+                        <input type="hidden" value="{{$imgDat}}" name="{{$file_input_name}}[]">
+                    </div>
+                @endforeach
+            @else
+
+            @endif
         </div>
     </div>
     <!-- Modal -->
