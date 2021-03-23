@@ -3,11 +3,11 @@
 @section('title', app_name() . ' | ' . __('navs.general.home'))
 
 @section('content')
-<style>
+<!-- <style>
   .slick-slide {
     width: 500px;
   }
-</style>
+</style> -->
 
 <section id="projects-page">
   <div class="container">
@@ -22,7 +22,7 @@
             @foreach($projects as $proj)
             <div class="swiper-slide">
               <div class="card-image">
-                <img src="{{url('files/'.$proj->feature_images)}}" data-toggle="modal" data-target="#exampleModalCenter{{$proj->id}}" style="height: 500px;" alt="">
+                <img src="{{url('files/'.$proj->feature_images)}}" data-toggle="modal" data-target="#exampleModalCenter{{$proj->id}}" alt="">
                 <!-- <div class="" style="background-image: url('{{url('files/'.$proj->feature_images)}}');height: 500px;background-position:center;background-size: cover;" data-toggle="modal" data-target="#exampleModalCenter{{$proj->id}}"></div> -->
               </div>
             </div>
@@ -68,18 +68,18 @@
 
   @foreach($projects as $projt)
 
-  <div class="modal fade bd-example-modal-lg" id="exampleModalCenter{{$projt->id}}" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-centered" style="max-width: 65%;">
+  <div class="modal-project-center modal fade bd-example-modal-lg" id="exampleModalCenter{{$projt->id}}" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
       <div class="modal-content">
-        <div class="wrap-modal-slider" style="padding-left: 0px;padding-right: 0px;">
+        <div class="wrap-modal-slider">
           <div class="your-class">
             @foreach(json_decode($projt->images) as $prject_img)
             <div>
-              <img src="{{file_manager_get_url($prject_img)}}" style="width: 100%;height: 650px;object-fit: cover;" alt="">
+              <img src="{{file_manager_get_url($prject_img)}}" class="modal-image-project"  alt="">
             </div>
             @endforeach
           </div>
-          <div class="dark-layer" style="padding: 20px;">
+          <div class="dark-layer" >
             <div class="b-text">
               <div class="row b-text-row">
                 <div class="col-md-11">

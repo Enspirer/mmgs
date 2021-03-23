@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;300;400;500;700;900&display=swap");
 @font-face {
   font-family: "Candara";
@@ -100,12 +99,12 @@ nav .nav-link {
 
 .slick-prev::before {
   font-family: FontAwesome;
-  content: "" !important;
+  content: "\f104" !important;
 }
 
 .slick-next::before {
   font-family: FontAwesome;
-  content: "" !important;
+  content: "\f105" !important;
 }
 
 .navbar {
@@ -491,11 +490,22 @@ nav .nav-link {
   left: 0;
   bottom: 0;
   width: 100%;
-  height: auto;
+  height: 500px;
   -o-object-fit: cover;
      object-fit: cover;
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
+}
+
+@media (max-width: 1268px) {
+  #projects-page .projects-content .main .swiper-container .swiper-wrapper .swiper-slide .card-image img {
+    height: 280px;
+  }
+}
+@media (max-width: 1520px) {
+  #projects-page .projects-content .main .swiper-container .swiper-wrapper .swiper-slide .card-image img {
+    height: 380px;
+  }
 }
 
 #projects-page .projects-content .main .swiper-container .swiper-pagination {
@@ -599,24 +609,36 @@ nav .nav-link {
   }
 }
 
-.modal-project-center .modal-dialog-centered {
-  max-width: 80%;
+.modal-project-center .modal-dialog {
+  max-width: 65% !important;
 }
 
-.modal-project-center .modal-dialog-centered .modal-content {
+.modal-project-center .modal-dialog .modal-content {
   overflow: hidden;
   position: relative;
 }
 
-.modal-project-center .modal-dialog-centered .modal-content .swiper-container2 {
+.modal-project-center .modal-dialog .modal-content .wrap-modal-slider {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.modal-project-center .modal-dialog .modal-content .wrap-modal-slider .modal-image-project {
+  width: 100%;
+  height: 650px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.modal-project-center .modal-dialog .modal-content .swiper-container2 {
   position: relative;
 }
 
-.modal-project-center .modal-dialog-centered .modal-content .swiper-container2 .swiper-slide {
+.modal-project-center .modal-dialog .modal-content .swiper-container2 .swiper-slide {
   width: 100% !important;
 }
 
-.modal-project-center .modal-dialog-centered .modal-content .swiper-container2 .swiper-slide .dark-layer {
+.modal-project-center .modal-dialog .modal-content .swiper-container2 .swiper-slide .dark-layer {
   background: -webkit-gradient(linear, left bottom, left top, from(black), color-stop(39%, rgba(108, 0, 52, 0)));
   background: linear-gradient(0deg, black 0%, rgba(108, 0, 52, 0) 39%);
   width: 100%;
@@ -626,7 +648,7 @@ nav .nav-link {
   top: 0;
 }
 
-.modal-project-center .modal-dialog-centered .modal-content .swiper-container2 .b-text {
+.modal-project-center .modal-dialog .modal-content .swiper-container2 .b-text {
   height: 100%;
   z-index: 99999999;
   position: absolute;
@@ -634,19 +656,19 @@ nav .nav-link {
   top: 0;
 }
 
-.modal-project-center .modal-dialog-centered .modal-content .swiper-container2 .b-text .b-text-row {
+.modal-project-center .modal-dialog .modal-content .swiper-container2 .b-text .b-text-row {
   position: absolute;
   top: 0;
   height: 100%;
   width: 100%;
 }
 
-.modal-project-center .modal-dialog-centered .modal-content .swiper-container2 .b-text .b-text-row .col-md-11 .title-project {
+.modal-project-center .modal-dialog .modal-content .swiper-container2 .b-text .b-text-row .col-md-11 .title-project {
   font-size: 30px;
   font-family: Candara;
 }
 
-.modal-project-center .modal-dialog-centered .modal-content .swiper-container2 .b-text .b-text-row .col-md-11 p {
+.modal-project-center .modal-dialog .modal-content .swiper-container2 .b-text .b-text-row .col-md-11 p {
   z-index: 999999999;
   position: absolute;
   padding: 20px;
@@ -655,12 +677,12 @@ nav .nav-link {
   color: #fff;
 }
 
-.modal-project-center .modal-dialog-centered .modal-content .swiper-container2 .b-text .b-text-row .col-md-11 p .btn-read-more {
+.modal-project-center .modal-dialog .modal-content .swiper-container2 .b-text .b-text-row .col-md-11 p .btn-read-more {
   cursor: pointer;
   color: #d3c441;
 }
 
-.modal-project-center .modal-dialog-centered .modal-content .swiper-container2 .b-text .b-text-row .col-md-1 i {
+.modal-project-center .modal-dialog .modal-content .swiper-container2 .b-text .b-text-row .col-md-1 i {
   font-size: 25px;
   color: #fff;
   position: absolute;
