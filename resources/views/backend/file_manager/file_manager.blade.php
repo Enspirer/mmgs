@@ -69,22 +69,25 @@
     <div class="form-group">
         <label class="form-label">{{$file_caption}}</label>
         <div id="select_img_{{$file_input_name}}" type="text" class="" style="border-color: grey;color: grey; padding: 10px;text-align: center;border-style: dashed;border-width: 1px;">
-            <br>
-            <div class="" id="upload_content_{{$file_input_name}}">
-                <h3>Upload Image</h3>
-                <small>Upload Images</small>
-            </div>
+
 
             @if($data)
-                <div class="" id="image_content_{{$file_input_name}}" style="display: none">
-                    <input type="hidden" name="{{$file_input_name}}" id="image_{{$file_input_name}}">
-                    <img src="" id="image_preview_{{$file_input_name}}" style="height: 200px;">
+                <div class="" id="upload_content_{{$file_input_name}}">
+                </div>
+                <div class="" id="image_content_{{$file_input_name}}" style="">
+                    <input type="hidden" name="{{$file_input_name}}" value="{{$data}}" id="image_{{$file_input_name}}">
+                    <img src="{{url('files/'.$data)}}" id="image_preview_{{$file_input_name}}" style="height: 200px;width: 200px;">
                 </div>
 
             @else
+                <br>
+                <div class="" id="upload_content_{{$file_input_name}}">
+                    <h3>Upload Image</h3>
+                    <small>Upload Images</small>
+                </div>
                 <div class="" id="image_content_{{$file_input_name}}" style="display: none">
-                    <input type="hidden" name="{{$file_input_name}}" value="{{$data}}" id="image_{{$file_input_name}}">
-                    <img src="{{url('files/'.$data)}}" id="image_preview_{{$file_input_name}}" style="height: 200px;">
+                    <input type="hidden" name="{{$file_input_name}}" id="image_{{$file_input_name}}">
+                    <img src="" id="image_preview_{{$file_input_name}}" style="height: 200px;">
                 </div>
             @endif
 

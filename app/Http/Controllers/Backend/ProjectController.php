@@ -71,6 +71,30 @@ class ProjectController extends Controller
         ]);
     }
 
+    public function update(Request $request)
+    {
+
+        if($request->feature_image)
+        {
+            $imageFiles = FileManager::where('id',$request->feature_image)->first();
+
+            $featureimgs = $imageFiles->file_name;
+        }else{
+            $featureimgs = $request->feature_image;
+        }
+
+
+
+        Projects::where('id',$request->item_id)->update([
+           'project_name' => $request->project_name,
+           'description' => $request->description,
+           'images' => json_encode($request->images),
+           'feature_images' => $featureimgs,
+           'status' => $request->status,
+        ]);
+        return back();
+    }
+
     public function create()
     {
         return view('backend.projects.creator');
