@@ -7,7 +7,7 @@
       <div class="container">
       @include('frontend.layouts.menu')
 
-        <div class="awards-section">
+      <div class="awards-section">
           <h1>awards</h1>
    
           <p>
