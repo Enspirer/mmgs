@@ -1,6 +1,6 @@
 <?php
 use App\Models\FileManager;
-
+use App\Models\Gallery;
 if (! function_exists('app_name')) {
     /**
      * Helper to grab the application name.
@@ -33,6 +33,20 @@ if (! function_exists('file_manager_get_url')) {
         return url('files/').'/'.$files->file_name;
     }
 }
+
+
+if (! function_exists('gallerylimit')) {
+    /**
+     * Access the gravatar helper.
+     */
+    function gallerylimit($skip_number)
+    {
+        $gimag = Gallery::skip($skip_number)->take(10)->get();
+
+        return $gimag;
+    }
+}
+
 
 
 

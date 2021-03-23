@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Gallery;
 use Illuminate\Http\Request;
 use DB;
+use Illuminate\Support\Collection;
 class GalleryController extends Controller
 {
        /**
@@ -13,15 +14,36 @@ class GalleryController extends Controller
      */
     public function index()
     {
-        $data = Gallery::paginate(8);
+
+        $gallaeyrDetails = Gallery::all();
+        $finalOutArray = [];
+        foreach ($gallaeyrDetails as $gallaeyrDetail)
+        {
+            $stap = [
+                'image_id' => $gallaeyrDetail->id,
+                'image_name' => $gallaeyrDetail->image_name,
+            ];
+            array_push($finalOutArray,$stap);
+        }
+        $finalOutput = self::sectionArray($finalOutArray,9);
 
 
+        return view('frontend.gallery',[
+            'galleryItems' => $finalOutput
+        ]);
+    }
 
+   static function sectionArray($array, $step)
+    {
+        $sectioned = array();
 
-        $products = Gallery::skip(0)->take(10)->get(); //get first 10 rows
-//        $products = Gallery::skip(10)->take(10)->get(); //get next 10 rows
-
-
-        return view('frontend.gallery');
+        $k = 0;
+        for ( $i=0;$i < count($array); $i++ ) {
+            if ( !($i % $step) ) {
+                $k++;
+            }
+            $sectioned[$k][] = $array[$i];
+        }
+        return $sectioned;
     }
 }
