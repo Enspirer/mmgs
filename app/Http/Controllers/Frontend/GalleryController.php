@@ -15,14 +15,12 @@ class GalleryController extends Controller
     {
         $data = Gallery::paginate(8);
 
-        dd($data);
 
 
 
         $products = Gallery::skip(0)->take(10)->get(); //get first 10 rows
 //        $products = Gallery::skip(10)->take(10)->get(); //get next 10 rows
 
-        dd($products);
 
         return view('frontend.gallery');
     }
