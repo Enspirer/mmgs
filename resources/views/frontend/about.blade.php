@@ -100,33 +100,33 @@
             </div>
             <div class="main-right-about col-md-12">
               <div class="row">
-                <div class="text-col col-md-12">
+              <div class="text-col col-md-12">
                   <br />
-                  <p>
+                  <p class="about-paragraph" style="font-size: 13.5px;line-height: 1;">
                     Mathew Mangaladaz Godridge Samuel (MMGS), born in Colombo in
                     1962, graduated from the University of Moratuwa Sri Lanka.
                     Became corporate member of the Sri Lanka Institute of
                     Architects (SLIA) in 1992. Elected a fellow member of SLIA
                     in 2003.
                   </p>
-                  <p>
+                  <p class="about-paragraph" style="font-size: 13.5px;line-height: 1;">
                     Started his practice in the living room with a single
                     draughtsman in 1992, today the practice is known as MMGS
                     ARCHITECTS having its own design studio in central Colombo.
                   </p>
-                  <p>
+                  <p class="about-paragraph" style="font-size: 13.5px;line-height: 1;">
                     MMGS ARCHITECTS, an award winning architectural practice in
                     Sri Lanka, comprising young and energetic architects,
                     experimenting with creative solutions for their clients.
                     Each project is a celebration of innovation, work of joy,
                     worthy addition to the contemporary Sri Lankan architecture.
                   </p>
-                  <p>
+                  <p class="about-paragraph">
                     Winning number of design and color awards and a few design
                     competitions makes Godridge Samuel, a leading, award winning
                     architect in Sri Lanka.
                   </p>
-                  <p>
+                  <p class="about-paragraph">
                     Today, Godridge Samuel has evolved a distinctive style of
                     his own ‘MODERN, MINIMALISTIC, TROPICAL, SUSTAINABLE
                     ARCHITECTURE’.
