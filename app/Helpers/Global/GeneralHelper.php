@@ -1,4 +1,5 @@
 <?php
+use App\Models\FileManager;
 
 if (! function_exists('app_name')) {
     /**
@@ -21,6 +22,19 @@ if (! function_exists('gravatar')) {
         return app('gravatar');
     }
 }
+
+if (! function_exists('file_manager_get_url')) {
+    /**
+     * Access the gravatar helper.
+     */
+    function file_manager_get_url($id)
+    {
+        $files = FileManager::where('id',$id)->first();
+        return url('files/').'/'.$files->file_name;
+    }
+}
+
+
 
 if (! function_exists('home_route')) {
     /**

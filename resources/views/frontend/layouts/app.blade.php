@@ -13,6 +13,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" />
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css'>
+    <link rel='stylesheet' href='https://kenwheeler.github.io/slick/slick/slick-theme.css'>
     <!-- Theame Style    -->
     <link rel="stylesheet" href="{{url('css/style.css')}}" />
     <style>
@@ -34,6 +39,9 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js'></script>
+
     <script>
         var swiper = new Swiper(".swiper-container3", {
             navigation: {
@@ -43,14 +51,6 @@
         });
     </script>
 
-    <script>
-        var swiper = new Swiper(".swiper-container2", {
-            navigation: {
-                nextEl: "#swiper-button-next2",
-                prevEl: "#swiper-button-prev2",
-            },
-        });
-    </script>
 
     <script>
         var swiper = new Swiper(".swiper-container1", {
@@ -118,6 +118,17 @@
                 prevEl: ".swiper-button-prev3",
             },
         });
+    </script>
+
+    <script>
+        $(document).ready(function(){
+            $('.your-class').slick();
+        });
+
+        $('.modal').on('shown.bs.modal', function (e) {
+            $('.your-class').slick('setPosition');
+            $('.wrap-modal-slider').addClass('open');
+        })
     </script>
 
 </body>

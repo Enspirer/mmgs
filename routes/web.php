@@ -1,7 +1,7 @@
 <?php
 
 use App\Http\Controllers\LanguageController;
-
+use App\Http\Controllers\Frontend\FileManagerController;
 /*
  * Global Routes
  * Routes that are used between both frontend and backend.
@@ -9,6 +9,8 @@ use App\Http\Controllers\LanguageController;
 
 // Switch between the included languages
 Route::get('lang/{lang}', [LanguageController::class, 'swap']);
+
+Route::get('image-details/{image_id}', [FileManagerController::class, 'get_img'])->name('get_img');
 
 /*
  * Frontend Routes

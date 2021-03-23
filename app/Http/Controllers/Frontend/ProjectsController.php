@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Frontend;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\Projects;
 
 class ProjectsController extends Controller
 {
@@ -12,6 +13,10 @@ class ProjectsController extends Controller
      */
     public function index()
     {
-        return view('frontend.projects');
+        $projects = Projects::where('status',1)->get();
+
+        return view('frontend.projects',[
+            'projects' => $projects
+        ]);
     }
 }
