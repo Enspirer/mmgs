@@ -14,7 +14,7 @@
                             <div class="">
                                 <div class="form-group">
                                     <label>Project Name</label>
-                                    <input type="text" class="form-control" name="project_name" required>
+                                    <input type="text" class="form-control" value="{{$projectDetails->project_name}}" name="project_name" required>
                                 </div>
                                 <div class="form-group">
                                     <label>Status</label>
@@ -26,7 +26,7 @@
 
                                 <div class="form-group">
                                     <label>Description</label>
-                                    <textarea class="form-control" rows="11" name="description"></textarea>
+                                    <textarea class="form-control" rows="11" name="description">{{$projectDetails->description}}</textarea>
                                 </div>
                                 @include('backend.file_manager.file_manager',['file_caption' => 'Project Images','file_input_name' => 'images','multiple' => true, 'data' => []])
 
