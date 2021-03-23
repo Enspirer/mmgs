@@ -38,7 +38,6 @@
                                 <th scope="col">Image</th>
                                 <th scope="col">Image Name</th>
                                 <th scope="col">Effect</th>
-                                <th scope="col">Link</th>
                                 <th scope="col">Created at</th>
                             </tr>
                         </thead>
@@ -61,7 +60,6 @@
                     {data: 'file', name: 'file'},
                     {data: 'image_name', name: 'image_name'},
                     {data: 'image_effect', name: 'image_effect'},
-                    {data: 'link', name: 'link'},
                     {data: 'created_at', name: 'created_at'},
                 ]
             });

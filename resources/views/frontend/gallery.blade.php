@@ -15,29 +15,35 @@
               <div class="col-md-9">
                 <div class="swiper-container swiper-container4" style="width: 100%;height: 500px;">
                   <div class="swiper-wrapper" style="width: 100%;height: 500px;">
+
                     <div class="swiper-slide" style="width: 100%;height: 500px;">
-                      <div class="row">
-                        <div class="col-md-4"><img src="https://source.unsplash.com/1280x720/?nature" alt=""></div>
-                        <div class="col-md-4"><img src="https://source.unsplash.com/1280x720/?water" alt=""></div>
-                        <div class="col-md-4"><img src="https://source.unsplash.com/1280x720/?animal" alt=""></div>
-                        <div class="col-md-4"><img src="https://source.unsplash.com/1280x720/?travel" alt=""></div>
-                        <div class="col-md-4"><img src="https://source.unsplash.com/1280x720/?flower" alt=""></div>
-                        <div class="col-md-4"><img src="https://source.unsplash.com/1280x720/?car" alt=""></div>
-                        <div class="col-md-4"><img src="https://source.unsplash.com/1280x720/?mountain" alt=""></div>
-                        <div class="col-md-4"><img src="https://source.unsplash.com/1280x720/?nature,water,animal" alt=""></div>
-                        <div class="col-md-4"><img src="https://source.unsplash.com/1280x720/?water,animal" alt=""></div>
-                      </div></div>
-                    <div class="swiper-slide" style="width: 100%;height: 500px;"><div class="row">
-                      <div class="col-md-4"><img src="https://source.unsplash.com/1280x720/?nature" alt=""></div>
-                      <div class="col-md-4"><img src="https://source.unsplash.com/1280x720/?water" alt=""></div>
-                      <div class="col-md-4"><img src="https://source.unsplash.com/1280x720/?animal" alt=""></div>
-                      <div class="col-md-4"><img src="https://source.unsplash.com/1280x720/?travel" alt=""></div>
-                      <div class="col-md-4"><img src="https://source.unsplash.com/1280x720/?flower" alt=""></div>
-                      <div class="col-md-4"><img src="https://source.unsplash.com/1280x720/?car" alt=""></div>
-                      <div class="col-md-4"><img src="https://source.unsplash.com/1280x720/?mountain" alt=""></div>
-                      <div class="col-md-4"><img src="https://source.unsplash.com/1280x720/?nature,water,animal" alt=""></div>
-                      <div class="col-md-4"><img src="https://source.unsplash.com/1280x720/?water,animal" alt=""></div>
-                    </div></div>
+                          <div class="row">
+                            <div class="col-md-4"><img src="https://source.unsplash.com/1280x720/?nature" alt=""></div>
+                            <div class="col-md-4"><img src="https://source.unsplash.com/1280x720/?water" alt=""></div>
+                            <div class="col-md-4"><img src="https://source.unsplash.com/1280x720/?animal" alt=""></div>
+                            <div class="col-md-4"><img src="https://source.unsplash.com/1280x720/?travel" alt=""></div>
+                            <div class="col-md-4"><img src="https://source.unsplash.com/1280x720/?flower" alt=""></div>
+                            <div class="col-md-4"><img src="https://source.unsplash.com/1280x720/?car" alt=""></div>
+                            <div class="col-md-4"><img src="https://source.unsplash.com/1280x720/?mountain" alt=""></div>
+                            <div class="col-md-4"><img src="https://source.unsplash.com/1280x720/?nature,water,animal" alt=""></div>
+                            <div class="col-md-4"><img src="https://source.unsplash.com/1280x720/?water,animal" alt=""></div>
+                          </div>
+                    </div>
+
+
+                    <div class="swiper-slide" style="width: 100%;height: 500px;">
+                         <div class="row">
+                          <div class="col-md-4"><img src="https://source.unsplash.com/1280x720/?nature" alt=""></div>
+                          <div class="col-md-4"><img src="https://source.unsplash.com/1280x720/?water" alt=""></div>
+                          <div class="col-md-4"><img src="https://source.unsplash.com/1280x720/?animal" alt=""></div>
+                          <div class="col-md-4"><img src="https://source.unsplash.com/1280x720/?travel" alt=""></div>
+                          <div class="col-md-4"><img src="https://source.unsplash.com/1280x720/?flower" alt=""></div>
+                          <div class="col-md-4"><img src="https://source.unsplash.com/1280x720/?car" alt=""></div>
+                          <div class="col-md-4"><img src="https://source.unsplash.com/1280x720/?mountain" alt=""></div>
+                          <div class="col-md-4"><img src="https://source.unsplash.com/1280x720/?nature,water,animal" alt=""></div>
+                          <div class="col-md-4"><img src="https://source.unsplash.com/1280x720/?water,animal" alt=""></div>
+                        </div>
+                    </div>
                     <div class="swiper-slide" style="background: rgb(199, 84, 128);width: 100%;height: 500px;">Slide 3</div>
                     </div>
                 
