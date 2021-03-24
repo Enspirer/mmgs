@@ -65,46 +65,15 @@
                 <i class="fa fa-angle-up swiper-button-prev3" aria-hidden="true" style="font-size: 40px; text-align: center"></i>
               </div>
               <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                      <div class="row" style="padding: 0 10px;">
-                 <img src="https://source.unsplash.com/1280x720/?nature" style="width: 50%;padding: 5px;" alt="">
-                  <img src="https://source.unsplash.com/1280x720/?water" style="width: 50%;padding: 5px;" alt="">
-                  <img src="https://source.unsplash.com/1280x720/?girl" style="width: 50%;padding: 5px;" alt="">
-                  <img src="https://source.unsplash.com/1280x720/?boy" style="width: 50%;padding: 5px;" alt="">
-                  <img src="https://source.unsplash.com/1280x720/?cow" style="width: 50%;padding: 5px;" alt="">
-                  <img src="https://source.unsplash.com/1280x720/?bird" style="width: 50%;padding: 5px;" alt="">
-                  <img src="https://source.unsplash.com/1280x720/?car" style="width: 50%;padding: 5px;" alt="">
-                  <img src="https://source.unsplash.com/1280x720/?van" style="width: 50%;padding: 5px;" alt="">
-        
-                </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="row" style="padding: 0 10px;">
-                    <img src="https://source.unsplash.com/1280x720/?nature" style="width: 50%;padding: 5px;" alt="">
-                     <img src="https://source.unsplash.com/1280x720/?water" style="width: 50%;padding: 5px;" alt="">
-                     <img src="https://source.unsplash.com/1280x720/?girl" style="width: 50%;padding: 5px;" alt="">
-                     <img src="https://source.unsplash.com/1280x720/?boy" style="width: 50%;padding: 5px;" alt="">
-                     <img src="https://source.unsplash.com/1280x720/?cow" style="width: 50%;padding: 5px;" alt="">
-                     <img src="https://source.unsplash.com/1280x720/?bird" style="width: 50%;padding: 5px;" alt="">
-                     <img src="https://source.unsplash.com/1280x720/?car" style="width: 50%;padding: 5px;" alt="">
-                     <img src="https://source.unsplash.com/1280x720/?van" style="width: 50%;padding: 5px;" alt="">
-           
-                   </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="row" style="padding: 0 10px;">
-                    <img src="https://source.unsplash.com/1280x720/?nature" style="width: 50%;padding: 5px;" alt="">
-                     <img src="https://source.unsplash.com/1280x720/?water" style="width: 50%;padding: 5px;" alt="">
-                     <img src="https://source.unsplash.com/1280x720/?girl" style="width: 50%;padding: 5px;" alt="">
-                     <img src="https://source.unsplash.com/1280x720/?boy" style="width: 50%;padding: 5px;" alt="">
-                     <img src="https://source.unsplash.com/1280x720/?cow" style="width: 50%;padding: 5px;" alt="">
-                     <img src="https://source.unsplash.com/1280x720/?bird" style="width: 50%;padding: 5px;" alt="">
-                     <img src="https://source.unsplash.com/1280x720/?car" style="width: 50%;padding: 5px;" alt="">
-                     <img src="https://source.unsplash.com/1280x720/?van" style="width: 50%;padding: 5px;" alt="">
-           
-                   </div>
-                </div>
-            
+                  @foreach($galleryItems as $items)
+                      <div class="swiper-slide">
+                          <div class="row" style="padding: 0 10px;">
+                              @foreach($items as $itemS)
+                                  <img src="{{url('files/'.$itemS['image_name'])}}" style="width: 50%;padding: 5px;" alt="">
+                              @endforeach
+                          </div>
+                      </div>
+                  @endforeach
               </div>
   
               <div

@@ -24,6 +24,10 @@ class GalleryController extends Controller
             ->addColumn('file', function($row){
                 return '<img src="'.file_manager_get_url($row->image_id).'" style="height: 100px;">';
             })
+            ->addColumn('action', function($row){
+                $btn = '<a href="'.route('admin.gallery.delete',$row->id).'" class="edit btn btn-danger btn-sm" style="margin-right: 10px"><i class="fa fa-trash"></i> Delete </a>';
+                return  $btn;
+            })
             ->rawColumns(['action','file'])
             ->make();
     }
@@ -43,5 +47,11 @@ class GalleryController extends Controller
     public function edit($id)
     {
 
+    }
+
+    public function delete($id)
+    {
+        Gallery::where('id',$id)->delete();
+        return back();
     }
 }

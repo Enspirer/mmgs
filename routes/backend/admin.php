@@ -37,3 +37,5 @@ Route::get('gallery/index', [GalleryController::class, 'index'])->name('gallery.
 Route::get('gallery/get-details', [GalleryController::class, 'getData'])->name('gallery.json');
 Route::get('gallery/create', [GalleryController::class, 'create'])->name('gallery.create');
 Route::post('gallery/store', [GalleryController::class, 'store'])->name('gallery.store');
+Route::get('gallery/delete/{id}', [GalleryController::class, 'delete'])->name('gallery.delete');
+

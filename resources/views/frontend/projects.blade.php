@@ -38,18 +38,12 @@
             <i class="fa fa-angle-up swiper-button-prev3" aria-hidden="true" style="font-size: 40px; text-align: center"></i>
           </div>
           <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img src="" alt="Image Slider" style="width: 100%">
-            </div>
-            <div class="swiper-slide">
-              <img src="https://source.unsplash.com/1280x720/?nature,water,animal" alt="Image Slider" style="width: 100%">
-            </div>
-            <div class="swiper-slide">
-              <img src="https://source.unsplash.com/1280x720/?water,animal" alt="Image Slider" style="width: 100%">
-            </div>
-            <div class="swiper-slide">
-              <img src="https://source.unsplash.com/1280x720/?nature,animal" alt="Image Slider" style="width: 100%">
-            </div>
+            @foreach($projects as $proj)
+              <div class="swiper-slide">
+                <img src="{{url('files/'.$proj->feature_images)}}" data-toggle="modal" data-target="#exampleModalCenter{{$proj->id}}" alt="Image Slider" style="width: 100%">
+              </div>
+            @endforeach
+
           </div>
           <div class="top-btn" style="padding: 20px 0 0 0;margin: auto; display: flex; justify-content: center;">
             <i class="fa fa-angle-down swiper-button-next3" aria-hidden="true" style="font-size: 40px; text-align: center"></i>
@@ -86,17 +80,6 @@
                   <p>
                     <span class="title-project">{{$projt->project_name}}</span><br />
                     <br>
-                    <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Phasellus imperdiet, nulla et dictum interdum, nisi lorem
-                      egestas vitae scel<span id="dots">... <span onclick="myFunction()" id="myBtn" class="btn-read-more">Read more</span> </span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est,
-                      ultrices nec congue eget, auctor vitae massa. Fusce luctus
-                      vestibulum augue ut aliquet. Nunc sagittis dictum nisi,
-                      sed ullamcorper ipsum dignissim ac. In at libero sed nunc
-                      venenatis imperdiet sed ornare turpis. Donec vitae dui
-                      eget tellus gravida venenatis. Integer fringilla congue
-                      eros non fermentum. Sed dapibus pulvinar nibh tempor
-                      porta.<span onclick="myFunction()" id="myBtn" class="btn-read-more"> &nbsp; Read Less</span></span> -->
-
                     <!-- {{$projt->description}} -->
                     @if(strlen($projt->description) > 200)
                     <span id="short-text"> {{ substr($projt->description, 0, 200)}}</span>

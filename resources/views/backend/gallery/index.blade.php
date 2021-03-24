@@ -39,6 +39,7 @@
                                 <th scope="col">Image Name</th>
                                 <th scope="col">Effect</th>
                                 <th scope="col">Created at</th>
+                                <th scope="col">Action</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -61,6 +62,7 @@
                     {data: 'image_name', name: 'image_name'},
                     {data: 'image_effect', name: 'image_effect'},
                     {data: 'created_at', name: 'created_at'},
+                    {data: 'action', name: 'action'},
                 ]
             });
         });
