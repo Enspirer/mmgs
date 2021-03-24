@@ -17,6 +17,7 @@ use App\Http\Controllers\Frontend\AwardsController;
 Route::get('/', [HomeController::class, 'index'])->name('index');
 Route::get('about', [AboutController::class, 'index'])->name('about');
 Route::get('projects', [ProjectsController::class, 'index'])->name('projects');
+Route::get('project_item/{id}', [ProjectsController::class, 'project_item'])->name('project_item');
 Route::get('gallery', [GalleryController::class, 'index'])->name('gallery');
 Route::get('awards', [AwardsController::class, 'index'])->name('awards');
 Route::get('contact', [ContactController::class, 'index'])->name('contact');

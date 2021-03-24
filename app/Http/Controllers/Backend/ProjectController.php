@@ -19,6 +19,7 @@ class ProjectController extends Controller
     {
         $projects = new Projects;
         $projects->project_name = $request->project_name;
+        $projects->location = $request->location;
         $projects->description = $request->description;
         $projects->images = json_encode($request->images);
         $projects->status = $request->status;
@@ -88,6 +89,7 @@ class ProjectController extends Controller
         Projects::where('id',$request->item_id)->update([
            'project_name' => $request->project_name,
            'description' => $request->description,
+           'location' => $request->location,
            'images' => json_encode($request->images),
            'feature_images' => $featureimgs,
            'status' => $request->status,
