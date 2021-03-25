@@ -30,6 +30,9 @@ class AwardsController extends Controller
         $category = Awards::select(['id', 'description', 'created_at']);
 
         return Datatables::of($category)
+            ->editColumn('description', function ($row) {
+                return substr($row->description,0,35).'...';
+            })
             ->editColumn('status', function ($row) {
                 if ($row->status == 1) {
                     return 'Enabled';
