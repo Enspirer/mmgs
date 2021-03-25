@@ -497,11 +497,12 @@ nav .nav-link {
           filter: grayscale(100%);
 }
 
-@media (max-width: 1268px) {
+@media (max-width: 1250px) {
   #projects-page .projects-content .main .swiper-container .swiper-wrapper .swiper-slide .card-image img {
     height: 280px;
   }
 }
+
 @media (max-width: 1520px) {
   #projects-page .projects-content .main .swiper-container .swiper-wrapper .swiper-slide .card-image img {
     height: 380px;
@@ -610,7 +611,7 @@ nav .nav-link {
 }
 
 .modal-project-center .modal-dialog {
-  max-width: 65% !important;
+  max-width: 85% !important;
 }
 
 .modal-project-center .modal-dialog .modal-content {
