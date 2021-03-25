@@ -21,10 +21,11 @@
                                   @foreach($items as $itemS)
 
                                     @if($itemS['effect'] == 'black_and_white')
-                                        <div class="" style="filter: grayscale(1);"></div>
-                                          <div class="col-md-4"  data-toggle="modal" data-target="#exampleModal{{$itemS['image_id']}}">
-                                              <div class="" style="background-image: url('{{url('files/'.$itemS['image_name'])}}');height: 150px;background-position: center;background-size: contain"></div>
-                                          </div>
+                                        <div class="" style="filter: grayscale(1);">
+                                            <div class="col-md-4"  data-toggle="modal" data-target="#exampleModal{{$itemS['image_id']}}">
+                                                <div class="" style="background-image: url('{{url('files/'.$itemS['image_name'])}}');height: 150px;background-position: center;background-size: contain"></div>
+                                            </div>
+                                        </div>
                                     @else
                                           <div class="col-md-4"  data-toggle="modal" data-target="#exampleModal{{$itemS['image_id']}}">
                                               <div class="" style="background-image: url('{{url('files/'.$itemS['image_name'])}}');height: 150px;background-position: center;background-size: contain"></div>
