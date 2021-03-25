@@ -747,7 +747,7 @@ nav .nav-link {
 }
 
 #awards-section {
-  height: 100vh;
+  margin-bottom: 100px;
 }
 
 #awards-section .awards-section h1 {
