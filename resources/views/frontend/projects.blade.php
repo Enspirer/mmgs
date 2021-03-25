@@ -63,11 +63,16 @@
       <div class="modal-content">
         <div class="wrap-modal-slider">
           <div class="your-class">
-            @foreach(json_decode($projt->images) as $prject_img)
-            <div>
-              <img src="{{file_manager_get_url($prject_img)}}" class="modal-image-project"  alt="">
-            </div>
-            @endforeach
+            @if($projt->images == 'null')
+
+            @else
+              @foreach(json_decode($projt->images) as $prject_img)
+                <div>
+                  <img src="{{file_manager_get_url($prject_img)}}" class="modal-image-project"  alt="">
+                </div>
+              @endforeach
+            @endif
+
           </div>
           <div class="dark-layer" >
             <div class="b-text">

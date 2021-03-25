@@ -20,16 +20,16 @@
                               <div class="row">
                                   @foreach($items as $itemS)
 
-                                    @if($itemS['effect'] == 'black_and_white')
-                                        <div class="" style="filter: grayscale(1);"></div>
-                                          <div class="col-md-4"  data-toggle="modal" data-target="#exampleModal{{$itemS['image_id']}}">
-                                              <div class="" style="background-image: url('{{url('files/'.$itemS['image_name'])}}');height: 150px;background-position: center;background-size: contain"></div>
-                                          </div>
-                                    @else
-                                          <div class="col-md-4"  data-toggle="modal" data-target="#exampleModal{{$itemS['image_id']}}">
-                                              <div class="" style="background-image: url('{{url('files/'.$itemS['image_name'])}}');height: 150px;background-position: center;background-size: contain"></div>
-                                          </div>
-                                    @endif
+
+                                            <div class="col-md-4"  data-toggle="modal" data-target="#exampleModal{{$itemS['image_id']}}">
+                                                @if($itemS['effect'] == 'black_and_white')
+                                                <div class="" style="background-image: url('{{url('files/'.$itemS['image_name'])}}');height: 150px;background-position: center;background-size: contain;filter: grayscale(1)"></div>
+                                                @else
+                                                    <div class="" style="background-image: url('{{url('files/'.$itemS['image_name'])}}');height: 150px;background-position: center;background-size: contain"></div>
+                                                @endif
+                                            </div>
+
+
 
 
                                   @endforeach
