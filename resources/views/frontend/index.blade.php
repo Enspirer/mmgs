@@ -8,7 +8,7 @@
         
 
     @include('frontend.layouts.menu')
-        <div class="home-page-text">
+        <div class="home-page-text" id="home-page-text">
             <p class="web-p">
                 architecture is my <span>PASSION;</span> <br />
                 not just my profession.
