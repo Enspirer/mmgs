@@ -22,6 +22,7 @@ class GalleryController extends Controller
             $stap = [
                 'image_id' => $gallaeyrDetail->id,
                 'image_name' => $gallaeyrDetail->image_name,
+                'effect' => $gallaeyrDetail->image_effect,
             ];
             array_push($finalOutArray,$stap);
         }
