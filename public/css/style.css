@@ -291,21 +291,22 @@ nav .nav-link {
   padding: 4px 4px;
 }
 
-#about-us-page .about-us-content .main-row .main-right-about .row .text-col {
+#about-us-page .about-us-content .main-row .main-right-about .row {
   width: 100%;
   margin-top: 4px !important;
   font-size: 13.5px !important;
   line-height: 1 !important;
 }
 
-#about-us-page .about-us-content .main-row .main-right-about .row .text-col p {
+#about-us-page .about-us-content .main-row .main-right-about .row p {
   width: 100%;
   margin-bottom: 1rem !important;
-  font-size: 13.5px !important;
+  font-size: 15.5px !important;
   line-height: 1.1 !important;
+  text-align: justify !important;
 }
 
-#about-us-page .about-us-content .main-row .main-right-about .row .text-col about-paragraph {
+#about-us-page .about-us-content .main-row .main-right-about .row about-paragraph {
   margin-top: 4px !important;
   font-size: 13.5px !important;
   line-height: 1 !important;

@@ -54,6 +54,7 @@
                     godridge@mmgs.lk <br />
                   </p>
                   <br />
+                  <br>
                   <div class="social-icon">
                     <div class="row">
                       <a href="#"
@@ -99,6 +100,7 @@
                       <span style="letter-spacing: 0.4px;">godridge@mmgs.lk </span>
                   </p>
                   <br />
+                  <br>
                   <div class="social-icon">
                     <div class="row">
                       <a href="#"

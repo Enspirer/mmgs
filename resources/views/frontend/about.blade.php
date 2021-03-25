@@ -11,8 +11,8 @@
         <div class="about-us-content about-web">
           <h1>about</h1>
           <div class="main-row row">
-            <div class="main-left-about col-md-6 col-sm-12">
-              <div class="second-row row">
+            <div class="main-left-about col-md-5 col-sm-12">
+              <!-- <div class="second-row row">
                 <div class="single-image col-md-3">
                   <img class="gray-image-full-width" src="{{asset('img/assets/team/1.jpg')}}" />
                 </div>
@@ -39,11 +39,11 @@
                 <div class="single-image col-md-3">
                   <img class="gray-image-full-width" src="{{asset('img/assets/team/8.jpg')}}" />
                 </div>
-              </div>
+              </div> -->
             </div>
-            <div class="main-right-about col-md-6">
+            <div class="main-right-about col-md-7">
               <div class="row">
-                <div class="text-col col-md-9">
+                <!-- <div class="text-col col-md-9"> -->
                   <p>
                     Mathew Mangaladaz Godridge Samuel (MMGS), born in Colombo in
                     1962, graduated from the University of Moratuwa Sri Lanka.
@@ -73,11 +73,11 @@
                     his own ‘MODERN, MINIMALISTIC, TROPICAL, SUSTAINABLE
                     ARCHITECTURE’.
                   </p>
-                </div>
-                <div class="right-image col-md-3" style="padding: 0">
+                <!-- </div> -->
+                <!-- <div class="right-image col-md-3" style="padding: 0">
                   <img class="gray-image-full-width" src="{{asset('img/assets/team/9.jpg')}}" />
                   <img class="gray-image-full-width" src="{{asset('img/assets/team/10.jpg')}}" />
-                </div>
+                </div> -->
               </div>
             </div>
           </div>
