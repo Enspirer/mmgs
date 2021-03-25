@@ -75,11 +75,18 @@ class ProjectController extends Controller
     public function update(Request $request)
     {
 
+
+
+
         if($request->feature_image)
         {
-            $imageFiles = FileManager::where('id',$request->feature_image)->first();
+            if(is_numeric($request->feature_image)) {
+                $imageFiles = FileManager::where('id',$request->feature_image)->first();
+                $featureimgs =  $imageFiles->file_name;
+            }else{
+                $featureimgs =  $request->feature_image;
+            }
 
-            $featureimgs = $imageFiles->file_name;
         }else{
             $featureimgs = $request->feature_image;
         }
