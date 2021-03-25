@@ -6,22 +6,22 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item {{ Request::segment(1) === null ? 'active' : null }}">
-                        <a class="nav-link " href="/">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link " href="{{url('/')}}">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item {{ Request::segment(1) === 'about' ? 'active' : null }}">
-                        <a class="nav-link" href="about">About</a>
+                        <a class="nav-link" href="{{route('frontend.about')}}">About</a>
                     </li>
                     <li class="nav-item {{ Request::segment(1) === 'projects' ? 'active' : null }}">
-                        <a class="nav-link" href="projects">Projects</a>
+                        <a class="nav-link" href="{{route('frontend.projects')}}">Projects</a>
                     </li>
                     <li class="nav-item {{ Request::segment(1) === 'gallery' ? 'active' : null }}">
-                        <a class="nav-link" href="gallery">Gallery</a>
+                        <a class="nav-link" href="{{route('frontend.gallery')}}">Gallery</a>
                     </li>
                     <li class="nav-item {{ Request::segment(1) === 'awards' ? 'active' : null }}">
-                        <a class="nav-link" href="awards">Awards</a>
+                        <a class="nav-link" href="{{route('frontend.awards')}}">Awards</a>
                     </li>
                     <li class="nav-item {{ Request::segment(1) === 'contact' ? 'active' : null }}">
-                        <a class="nav-link" href="contact">Contact</a>
+                        <a class="nav-link" href="{{route('frontend.contact')}}">Contact</a>
                     </li>
                 </ul>
             </div>
