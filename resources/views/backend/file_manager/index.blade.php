@@ -81,6 +81,8 @@
 
     <script type="text/javascript">
 
+
+
         function load_tables() {
             var table = $('#villadatatable').DataTable({
                 processing: true,
@@ -98,7 +100,6 @@
                 ]
             });
         }
-
         $(function () {
             load_tables()
         });
@@ -109,6 +110,10 @@
             $('#myModal').modal('show')
         }
 
+        var varmet = 12 / 17;
+        var metFile;
+        var donObj;
+        var dropz;
         Dropzone.options.myAwesomeDropzone = {
             paramName: "file", // The name that will be used to transfer the file
             maxFilesize: 2, // MB
@@ -117,8 +122,119 @@
                     $('#villadatatable').DataTable().ajax.reload();
                 });
             },
+            transformFile: function(file, done,aepsetrat) {
+                metFile = file;
+                donObj = done;
+                dropz = this;
+                // Create Dropzone reference for use in confirm button click handler
+                genearateEditor(file,done,this);
+            }
+
         };
 
 
+
+
+        function genearateEditor(file, done, myDropZone) {
+            // Create the image editor overlay
+            var editor = document.createElement('div');
+            editor.id = 'enp_editor';
+            editor.style.position = 'fixed';
+            editor.style.left = 0;
+            editor.style.right = 0;
+            editor.style.top = 0;
+            editor.style.bottom = 0;
+            editor.style.zIndex = 9999;
+            editor.style.backgroundColor = '#000';
+            document.body.appendChild(editor);
+
+            var description_pane = document.createElement('div');
+            description_pane.style.position = 'fixed';
+            description_pane.className = 'aside-menu';
+            description_pane.style.width = '540px';
+            description_pane.style.backgroundColor = 'black';
+            editor.appendChild(description_pane);
+
+            var editor_title = document.createElement('div');
+            editor_title.innerHTML = '' +
+                '<div class="" style="color: white;padding: 10px;margin-top:10px;font-size: 20px;">' +
+                '<div>Enspirer CRM</div>' +
+                '</div>' +
+                '<div class="container">' +
+                '<label class="btn btn-primary">' +
+                    '<input type="radio"  class="sr-only" onclick="change_ratios(7 / 5)" id="aspectRatio1" name="aspectRatio" value="1.7777777777777777">' +
+                    '<span class="docs-tooltip" data-toggle="tooltip" title="aspectRatio: 16 / 9">Project Image Ratio</span>' +
+                '</label>'+ '<br>' +
+
+                '<label class="btn btn-primary">' +
+                    '<input type="radio"  class="sr-only" onclick="change_ratios(5 / 3)" id="aspectRatio1" name="aspectRatio" value="1.7777777777777777">' +
+                    '<span class="docs-tooltip" data-toggle="tooltip" title="aspectRatio: 16 / 9">Gallery Image Ratio</span>' +
+                '</label>'+
+
+                '</div>';
+
+
+            editor_title.className = 'aside-menu';
+            editor_title.style.width = '540px';
+            editor_title.style.backgroundColor = 'black';
+            description_pane.appendChild(editor_title);
+
+            // Create confirm button at the top left of the viewport
+            var buttonConfirm = document.createElement('button');
+            buttonConfirm.style.position = 'absolute';
+            buttonConfirm.style.left = '10px';
+            buttonConfirm.style.top = '10px';
+            buttonConfirm.className = 'btn btn-primary';
+            buttonConfirm.style.zIndex = 9999;
+            buttonConfirm.textContent = 'Confirm';
+            editor.appendChild(buttonConfirm);
+            buttonConfirm.addEventListener('click', function() {
+                // Get the canvas with image data from Cropper.js
+
+                var canvas = cropper.getCroppedCanvas({
+                    width: 256,
+                    height: 256
+                });
+                // Turn the canvas into a Blob (file object without a name)
+                canvas.toBlob(function(blob) {
+                    // Create a new Dropzone file thumbnail
+                    myDropZone.createThumbnail(
+                        blob,
+                        myDropZone.options.thumbnailWidth,
+                        myDropZone.options.thumbnailHeight,
+                        myDropZone.options.thumbnailMethod,
+                        false,
+                        function(dataURL) {
+
+                            // Update the Dropzone file thumbnail
+                            myDropZone.emit('thumbnail', file, dataURL);
+                            // Return the file to Dropzone
+                            done(blob);
+                        });
+                });
+                // Remove the editor from the view
+                document.body.removeChild(editor);
+            });
+            // Create an image node for Cropper.js
+            var image = new Image();
+            image.src = URL.createObjectURL(file);
+            editor.appendChild(image);
+
+            // Create Cropper.js
+
+
+                var cropper = new Cropper(image, {
+                    aspectRatio: varmet,
+                });
+
+        }
+
+        function change_ratios(ratio) {
+            var editorr = document.getElementById("enp_editor");
+
+            document.body.removeChild(editorr);
+            varmet = ratio;
+            genearateEditor(metFile,donObj,dropz);
+        }
     </script>
 @endsection
