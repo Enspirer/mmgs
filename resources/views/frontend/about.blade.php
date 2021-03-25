@@ -84,9 +84,10 @@
         </div>
 
         <div class="about-us-content about-mobile d-none">
+        <h1 style="margin-left: 15px;margin-top: 20px;margin-bottom: 20px;">about</h1>
           <div class="main-row row">
             <div class="main-left-about col-md-12 col-sm-12">
-              <div class="second-row row">
+              <!-- <div class="second-row row">
                 <div class="single-image col-md-4 col">
                   <img class="gray-image-full-width" src="{{asset('img/assets/team/9.jpg')}}" />
                 </div>
@@ -97,7 +98,7 @@
                   <img class="gray-image-full-width" src="{{asset('img/assets/team/3.jpg')}}" />
                 </div>
               </div>
-            </div>
+            </div> -->
             <div class="main-right-about col-md-12">
               <div class="row">
               <div class="text-col col-md-12">
@@ -137,7 +138,7 @@
            
               </div>
             </div>
-            <div class="main-left-about col-md-12 col-sm-12">
+            <!-- <div class="main-left-about col-md-12 col-sm-12">
               <div class="second-row row">
                 <div class="single-image col-md-4 col">
                   <img class="gray-image-full-width" src="{{asset('img/assets/team/4.jpg')}}" />
@@ -149,8 +150,8 @@
                   <img class="gray-image-full-width" src="{{asset('img/assets/team/10.jpg')}}" />
                 </div>
               </div>
-            </div>
-            <div class="main-left-about col-md-12 col-sm-12">
+            </div> -->
+            <!-- <div class="main-left-about col-md-12 col-sm-12">
               <div class="second-row row">
                 <div class="single-image col-md-4 col">
                   <img class="gray-image-full-width" src="{{asset('img/assets/team/6.jpg')}}" />
@@ -162,7 +163,7 @@
                   <img class="gray-image-full-width" src="{{asset('img/assets/team/8.jpg')}}" />
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
