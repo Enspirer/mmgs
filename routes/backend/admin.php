@@ -31,7 +31,7 @@ Route::get('file_manager/get-details', [FileManagerController::class, 'getData']
 Route::get('file_manager/get-details-dialog/{name}', [FileManagerController::class, 'getDialogData'])->name('get_dialog_data.json');
 Route::get('file_manager/create', [FileManagerController::class, 'create'])->name('file_manager.create');
 Route::post('file_manager/store_file', [FileManagerController::class,'store'])->name('file_manager.store');
-Route::post('file_manager/delete/{id}', [FileManagerController::class,'delete'])->name('file_manager.delete');
+Route::get('file_manager/delete/{id}', [FileManagerController::class,'delete'])->name('file_manager.delete');
 
 Route::get('gallery/index', [GalleryController::class, 'index'])->name('gallery.index');
 Route::get('gallery/get-details', [GalleryController::class, 'getData'])->name('gallery.json');

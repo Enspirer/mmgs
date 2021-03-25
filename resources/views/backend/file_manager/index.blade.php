@@ -73,7 +73,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <a href="" type="button" class="btn btn-danger">Delete Image</a>
+                    <a href="" type="button" class="btn btn-danger" id="delete_ids">Delete Image</a>
                 </div>
             </div>
         </div>
@@ -107,6 +107,7 @@
             $("#item_name_title").text(item_name);
             $("#item_cart_title_delete").text(item_name);
             $('#my_image').attr('src',url);
+            $('#delete_ids').attr('href',"{{url('admin/file_manager/delete')}}/"+id );
             $('#myModal').modal('show')
         }
 
@@ -129,7 +130,6 @@
                 // Create Dropzone reference for use in confirm button click handler
                 genearateEditor(file,done,this);
             }
-
         };
 
 
