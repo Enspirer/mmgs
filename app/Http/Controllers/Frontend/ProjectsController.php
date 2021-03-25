@@ -19,4 +19,12 @@ class ProjectsController extends Controller
             'projects' => $projects
         ]);
     }
+
+    public function project_item($id)
+    {
+        $project = Projects::where('id',$id)->get();
+        return view('frontend.project_item',[
+            'project' => $project
+        ]);
+    }
 }

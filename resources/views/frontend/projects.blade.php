@@ -3,11 +3,7 @@
 @section('title', app_name() . ' | ' . __('navs.general.home'))
 
 @section('content')
-<!-- <style>
-  .slick-slide {
-    width: 500px;
-  }
-</style> -->
+
 
 <section id="projects-page">
   <div class="container">
@@ -40,7 +36,7 @@
           <div class="swiper-wrapper">
             @foreach($projects as $proj)
               <div class="swiper-slide">
-                <img src="{{url('files/'.$proj->feature_images)}}" data-toggle="modal" data-target="#exampleModalCenter{{$proj->id}}" alt="Image Slider" style="width: 100%">
+              <a href="project_item/{{$proj->id}}"><img src="{{url('files/'.$proj->feature_images)}}" alt="Image Slider" style="width: 100%"></a>  
               </div>
             @endforeach
 

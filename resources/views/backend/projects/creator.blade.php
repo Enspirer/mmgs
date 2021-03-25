@@ -23,7 +23,10 @@
                                         <option value="0">Disabled</option>
                                     </select>
                                 </div>
-
+                                <div class="form-group">
+                                    <label>Project Location</label>
+                                    <input type="text" class="form-control" name="location" required>
+                                </div>
                                 <div class="form-group">
                                     <label>Description</label>
                                     <textarea class="form-control" rows="11" name="description"></textarea>
