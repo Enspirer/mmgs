@@ -27,11 +27,16 @@
                         <i class="fa fa-angle-up swiper-button-prev3" aria-hidden="true" style="font-size: 40px; text-align: center"></i>
                     </div>
                     <div class="swiper-wrapper">
-                        @foreach(json_decode($projt->images) as $prject_img)
-                        <div class="swiper-slide">
-                            <img src="{{file_manager_get_url($prject_img)}}" alt="Image Slider" style="width: 100%;height: 250px;object-fit: cover;" />
-                        </div>
-                        @endforeach
+                        @if($projt->images == 'null')
+
+                        @else
+                            @foreach(json_decode($projt->images) as $prject_img)
+                                <div class="swiper-slide">
+                                    <img src="{{file_manager_get_url($prject_img)}}" alt="Image Slider" style="width: 100%;height: 250px;object-fit: cover;" />
+                                </div>
+                            @endforeach
+                        @endif
+
 
 
 
