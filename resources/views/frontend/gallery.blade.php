@@ -23,9 +23,11 @@
 
                                             <div class="col-md-4"  data-toggle="modal" data-target="#exampleModal{{$itemS['image_id']}}">
                                                 @if($itemS['effect'] == 'black_and_white')
-                                                <div class="" style="background-image: url('{{url('files/'.$itemS['image_name'])}}');height: 150px;background-position: center;background-size: contain;filter: grayscale(1)"></div>
+                                                <img src="{{url('files/'.$itemS['image_name'])}}" class="gray" style="height: 150px; object-fit: cover;" alt="">
+                                                <!-- <div class="" style="background-image: url('{{url('files/'.$itemS['image_name'])}}');height: 150px;background-position: center;background-size: contain;filter: grayscale(1)"></div> -->
                                                 @else
-                                                    <div class="" style="background-image: url('{{url('files/'.$itemS['image_name'])}}');height: 150px;background-position: center;background-size: contain"></div>
+                                                <img src="{{url('files/'.$itemS['image_name'])}}"  style="height: 150px; object-fit: cover;" alt="">
+                                                    <!-- <div class="" style="background-image: url('{{url('files/'.$itemS['image_name'])}}');height: 150px;background-position: center;background-size: contain"></div> -->
                                                 @endif
                                             </div>
 
@@ -48,10 +50,11 @@
           @foreach($galleryItems as $items)
               @foreach($items as $itemS)
               <!-- Modal -->
-              <div class="modal fade" id="exampleModal{{$itemS['image_id']}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                  <div class="modal-dialog" role="document" style="width: 950px;max-width: none;">
+              <div class="modal fade" id="exampleModal{{$itemS['image_id']}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered" role="document" style="width: 950px;max-width: none;">
                       <div class="modal-content">
-                          <div class="" style="background-image: url('{{url('files/'.$itemS['image_name'])}}');height: 600px;background-size: contain;background-position: center;">
+                      <img src="{{url('files/'.$itemS['image_name'])}}" alt="" style="height: 600px;object-fit: cover;">
+                          <!-- <div class="" style="background-image: url('{{url('files/'.$itemS['image_name'])}}');height: 600px;background-size: contain;background-position: center;"> -->
                           </div>
 
                       </div>
