@@ -33,6 +33,7 @@
         </div>
     </div>
     <!-- Modal -->
+    <!-- Modal -->
     <div class="modal fade  bd-example-modal-lg" id="file_manager_{{$file_input_name}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog  modal-lg" role="document">
             <div class="modal-content">
@@ -51,7 +52,6 @@
                                     <th scope="col">#</th>
                                     <th scope="col">File</th>
                                     <th scope="col">File Name</th>
-                                    <th scope="col">URL</th>
                                     <th scope="col">Actions</th>
                                 </tr>
                                 </thead>
