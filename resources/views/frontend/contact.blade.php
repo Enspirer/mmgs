@@ -35,6 +35,8 @@
                     +94 11 2345418 <br />
                     +94 11 2439294
                   </p>
+                  <br>
+                  
                   <p style="margin: 0;">mmgs@mmgs.lk</p>
                 </div>
                 <div
@@ -87,6 +89,7 @@
                     +94 11 2345418 <br />
                     +94 11 2439294
                   </p>
+                  <br>
                   <p style="margin: 0;">mmgs@mmgs.lk</p>
                 </div>
                 <div class="col-md-1">
