@@ -73,7 +73,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-danger">Delete</button>
+                    <a href="" type="button" class="btn btn-danger">Delete Image</a>
                 </div>
             </div>
         </div>
@@ -222,10 +222,6 @@
 
                 var cropper = new Cropper(image, {
                     aspectRatio: varmet,
-                    minWidth: 256,
-                    minHeight: 256,
-                    maxWidth: 4096,
-                    maxHeight: 4096,
                 });
 
         }

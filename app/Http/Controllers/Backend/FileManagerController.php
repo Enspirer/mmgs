@@ -68,4 +68,11 @@ class FileManagerController extends Controller
         $fileManager->extension = request()->file->getClientOriginalExtension();
         $fileManager->save();
     }
+
+
+    public function delete($id)
+    {
+        FileManager::where('id',$id)->delete();
+        return back();
+    }
 }
