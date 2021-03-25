@@ -116,7 +116,7 @@
         var dropz;
         Dropzone.options.myAwesomeDropzone = {
             paramName: "file", // The name that will be used to transfer the file
-            maxFilesize: 2, // MB
+            maxFilesize: 8, // MB
             init: function () {
                 this.on('success', function( file, resp ){
                     $('#villadatatable').DataTable().ajax.reload();

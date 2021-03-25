@@ -53,11 +53,7 @@ class FileManagerController extends Controller
 
     public function store()
     {
-        request()->validate([
 
-            'file' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
-
-        ]);
         $imageName = time().'.'.request()->file->getClientOriginalExtension();
         $fullURLs = request()->file->move(public_path('files'), $imageName);
         $fileManager = new Filemanager;
