@@ -39,6 +39,17 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
+        function hidenav() {
+            var text = document.getElementById("home-page-text");
+            if ($('.navbar-toggler').attr('aria-expanded') === "true") {
+
+                text.style.display = "block";
+            } else {
+                text.style.display = "none";
+            }
+        }
+    </script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js'></script>
     <script src='https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js'></script>
 
@@ -88,15 +99,15 @@
             $("#short-text").addClass("d-none");
             $("#dots").addClass("d-none");
             $("#myBtn").addClass("d-none");
-            $("#long-text").removeClass("d-none"); 
-            $("#myBtnLess").removeClass("d-none"); 
+            $("#long-text").removeClass("d-none");
+            $("#myBtnLess").removeClass("d-none");
         });
         $("#myBtnLess").click(function() {
             $("#short-text").removeClass("d-none");
             $("#dots").removeClass("d-none");
             $("#myBtn").removeClass("d-none");
-            $("#long-text").addClass("d-none"); 
-            $("#myBtnLess").addClass("d-none"); 
+            $("#long-text").addClass("d-none");
+            $("#myBtnLess").addClass("d-none");
         });
         // function myFunction() {
         //     var dots = document.getElementById("dots");
@@ -153,6 +164,9 @@
             $('.wrap-modal-slider').addClass('open');
         })
     </script>
+
+
+  
 
 </body>
 
