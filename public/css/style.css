@@ -107,6 +107,11 @@ nav .nav-link {
   content: "\f105" !important;
 }
 
+.gray {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
 .navbar {
   padding: 40px 0px 20px 0;
 }
@@ -729,6 +734,16 @@ nav .nav-link {
   #gallery-page .gallery-mobile {
     display: block !important;
   }
+}
+
+#gallery-page .swiper-pagination-bullet {
+  opacity: 0.8;
+  background: #cacaca;
+  margin: 3px;
+}
+
+#gallery-page .swiper-pagination-bullet-active {
+  background: #fff;
 }
 
 #awards-section {

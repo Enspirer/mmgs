@@ -7,7 +7,7 @@
       <div class="container">
       @include('frontend.layouts.menu')
 
-        <div class="gallery-content" style="height: 500px;">
+        <div class="gallery-content">
           <div class="container">
          
             <div class="row gallery-web">
@@ -80,9 +80,18 @@
                   @foreach($galleryItems as $items)
                       <div class="swiper-slide">
                           <div class="row" style="padding: 0 10px;">
-                              @foreach($items as $itemS)
+                        @foreach($items as $itemS)
+                          @if($itemS['effect'] == 'black_and_white')
+                                                <img src="{{url('files/'.$itemS['image_name'])}}" class="gray" style="width: 50%;padding: 5px;" alt="">
+                                                <!-- <div class="" style="background-image: url('{{url('files/'.$itemS['image_name'])}}');height: 150px;background-position: center;background-size: contain;filter: grayscale(1)"></div> -->
+                                                @else
+                                                <img src="{{url('files/'.$itemS['image_name'])}}"  style="width: 50%;padding: 5px;" alt="">
+                                                    <!-- <div class="" style="background-image: url('{{url('files/'.$itemS['image_name'])}}');height: 150px;background-position: center;background-size: contain"></div> -->
+                                                @endif
+                                                @endforeach
+                              <!-- @foreach($items as $itemS)
                                   <img src="{{url('files/'.$itemS['image_name'])}}" style="width: 50%;padding: 5px;" alt="">
-                              @endforeach
+                              @endforeach -->
                           </div>
                       </div>
                   @endforeach
