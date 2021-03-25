@@ -7,7 +7,7 @@
       <div class="container">
       @include('frontend.layouts.menu')
 
-        <div class="gallery-content" style="height: 500px;">
+        <div class="gallery-content">
           <div class="container">
          
             <div class="row gallery-web">
@@ -23,9 +23,11 @@
 
                                             <div class="col-md-4"  data-toggle="modal" data-target="#exampleModal{{$itemS['image_id']}}">
                                                 @if($itemS['effect'] == 'black_and_white')
-                                                <div class="" style="background-image: url('{{url('files/'.$itemS['image_name'])}}');height: 150px;background-position: center;background-size: contain;filter: grayscale(1)"></div>
+                                                <img src="{{url('files/'.$itemS['image_name'])}}" class="gray" style="height: 150px; object-fit: cover;" alt="">
+                                                <!-- <div class="" style="background-image: url('{{url('files/'.$itemS['image_name'])}}');height: 150px;background-position: center;background-size: contain;filter: grayscale(1)"></div> -->
                                                 @else
-                                                    <div class="" style="background-image: url('{{url('files/'.$itemS['image_name'])}}');height: 150px;background-position: center;background-size: contain"></div>
+                                                <img src="{{url('files/'.$itemS['image_name'])}}"  style="height: 150px; object-fit: cover;" alt="">
+                                                    <!-- <div class="" style="background-image: url('{{url('files/'.$itemS['image_name'])}}');height: 150px;background-position: center;background-size: contain"></div> -->
                                                 @endif
                                             </div>
 
@@ -48,10 +50,11 @@
           @foreach($galleryItems as $items)
               @foreach($items as $itemS)
               <!-- Modal -->
-              <div class="modal fade" id="exampleModal{{$itemS['image_id']}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                  <div class="modal-dialog" role="document" style="width: 950px;max-width: none;">
+              <div class="modal fade" id="exampleModal{{$itemS['image_id']}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered" role="document" style="width: 950px;max-width: none;">
                       <div class="modal-content">
-                          <div class="" style="background-image: url('{{url('files/'.$itemS['image_name'])}}');height: 600px;background-size: contain;background-position: center;">
+                      <img src="{{url('files/'.$itemS['image_name'])}}" alt="" style="height: 600px;object-fit: cover;">
+                          <!-- <div class="" style="background-image: url('{{url('files/'.$itemS['image_name'])}}');height: 600px;background-size: contain;background-position: center;"> -->
                           </div>
 
                       </div>
@@ -64,6 +67,7 @@
 
 
             <div class="row gallery-mobile d-none">
+     
               <div class="swiper-container swiper-container5">
               <div class="top-btn" style="
                   padding: 0 0 20px 0;
@@ -77,9 +81,18 @@
                   @foreach($galleryItems as $items)
                       <div class="swiper-slide">
                           <div class="row" style="padding: 0 10px;">
-                              @foreach($items as $itemS)
+                        @foreach($items as $itemS)
+                          @if($itemS['effect'] == 'black_and_white')
+                                                <img src="{{url('files/'.$itemS['image_name'])}}" class="gray" style="width: 50%;padding: 5px;" alt="">
+                                                <!-- <div class="" style="background-image: url('{{url('files/'.$itemS['image_name'])}}');height: 150px;background-position: center;background-size: contain;filter: grayscale(1)"></div> -->
+                                                @else
+                                                <img src="{{url('files/'.$itemS['image_name'])}}"  style="width: 50%;padding: 5px;" alt="">
+                                                    <!-- <div class="" style="background-image: url('{{url('files/'.$itemS['image_name'])}}');height: 150px;background-position: center;background-size: contain"></div> -->
+                                                @endif
+                                                @endforeach
+                              <!-- @foreach($items as $itemS)
                                   <img src="{{url('files/'.$itemS['image_name'])}}" style="width: 50%;padding: 5px;" alt="">
-                              @endforeach
+                              @endforeach -->
                           </div>
                       </div>
                   @endforeach

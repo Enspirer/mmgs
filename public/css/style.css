@@ -92,19 +92,28 @@ nav .nav-link {
   right: 0;
 }
 
+.slick-arrow {
+  z-index: 9999999999999999;
+}
+
 .slick-arrow::before {
   font-size: 60px;
   color: #d3c441;
 }
 
 .slick-prev::before {
-  font-family: FontAwesome;
+  font-family: 'FontAwesome' !important;
   content: "\f104" !important;
 }
 
 .slick-next::before {
-  font-family: FontAwesome;
+  font-family: 'FontAwesome' !important;
   content: "\f105" !important;
+}
+
+.gray {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
 }
 
 .navbar {
@@ -527,7 +536,7 @@ nav .nav-link {
 }
 
 #projects-page .projects-content .main .swiper-container .swiper-pagination-bullet-active {
-  background: #d3c441;
+  background: #fff;
 }
 
 #projects-page .projects-content .main .swiper-container .swiper-button-next,
@@ -731,8 +740,18 @@ nav .nav-link {
   }
 }
 
+#gallery-page .swiper-pagination-bullet {
+  opacity: 0.8;
+  background: #cacaca;
+  margin: 3px;
+}
+
+#gallery-page .swiper-pagination-bullet-active {
+  background: #fff;
+}
+
 #awards-section {
-  height: 100vh;
+  margin-bottom: 100px;
 }
 
 #awards-section .awards-section h1 {
