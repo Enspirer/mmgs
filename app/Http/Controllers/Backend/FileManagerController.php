@@ -53,11 +53,7 @@ class FileManagerController extends Controller
 
     public function store()
     {
-        request()->validate([
 
-            'file' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
-
-        ]);
         $imageName = time().'.'.request()->file->getClientOriginalExtension();
         $fullURLs = request()->file->move(public_path('files'), $imageName);
         $fileManager = new Filemanager;
@@ -67,5 +63,12 @@ class FileManagerController extends Controller
         $fileManager->url = url('/files/').'/'.$imageName;
         $fileManager->extension = request()->file->getClientOriginalExtension();
         $fileManager->save();
+    }
+
+
+    public function delete($id)
+    {
+        FileManager::where('id',$id)->delete();
+        return back();
     }
 }
