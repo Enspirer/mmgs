@@ -191,10 +191,7 @@
             buttonConfirm.addEventListener('click', function() {
                 // Get the canvas with image data from Cropper.js
 
-                var canvas = cropper.getCroppedCanvas({
-                    width: 1000,
-                    height: 1000
-                });
+                var canvas = cropper.getCroppedCanvas();
                 // Turn the canvas into a Blob (file object without a name)
                 canvas.toBlob(function(blob) {
                     // Create a new Dropzone file thumbnail
