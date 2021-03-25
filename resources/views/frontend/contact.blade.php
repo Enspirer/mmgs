@@ -20,7 +20,10 @@
           <div class="details-box-mobile d-none">
             <div class="container">
               <div class="row">
-              <div class="col-md-6 col-sm-6 col-6" style="margin: 0;padding: 0;">
+                <div
+                  class="col-md-6 col-sm-6 col-6"
+                  style="margin: 0; padding: 0"
+                >
                   <p>
                     MMGS ARCHITECTS (PVT) LTD <br />
                     26 A, <br />
@@ -32,13 +35,19 @@
                     +94 11 2345418 <br />
                     +94 11 2439294
                   </p>
-                  <p>mmgs@mmgs.lk</p>
+                  <p style="margin: 0;">mmgs@mmgs.lk</p>
                 </div>
-                <div class="col-md-1 col-sm-1 col-1" style="width: 12px;margin: 0;padding: 0;">
-                  <hr/>
+                <div
+                  class="col-md-1 col-sm-1 col-1"
+                  style="width: 12px; margin: 0; padding: 0"
+                >
+                  <hr />
                 </div>
-                <div class="col-md-5 col-sm-5 col-5" style="margin: 0;padding: 0;">
-                  <p>
+                <div
+                  class="col-md-5 col-sm-5 col-5"
+                  style=" padding: 0"
+                >
+                  <p style="margin-top: 0;">
                     <span>GODRIDGE SAMUEL </span> <br />
                     +94 77 7766511 <br />
                     godridge@gmail.com <br />
@@ -46,52 +55,59 @@
                   </p>
                   <br />
                   <div class="social-icon">
-                      <div class="row">
-                        <a href="#"
+                    <div class="row">
+                      <a href="#"
                         ><i class="fa fa-facebook" aria-hidden="true"></i
                       ></a>
-                      <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                      </div>
+                      <a href="#"
+                        ><i class="fa fa-instagram" aria-hidden="true"></i
+                      ></a>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
+            <br><br>
           </div>
           <div class="details-box">
             <div class="container">
               <div class="row">
                 <div class="col-md-6">
-                  <p>
+                  <p style="margin: 0;">
                     MMGS ARCHITECTS (PVT) LTD <br />
-                    26 A, <br />
-                    Alwis Place, <br />
-                    Colombo 00300, <br />
-                    Sri Lanka
+                    26 A,
                   </p>
+                  <p style="text-align: justify;">
+                   <span style="white-space: nowrap;font-weight: 100;letter-spacing: 2.4px;">Alwis Place,</span>
+                   <span style="white-space: nowrap;font-weight: 100;display: block;">Colombo 00300,</span>  
+                   <span style="white-space: nowrap;font-weight: 100;letter-spacing: 5px;">Sri Lanka</span>
+                    </p>
                   <p>
                     +94 11 2345418 <br />
                     +94 11 2439294
                   </p>
-                  <p>mmgs@mmgs.lk</p>
+                  <p style="margin: 0;">mmgs@mmgs.lk</p>
                 </div>
                 <div class="col-md-1">
-                  <hr/>
+                  <hr />
                 </div>
                 <div class="col-md-5">
                   <p>
-                    <span>GODRIDGE SAMUEL </span> <br />
-                    +94 77 7766511 <br />
-                    godridge@gmail.com <br />
-                    godridge@mmgs.lk <br />
+                    <span>GODRIDGE SAMUEL </span>
+                    <span style="display: block;letter-spacing: 1.8px;">+94 77 7766511 </span>
+                      <span style="display: block;letter-spacing: -0.3px;">godridge@gmail.com </span>
+                      <span style="letter-spacing: 0.4px;">godridge@mmgs.lk </span>
                   </p>
                   <br />
                   <div class="social-icon">
-                      <div class="row">
-                        <a href="#"
+                    <div class="row">
+                      <a href="#"
                         ><i class="fa fa-facebook" aria-hidden="true"></i
                       ></a>
-                      <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                      </div>
+                      <a href="#"
+                        ><i class="fa fa-instagram" aria-hidden="true"></i
+                      ></a>
+                    </div>
                   </div>
                 </div>
               </div>
