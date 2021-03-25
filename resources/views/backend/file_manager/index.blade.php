@@ -192,8 +192,8 @@
                 // Get the canvas with image data from Cropper.js
 
                 var canvas = cropper.getCroppedCanvas({
-                    width: 256,
-                    height: 256
+                    width: 1000,
+                    height: 1000
                 });
                 // Turn the canvas into a Blob (file object without a name)
                 canvas.toBlob(function(blob) {
@@ -225,6 +225,10 @@
 
                 var cropper = new Cropper(image, {
                     aspectRatio: varmet,
+                    minWidth: 256,
+                    minHeight: 256,
+                    maxWidth: 4096,
+                    maxHeight: 4096,
                 });
 
         }
