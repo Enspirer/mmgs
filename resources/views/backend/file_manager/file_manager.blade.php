@@ -115,7 +115,6 @@
                                     <th scope="col">#</th>
                                     <th scope="col">File</th>
                                     <th scope="col">File Name</th>
-                                    <th scope="col">URL</th>
                                     <th scope="col">Actions</th>
                                 </tr>
                                 </thead>
@@ -198,7 +197,6 @@
                 {data: 'id', name: 'id'},
                 {data: 'file', name: 'file',orderable: false, searchable: false},
                 {data: 'file_name', name: 'file_name',orderable: false, searchable: false},
-                {data: 'url', name: 'url',orderable: false, searchable: false},
                 {data: 'action', name: 'action', orderable: false, searchable: false},
             ]
         });
