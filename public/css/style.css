@@ -21,6 +21,10 @@ a {
   text-decoration: none !important;
 }
 
+.navbar-toggler {
+  border: none;
+}
+
 .gray-image-full-width {
   width: 100%;
   -webkit-filter: grayscale(100%);
@@ -102,7 +106,7 @@ nav .nav-link {
 }
 
 .slick-prev::before {
-  font-family: 'Font Awesome\ 5 Free';
+  font-family: "Font Awesome\ 5 Free";
   content: "\f104" !important;
 }
 
@@ -133,6 +137,33 @@ nav .nav-link {
   padding: 0 20px;
 }
 
+@media (max-width: 640px) and (orientation: landscape) {
+  .navbar {
+    padding-top: 10px;
+  }
+  .navbar img {
+    width: 220px !important;
+  }
+}
+
+@media (max-width: 824px) and (orientation: landscape) {
+  .navbar {
+    padding-top: 10px;
+  }
+  .navbar img {
+    width: 220px !important;
+  }
+}
+
+@media (max-width: 732px) and (orientation: landscape) {
+  .navbar {
+    padding-top: 10px;
+  }
+  .navbar img {
+    width: 220px !important;
+  }
+}
+
 @media (max-width: 360px) {
   .navbar img {
     width: 250px !important;
@@ -158,6 +189,7 @@ nav .nav-link {
 }
 
 #home-page-background {
+  background-image: url(../../assets/HOMEPAGEimage.jpg);
   width: 100%;
   height: 100vh;
   -o-object-fit: cover;
@@ -197,7 +229,7 @@ nav .nav-link {
     display: none;
   }
   #home-page-background .home-page-text .mobile-p {
-    display: block !important;
+    display: block;
     width: 100%;
     font-size: 25px;
     font-weight: 300;
@@ -205,6 +237,20 @@ nav .nav-link {
   }
   #home-page-background .home-page-text .mobile-p span {
     color: #d3c441;
+  }
+}
+
+@media (max-width: 824px) and (orientation: landscape) {
+  #home-page-background .home-page-text .web-p {
+    display: block !important;
+    font-size: 25px !important;
+  }
+  #home-page-background .home-page-text .web-p span {
+    font-size: 30px;
+  }
+  #home-page-background .home-page-text .mobile-p {
+    display: none !important;
+    font-size: 25px;
   }
 }
 
@@ -234,7 +280,7 @@ nav .nav-link {
   }
 }
 
-@media (max-width: 823px) and (orientation: landscape) {
+@media (max-width: 824px) and (orientation: landscape) {
   #home-page-background .home-page-text .web-p {
     display: block !important;
     font-size: 25px;
@@ -244,6 +290,22 @@ nav .nav-link {
   }
   #home-page-background .home-page-text .mobile-p {
     display: none !important;
+  }
+}
+
+@media (max-width: 1025px) and (orientation: portrait) {
+  #home-page-background .home-page-text .web-p {
+    display: block !important;
+    font-size: 45px;
+    margin-top: -120px;
+  }
+  #home-page-background .home-page-text .web-p span {
+    font-size: 40px;
+  }
+  #home-page-background .home-page-text .mobile-p {
+    display: none !important;
+    font-size: 23px;
+    margin-top: 20px;
   }
 }
 
@@ -262,7 +324,9 @@ nav .nav-link {
 
 @media (max-width: 1024px) {
   #home-page-background {
-    background-position: 75% 120px;
+    background-image: url(../../assets/HOMEPAGEimage2.jpg);
+    background-position: bottom right;
+    background-size: 100% !important;
   }
 }
 
@@ -278,13 +342,26 @@ nav .nav-link {
   }
 }
 
-@media (max-width: 823px) and (orientation: landscape) {
+@media (max-width: 824px) and (orientation: landscape) {
   #home-page-background {
-    background-position: center;
+    background-image: url(../../assets/HOMEPAGEimage.jpg);
+    background-position: bottom right;
+    background-size: 90% !important;
+  }
+}
+
+@media (max-width: 1025px) and (orientation: landscape) {
+  #home-page-background {
+    background-image: url(../../assets/HOMEPAGEimage.jpg);
+    background-position: bottom right;
+    background-size: 100% !important;
   }
 }
 
 #home-page-background2 {
+  background-image: url(../../assets/HOMEPAGEimage2.jpg);
+  background-size: 100%;
+  background-position: bottom !important;
   display: none;
   width: 100%;
   height: 100vh;
@@ -362,16 +439,89 @@ nav .nav-link {
   }
 }
 
-@media (max-width: 823px) and (orientation: landscape) {
+@media (max-width: 824px) and (orientation: landscape) {
   #home-page-background2 .home-page-text .web-p {
     display: block !important;
+    font-size: 20px !important;
+  }
+  #home-page-background2 .home-page-text .web-p span {
     font-size: 25px;
+  }
+  #home-page-background2 .home-page-text .mobile-p {
+    display: none !important;
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 541px) {
+  #home-page-background2 .home-page-text .web-p {
+    display: none !important;
+    font-size: 20px;
   }
   #home-page-background2 .home-page-text .web-p span {
     font-size: 30px;
   }
   #home-page-background2 .home-page-text .mobile-p {
+    display: block !important;
+    font-size: 20px;
+    margin-top: -20px;
+  }
+}
+
+@media (max-width: 412px) {
+  #home-page-background2 .home-page-text .web-p {
     display: none !important;
+    font-size: 20px;
+  }
+  #home-page-background2 .home-page-text .web-p span {
+    font-size: 30px;
+  }
+  #home-page-background2 .home-page-text .mobile-p {
+    display: block !important;
+    font-size: 30px;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 321px) {
+  #home-page-background2 .home-page-text .web-p {
+    display: none !important;
+  }
+  #home-page-background2 .home-page-text .web-p span {
+    font-size: 30px;
+  }
+  #home-page-background2 .home-page-text .mobile-p {
+    display: block !important;
+    font-size: 23px;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 376px) {
+  #home-page-background2 .home-page-text .web-p {
+    display: none !important;
+  }
+  #home-page-background2 .home-page-text .web-p span {
+    font-size: 30px;
+  }
+  #home-page-background2 .home-page-text .mobile-p {
+    display: block !important;
+    font-size: 23px;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 415px) {
+  #home-page-background2 .home-page-text .web-p {
+    display: none !important;
+  }
+  #home-page-background2 .home-page-text .web-p span {
+    font-size: 30px;
+  }
+  #home-page-background2 .home-page-text .mobile-p {
+    display: block !important;
+    font-size: 23px;
+    margin-top: 20px;
   }
 }
 
@@ -382,33 +532,59 @@ nav .nav-link {
   }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 415px) {
   #home-page-background2 {
-    background-position: 75% 120px !important;
+    background-image: url(../../assets/HOMEPAGEimage2.jpg);
+    background-position: center;
+    background-size: 100% !important;
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 360px) {
   #home-page-background2 {
-    background-position: 75% 120px;
+    background-image: url(../../assets/HOMEPAGEimage2.jpg);
+    background-position: center;
+    background-size: 100% !important;
+  }
+}
+
+@media (max-width: 412px) {
+  #home-page-background2 {
+    background-image: url(../../assets/HOMEPAGEimage2.jpg);
+    background-position: center;
+    background-size: 100% !important;
   }
 }
 
 @media (max-width: 640px) and (orientation: landscape) {
   #home-page-background2 {
+    background-image: url(../../assets/HOMEPAGEimage.jpg);
     background-position: center;
+    background-size: 100% !important;
   }
 }
 
-@media (max-width: 731px) and (orientation: landscape) {
+@media (max-width: 732px) and (orientation: landscape) {
   #home-page-background2 {
+    background-image: url(../../assets/HOMEPAGEimage.jpg);
     background-position: center;
+    background-size: 100% !important;
   }
 }
 
-@media (max-width: 823px) and (orientation: landscape) {
+@media (max-width: 736px) and (orientation: landscape) {
   #home-page-background2 {
+    background-image: url(../../assets/HOMEPAGEimage.jpg);
     background-position: center;
+    background-size: 100% !important;
+  }
+}
+
+@media (max-width: 654px) and (orientation: landscape) {
+  #home-page-background2 {
+    background-image: url(../../assets/HOMEPAGEimage.jpg);
+    background-position: bottom right !important;
+    background-size: 70% !important;
   }
 }
 
@@ -613,6 +789,11 @@ nav .nav-link {
   margin-top: 20px;
 }
 
+#projects-page .projects-content .main .swiper-container .swiper-wrapper .swiper-slide {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
 #projects-page .projects-content .main .swiper-container .swiper-wrapper .swiper-slide .card-image {
   background: #ffffff;
   border: none;
@@ -628,7 +809,7 @@ nav .nav-link {
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 500px;
+  height: 400px;
   -o-object-fit: cover;
      object-fit: cover;
   -webkit-filter: grayscale(100%);
