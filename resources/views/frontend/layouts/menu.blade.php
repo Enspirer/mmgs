@@ -1,8 +1,20 @@
 <nav class="navbar navbar-expand-lg navbar-light">
             <a class="navbar-brand" href="{{url('/')}}"><img src="{{asset('img/assets/mmgs sm.png')}}" alt="" /></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" onclick="hidenav()">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            <div class="navbar-toggler" type="button">
+            <input type="checkbox" id="overlay-input" />
+            <label for="overlay-input" id="overlay-button"><span></span></label>
+            <!-- <span class="navbar-toggler-icon"></span> -->
+            <div id="overlay">
+              <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">PROJECTS</a></li>
+                <li><a href="#">GALLERY</a></li>
+                <li><a href="#">AWARDS</a></li>
+                <li><a href="#">CONTACT</a></li>
+              </ul>
+            </div>
+          </div>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item {{ Request::segment(1) === null ? 'active' : null }}">

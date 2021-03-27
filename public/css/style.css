@@ -25,6 +25,128 @@ a {
   border: none;
 }
 
+.navbar-toggler #overlay-button {
+  position: absolute;
+  right: 0.1em;
+  top: 2em;
+  padding: 26px 11px;
+  z-index: 5;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.navbar-toggler #overlay-button span {
+  height: 4px;
+  width: 35px;
+  border-radius: 2px;
+  background-color: black;
+  position: relative;
+  display: block;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.navbar-toggler #overlay-button span:before {
+  top: -10px;
+  visibility: visible;
+}
+
+.navbar-toggler #overlay-button span:after {
+  top: 10px;
+}
+
+.navbar-toggler #overlay-button span:before, .navbar-toggler #overlay-button span:after {
+  left: 0;
+  height: 4px;
+  width: 35px;
+  border-radius: 2px;
+  background-color: black;
+  position: absolute;
+  content: "";
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.navbar-toggler #overlay-button:hover span, .navbar-toggler #overlay-button:hover span:before, .navbar-toggler #overlay-button:hover span:after {
+  background: #333332;
+}
+
+.navbar-toggler input[type=checkbox] {
+  display: none;
+}
+
+.navbar-toggler input[type=checkbox]:checked ~ #overlay {
+  visibility: visible;
+}
+
+.navbar-toggler input[type=checkbox]:checked ~ #overlay-button:hover span, .navbar-toggler input[type=checkbox]:checked ~ #overlay-button span {
+  background: transparent;
+}
+
+.navbar-toggler input[type=checkbox]:checked ~ #overlay-button span:before {
+  -webkit-transform: rotate(45deg) translate(7px, 7px);
+          transform: rotate(45deg) translate(7px, 7px);
+  opacity: 1;
+}
+
+.navbar-toggler input[type=checkbox]:checked ~ #overlay-button span:after {
+  -webkit-transform: rotate(-45deg) translate(7px, -7px);
+          transform: rotate(-45deg) translate(7px, -7px);
+}
+
+.navbar-toggler #overlay {
+  height: 100vh;
+  width: 100vw;
+  background: #fff;
+  z-index: 2;
+  visibility: hidden;
+  position: fixed;
+  position: absolute;
+  left: -15px;
+  top: 0;
+}
+
+.navbar-toggler #overlay.active {
+  visibility: visible;
+}
+
+.navbar-toggler #overlay ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  height: 100vh;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.navbar-toggler #overlay ul li {
+  padding: 1em;
+}
+
+.navbar-toggler #overlay ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+.navbar-toggler #overlay ul li a:hover {
+  color: #333332;
+}
+
 .gray-image-full-width {
   width: 100%;
   -webkit-filter: grayscale(100%);
