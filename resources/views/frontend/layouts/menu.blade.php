@@ -6,12 +6,12 @@
             <!-- <span class="navbar-toggler-icon"></span> -->
             <div id="overlay">
               <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">PROJECTS</a></li>
-                <li><a href="#">GALLERY</a></li>
-                <li><a href="#">AWARDS</a></li>
-                <li><a href="#">CONTACT</a></li>
+                <li><a href="{{url('/')}}">HOME</a></li>
+                <li><a href="{{route('frontend.about')}}">ABOUT</a></li>
+                <li><a href="{{route('frontend.projects')}}">PROJECTS</a></li>
+                <li><a href="{{route('frontend.gallery')}}">GALLERY</a></li>
+                <li><a href="{{route('frontend.awards')}}">AWARDS</a></li>
+                <li><a href="{{route('frontend.contact')}}">CONTACT</a></li>
               </ul>
             </div>
           </div>
