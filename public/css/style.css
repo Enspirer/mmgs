@@ -234,12 +234,12 @@ nav .nav-link {
 }
 
 .slick-prev::before {
-  font-family: FontAwesome;
+  font-family: FontAwesome !important;
   content: "\f104" !important;
 }
 
 .slick-next::before {
-  font-family: FontAwesome;
+  font-family: FontAwesome !important;
   content: "\f105" !important;
 }
 
