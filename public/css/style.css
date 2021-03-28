@@ -234,7 +234,7 @@ nav .nav-link {
 }
 
 .slick-prev::before {
-  font-family: "Font Awesome\ 5 Free";
+  font-family: FontAwesome;
   content: "\f104" !important;
 }
 
@@ -791,6 +791,12 @@ nav .nav-link {
 #contact-page-section .feature-map {
   position: relative;
   width: 100%;
+}
+
+@media (max-width: 768px) {
+  #contact-page-section .feature-map iframe {
+    height: 350px !important;
+  }
 }
 
 #contact-page-section .feature-map iframe {

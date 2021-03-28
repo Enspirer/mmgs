@@ -41,6 +41,7 @@
 
 
                     </div>
+                    <br>
                     <p class="slider-text">
                     {{$projt->description}}
                     </p>

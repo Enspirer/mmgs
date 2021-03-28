@@ -14,7 +14,7 @@
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <!-- Link Swiper's CSS -->
-    <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
+    <!-- <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet"> -->
     <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css'>
 
 
@@ -61,6 +61,7 @@
 
     <script>
         var swiper = new Swiper(".swiper-container3", {
+            loop: true,
             navigation: {
                 nextEl: ".swiper-button-next3",
                 prevEl: ".swiper-button-prev3",

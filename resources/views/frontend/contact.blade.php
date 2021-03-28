@@ -19,9 +19,9 @@
           ></iframe>
           <div class="details-box-mobile d-none">
             <div class="container">
-              <div class="row">
+              <div class="row d-flex justify-content-center" >
                 <div
-                  class="col-md-6 col-sm-6 col-6"
+                  class=""
                   style="margin: 0; padding: 0"
                 >
                   <p>
@@ -35,18 +35,16 @@
                     +94 11 2345418 <br />
                     +94 11 2439294
                   </p>
-                  <br>
-                  
                   <p style="margin: 0;">mmgs@mmgs.lk</p>
                 </div>
                 <div
-                  class="col-md-1 col-sm-1 col-1"
-                  style="width: 12px; margin: 0; padding: 0"
+                  class=" colcolcol"
+                  style="width: 12px; margin: 0;    padding: 0 20px;"
                 >
                   <hr />
                 </div>
                 <div
-                  class="col-md-5 col-sm-5 col-5"
+                  class=" coltx"
                   style=" padding: 0"
                 >
                   <p style="margin-top: 0;">
@@ -70,6 +68,10 @@
                 </div>
               </div>
             </div>
+            <br><br>
+            <br><br>
+            <br><br>
+            <br><br>
             <br><br>
           </div>
           <div class="details-box">
