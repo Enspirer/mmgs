@@ -16,14 +16,15 @@
     <!-- Link Swiper's CSS -->
     <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
     <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css'>
-<link rel='stylesheet' href='https://kenwheeler.github.io/slick/slick/slick-theme.css'>
+
 
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css'>
-    <link rel='stylesheet' href='https://kenwheeler.github.io/slick/slick/slick-theme.css'>
+    <!-- <link rel='stylesheet' href='https://kenwheeler.github.io/slick/slick/slick-theme.css'> -->
     <!-- Theame Style    -->
     <link rel="stylesheet" href="{{url('css/style.css')}}" />
+    <link rel="stylesheet" href="{{url('css/kwheeler.css')}}" />
     <style>
         @font-face {
             font-family: "Candara";
