@@ -80,7 +80,7 @@
               <div class="swiper-wrapper">
                   @foreach($galleryItems as $items)
                       <div class="swiper-slide">
-                          <div class="row" style="padding: 0 10px;">
+                          <div class="row" style="padding: 0 40px;">
                         @foreach($items as $itemS)
                           @if($itemS['effect'] == 'black_and_white')
                                                 <img src="{{url('files/'.$itemS['image_name'])}}" class="gray" style="width: 50%;padding: 5px;" alt="">
