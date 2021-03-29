@@ -36,9 +36,13 @@
 </head>
 
 <body>
-<div id="preloader"> 
+<div id="preloader" style="width: 100%; height: 100%; position: fixed;background: #fff; z-index: 9999999;"> 
       
-      <img id="preimage" src="{{url('assets/perloader.gif')}}" alt="">
+      <img id="preimage" src="{{url('assets/Comp 1.gif')}}" style=" margin: 0;
+      position: absolute;
+      top: 50%;
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);display: flex;justify-content: center;width: 100%;" alt="">
     </div>
 
 
