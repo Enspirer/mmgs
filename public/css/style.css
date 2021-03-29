@@ -110,9 +110,8 @@ a {
   z-index: 2;
   visibility: hidden;
   position: fixed;
-  position: absolute;
-  left: -15px;
   top: 0;
+  left: 0;
 }
 
 .navbar-toggler #overlay.active {
@@ -141,6 +140,12 @@ a {
 
 .navbar-toggler #overlay ul li {
   padding: 1em;
+}
+
+@media (max-width: 823px) and (orientation: landscape) {
+  .navbar-toggler #overlay ul li {
+    padding: 10px;
+  }
 }
 
 .navbar-toggler #overlay ul li a {
@@ -376,20 +381,6 @@ nav .nav-link {
   }
 }
 
-@media (max-width: 824px) and (orientation: landscape) {
-  #home-page-background .home-page-text .web-p {
-    display: block !important;
-    font-size: 25px !important;
-  }
-  #home-page-background .home-page-text .web-p span {
-    font-size: 30px;
-  }
-  #home-page-background .home-page-text .mobile-p {
-    display: none !important;
-    font-size: 25px;
-  }
-}
-
 @media (max-width: 640px) and (orientation: landscape) {
   #home-page-background .home-page-text .web-p {
     display: block !important;
@@ -509,6 +500,13 @@ nav .nav-link {
   background-size: cover;
 }
 
+@media (max-width: 824px) and (orientation: landscape) {
+  #home-page-background2 {
+    display: block !important;
+    background-image: url(../../assets/HOMEPAGEimage.jpg);
+  }
+}
+
 #home-page-background2 .home-page-text {
   position: relative;
   height: 60vh;
@@ -600,7 +598,7 @@ nav .nav-link {
   #home-page-background2 .home-page-text .mobile-p {
     display: block !important;
     font-size: 20px;
-    margin-top: -20px;
+    margin-top: -10px;
   }
 }
 
@@ -720,7 +718,7 @@ nav .nav-link {
   #home-page-background2 {
     background-image: url(../../assets/HOMEPAGEimage.jpg);
     background-position: bottom right !important;
-    background-size: 70% !important;
+    background-size: 90% !important;
   }
 }
 
