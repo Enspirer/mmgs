@@ -866,7 +866,7 @@ nav .nav-link {
   margin: 0 0 15px 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 824px) {
   #contact-page-section {
     height: 100%;
   }
