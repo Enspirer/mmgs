@@ -11,7 +11,7 @@
             @foreach($project as $projt)
             <main class="main">
                 <div class="single-item-title d-none">
-                    <h2>{{$projt->project_name}}</h2>
+                    <h2 style="font-size: 2rem;">{{$projt->project_name}}</h2>
                     <p>{{$projt->location}}</p>
                 </div>
 
