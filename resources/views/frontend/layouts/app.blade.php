@@ -38,7 +38,7 @@
 <body>
 <div id="preloader" style="width: 100%; height: 100%; position: fixed;background: #fff; z-index: 9999999;"> 
       
-      <img id="preimage" src="{{url('assets/Comp 1.gif')}}" style=" margin: 0;
+      <img id="preimage" src="{{url('assets/Comp 1_4.gif')}}" style=" margin: 0;
       position: absolute;
       top: 50%;
       -ms-transform: translateY(-50%);
