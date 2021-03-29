@@ -8,7 +8,7 @@
     @include('frontend.layouts.menu')
 
     <div class="awards-section">
-      <h1 style="margin-top: 20px;margin-bottom: 20px;">awards</h1>
+      <h1 style="margin-top: 20px;margin-bottom: 40px;">awards</h1>
 
       <p>
       <ul>

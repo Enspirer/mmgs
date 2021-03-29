@@ -10,7 +10,7 @@
     @include('frontend.layouts.menu')
 
     <div class="projects-content">
-      <h1>projects</h1>
+      <h1 style="margin-top: 20px;margin-bottom: 40px;">projects</h1>
 
       <main class="main">
         <div class="swiper-container swiper-container1 swiper-web">
