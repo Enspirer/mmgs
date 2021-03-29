@@ -64,7 +64,8 @@ a {
   top: 10px;
 }
 
-.navbar-toggler #overlay-button span:before, .navbar-toggler #overlay-button span:after {
+.navbar-toggler #overlay-button span:before,
+.navbar-toggler #overlay-button span:after {
   left: 0;
   height: 4px;
   width: 35px;
@@ -76,29 +77,32 @@ a {
   transition: all 0.2s ease-in-out;
 }
 
-.navbar-toggler #overlay-button:hover span, .navbar-toggler #overlay-button:hover span:before, .navbar-toggler #overlay-button:hover span:after {
+.navbar-toggler #overlay-button:hover span,
+.navbar-toggler #overlay-button:hover span:before,
+.navbar-toggler #overlay-button:hover span:after {
   background: #333332;
 }
 
-.navbar-toggler input[type=checkbox] {
+.navbar-toggler input[type="checkbox"] {
   display: none;
 }
 
-.navbar-toggler input[type=checkbox]:checked ~ #overlay {
+.navbar-toggler input[type="checkbox"]:checked ~ #overlay {
   visibility: visible;
 }
 
-.navbar-toggler input[type=checkbox]:checked ~ #overlay-button:hover span, .navbar-toggler input[type=checkbox]:checked ~ #overlay-button span {
+.navbar-toggler input[type="checkbox"]:checked ~ #overlay-button:hover span,
+.navbar-toggler input[type="checkbox"]:checked ~ #overlay-button span {
   background: transparent;
 }
 
-.navbar-toggler input[type=checkbox]:checked ~ #overlay-button span:before {
+.navbar-toggler input[type="checkbox"]:checked ~ #overlay-button span:before {
   -webkit-transform: rotate(45deg) translate(7px, 7px);
           transform: rotate(45deg) translate(7px, 7px);
   opacity: 1;
 }
 
-.navbar-toggler input[type=checkbox]:checked ~ #overlay-button span:after {
+.navbar-toggler input[type="checkbox"]:checked ~ #overlay-button span:after {
   -webkit-transform: rotate(-45deg) translate(7px, -7px);
           transform: rotate(-45deg) translate(7px, -7px);
 }
@@ -149,13 +153,20 @@ a {
 }
 
 .navbar-toggler #overlay ul li a {
-  color: black;
+  font-family: "Yantramanav", sans-serif;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 300;
   text-decoration: none;
-  font-size: 1.5em;
+  font-size: 1em;
+}
+
+.navbar-toggler #overlay ul li .activetab {
+  font-weight: 500 !important;
+  color: #000 !important;
 }
 
 .navbar-toggler #overlay ul li a:hover {
-  color: #333332;
+  color: #000;
 }
 
 .gray-image-full-width {
