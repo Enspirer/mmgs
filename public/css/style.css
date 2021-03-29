@@ -34,7 +34,7 @@ a {
 .navbar-toggler #overlay-button {
   position: absolute;
   right: 0.1em;
-  top: 1em;
+  top: 10px;
   padding: 26px 11px;
   z-index: 5;
   cursor: pointer;
@@ -46,7 +46,7 @@ a {
 
 .navbar-toggler #overlay-button span {
   height: 4px;
-  width: 35px;
+  width: 25px;
   border-radius: 2px;
   background-color: #625e5d;
   position: relative;
@@ -68,7 +68,7 @@ a {
 .navbar-toggler #overlay-button span:after {
   left: 0;
   height: 4px;
-  width: 35px;
+  width: 25px;
   border-radius: 2px;
   background-color: #625e5d;
   position: absolute;
@@ -167,6 +167,36 @@ a {
 
 .navbar-toggler #overlay ul li a:hover {
   color: #000;
+}
+
+@media (max-width: 415px) {
+  .navbar-toggler #overlay-button {
+    top: 12px !important;
+  }
+}
+
+@media (max-width: 769px) {
+  .navbar-toggler #overlay-button {
+    top: 16px !important;
+  }
+}
+
+@media (max-width: 361px) {
+  .navbar-toggler #overlay-button {
+    top: 11px !important;
+  }
+}
+
+@media (max-width: 641px) and (orientation: landscape) {
+  .navbar-toggler #overlay-button {
+    top: 5px !important;
+  }
+}
+
+@media (max-width: 824px) and (orientation: landscape) {
+  .navbar-toggler #overlay-button {
+    top: 2px !important;
+  }
 }
 
 .gray-image-full-width {
@@ -291,6 +321,24 @@ nav .nav-link {
   .navbar .navbar-toggler #overlay-button {
     top: 10px;
     right: 10px;
+  }
+}
+
+@media (max-width: 361px) {
+  .navbar img {
+    width: 180px !important;
+  }
+}
+
+@media (max-width: 416px) {
+  .navbar img {
+    width: 180px !important;
+  }
+}
+
+@media (max-width: 541px) {
+  .navbar img {
+    width: 180px !important;
   }
 }
 
@@ -520,7 +568,9 @@ nav .nav-link {
 @media (max-width: 824px) and (orientation: landscape) {
   #home-page-background2 {
     display: block !important;
+    background-position: bottom right !important;
     background-image: url(../../assets/HOMEPAGEimage.jpg);
+    background-size: 90% !important;
   }
 }
 
