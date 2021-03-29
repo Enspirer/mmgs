@@ -286,7 +286,7 @@ nav .nav-link {
     padding-top: 10px;
   }
   .navbar img {
-    width: 190px !important;
+    width: 160px !important;
   }
   .navbar .navbar-toggler #overlay-button {
     top: 10px;
@@ -299,7 +299,7 @@ nav .nav-link {
     padding-top: 10px;
   }
   .navbar img {
-    width: 190px !important;
+    width: 160px !important;
   }
   .navbar .navbar-toggler #overlay-button {
     top: 10px;
@@ -312,31 +312,31 @@ nav .nav-link {
     padding-top: 10px;
   }
   .navbar img {
-    width: 190px !important;
+    width: 160px !important;
   }
 }
 
 @media (max-width: 360px) {
   .navbar img {
-    width: 210px !important;
+    width: 180px !important;
   }
 }
 
 @media (max-width: 320px) and (max-width: 375px) {
   .navbar img {
-    width: 180px !important;
+    width: 150px !important;
   }
 }
 
 @media (max-width: 375px) {
   .navbar img {
-    width: 180px !important;
+    width: 150px !important;
   }
 }
 
 @media (max-width: 280px) {
   .navbar img {
-    width: 140px !important;
+    width: 120px !important;
   }
 }
 
@@ -762,9 +762,12 @@ nav .nav-link {
   font-size: 15.5px !important;
   line-height: 1.1 !important;
   text-align: justify !important;
+  font-family: "Yantramanav", sans-serif;
+  font-weight: 300;
 }
 
 #about-us-page .about-us-content .main-row .main-right-about .row about-paragraph {
+  font-weight: 300 !important;
   margin-top: 4px !important;
   font-size: 13.5px !important;
   line-height: 1 !important;
