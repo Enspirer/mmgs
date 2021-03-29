@@ -36,7 +36,22 @@
 </head>
 
 <body>
+<div id="preloader"> 
+      
+      <img id="preimage" src="{{url('assets/perloader.gif')}}" alt="">
+    </div>
+
+
+
     @yield('content')
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" type="text/javascript"></script>
+    <script    type="text/javascript">
+    $(window).load(function() { // makes sure the whole site is loaded
+    $('#preimage').hide(); // will first fade out the loading animation
+    $('#preloader').delay(50).fadeOut(100); // will fade out the white DIV that covers the website.
+    $('body').delay(50).css({'overflow':'visible'});
+    })
+    </script>
     <!-- Optional JavaScript -->
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
