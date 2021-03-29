@@ -51,6 +51,7 @@
         <h6>“simplicity is the ultimate sophistication”</h6>
         <p>LEONARDO DA VINCI</p>
       </div>
+      <br><br><br><br>
     </div>
   </div>
 
