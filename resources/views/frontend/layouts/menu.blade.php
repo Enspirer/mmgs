@@ -6,12 +6,12 @@
             <!-- <span class="navbar-toggler-icon"></span> -->
             <div id="overlay">
               <ul>
-                <li><a href="{{url('/')}}">HOME</a></li>
-                <li><a href="{{route('frontend.about')}}">ABOUT</a></li>
-                <li><a href="{{route('frontend.projects')}}">PROJECTS</a></li>
-                <li><a href="{{route('frontend.gallery')}}">GALLERY</a></li>
-                <li><a href="{{route('frontend.awards')}}">AWARDS</a></li>
-                <li><a href="{{route('frontend.contact')}}">CONTACT</a></li>
+                <li><a href="{{url('/')}}" class="{{ Request::segment(1) === null ? 'activetab' : null }}">HOME</a></li>
+                <li><a href="{{route('frontend.about')}}" class="{{ Request::segment(1) === 'about' ? 'activetab' : null }}">ABOUT</a></li>
+                <li><a href="{{route('frontend.projects')}}" class="{{ Request::segment(1) === 'projects' ? 'activetab' : null }}">PROJECTS</a></li>
+                <li><a href="{{route('frontend.gallery')}}" class="{{ Request::segment(1) === 'gallery' ? 'activetab' : null }}">GALLERY</a></li>
+                <li><a href="{{route('frontend.awards')}}" class="{{ Request::segment(1) === 'awards' ? 'activetab' : null }}">AWARDS</a></li>
+                <li><a href="{{route('frontend.contact')}}" class="{{ Request::segment(1) === 'contact' ? 'activetab' : null }}">CONTACT</a></li>
               </ul>
             </div>
           </div>
