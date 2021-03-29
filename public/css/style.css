@@ -352,6 +352,12 @@ nav .nav-link {
   background-size: cover;
 }
 
+@media (max-width: 824px) and (orientation: landscape) {
+  #home-page-background {
+    display: none !important;
+  }
+}
+
 #home-page-background .home-page-text {
   position: relative;
   height: 60vh;
