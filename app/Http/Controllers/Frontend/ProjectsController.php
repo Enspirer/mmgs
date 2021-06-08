@@ -15,6 +15,10 @@ class ProjectsController extends Controller
     {
         $projects = Projects::where('status',1)->get();
 
+//        return view('frontend.mobile_connectivity.projects',[
+//            'projects' => $projects
+//        ]);
+
         return view('frontend.projects',[
             'projects' => $projects
         ]);

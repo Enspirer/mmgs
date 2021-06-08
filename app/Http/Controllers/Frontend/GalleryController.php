@@ -32,6 +32,9 @@ class GalleryController extends Controller
         return view('frontend.gallery',[
             'galleryItems' => $finalOutput
         ]);
+//        return view('frontend.mobile_connectivity.gallery',[
+//            'galleryItems' => $finalOutput
+//        ]);
     }
 
    static function sectionArray($array, $step)

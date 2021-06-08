@@ -4,8 +4,7 @@
 <head>
     <title>MMGS Architects - Godridge Samuel</title>
     <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <link rel="icon" type="image/png" href="{{asset('img/assets/mmgs sm fav.png')}}" />
 
     <!-- Bootstrap CSS -->
@@ -33,29 +32,11 @@
             /* Safari, Android, iOS */
         }
     </style>
+
 </head>
 
-<body>
-<div id="preloader" style="width: 100%; height: 100%; position: fixed;background: #fbfbfb; z-index: 9999999;"> 
-      
-      <img id="preimage" src="{{url('assets/Comp 1_4.gif')}}" style=" margin: 0;
-      position: absolute;
-      top: 50%;
-      -ms-transform: translateY(-50%);
-      transform: translateY(-50%);display: flex;justify-content: center;width: 100%;padding:300px" alt="">
-    </div>
-
-
-
+    <body id="boyd_elem">
     @yield('content')
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js" type="text/javascript"></script>
-    <script    type="text/javascript">
-    $(window).load(function() { // makes sure the whole site is loaded
-    $('#preimage').hide(); // will first fade out the loading animation
-    $('#preloader').hide(); // will fade out the white DIV that covers the website.
-    $('body').delay(50).css({'overflow':'visible'});
-    })
-    </script>
     <!-- Optional JavaScript -->
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
@@ -171,6 +152,12 @@
         });
     </script>
 
+
+
+    <script>
+
+    </script>
+
     <script>
         var swiper = new Swiper(".swiper-container5", {
             navigation: {
@@ -179,6 +166,7 @@
             },
         });
     </script>
+
 
     <script>
         $(document).ready(function() {
@@ -192,8 +180,10 @@
     </script>
 
 
-  
 
-</body>
+
+    </body>
+
+
 
 </html>
