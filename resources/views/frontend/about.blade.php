@@ -8,7 +8,7 @@
         <div class="home-page-body">
             @include('frontend.includes.nav_desktop')
             <div class="about-us-content about-web" style="padding: 0 10vh">
-                <h1 style="font-size: 6vh; margin-top: 0vh">about</h1>
+                <h1 style="font-size: 6vh; color: #d3c441; margin-top: 0vh;font-family: Candara;line-height: 1;">about</h1>
                 <div class="main-row row">
                     <div class="main-left-about   col-5"></div>
                     <div class="main-right-about  col-7">

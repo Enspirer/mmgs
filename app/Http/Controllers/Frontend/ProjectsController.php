@@ -11,23 +11,26 @@ class ProjectsController extends Controller
       /**
      * @return \Illuminate\View\View
      */
-    public function index()
+    public function index(Request $request)
     {
         $projects = Projects::where('status',1)->get();
 
-//        return view('frontend.mobile_connectivity.projects',[
-//            'projects' => $projects
-//        ]);
-
-        return view('frontend.projects',[
-            'projects' => $projects
-        ]);
+        if (is_mobile($request->header('user-agent')) != true)
+        {
+            return view('frontend.projects',[
+                'projects' => $projects
+            ]);
+        }else{
+            return view('frontend.mobile_connectivity.projects',[
+                'projects' => $projects
+            ]);
+        }
     }
 
     public function project_item($id)
     {
         $project = Projects::where('id',$id)->get();
-        return view('frontend.project_item',[
+        return view('frontend.mobile_connectivity.project_item',[
             'project' => $project
         ]);
     }

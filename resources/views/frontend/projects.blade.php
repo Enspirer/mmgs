@@ -27,10 +27,6 @@
                                 <div class="swiper-button-next"></div>
                                 <div class="swiper-button-prev"></div>
                             </div>
-
-
-
-
                         </main>
                         <div class="project-bottum-text">
                             <h6 style="font-weight: 300;font-size: 3.5vh;">“simplicity is the ultimate sophistication”</h6>

@@ -12,7 +12,7 @@ class GalleryController extends Controller
        /**
      * @return \Illuminate\View\View
      */
-    public function index()
+    public function index(Request $request)
     {
 
         $gallaeyrDetails = Gallery::all();
@@ -29,12 +29,16 @@ class GalleryController extends Controller
         $finalOutput = self::sectionArray($finalOutArray,9);
 
 
-        return view('frontend.gallery',[
-            'galleryItems' => $finalOutput
-        ]);
-//        return view('frontend.mobile_connectivity.gallery',[
-//            'galleryItems' => $finalOutput
-//        ]);
+        if (is_mobile($request->header('user-agent')) != true)
+        {
+            return view('frontend.gallery',[
+                'galleryItems' => $finalOutput
+            ]);
+        }else{
+            return view('frontend.mobile_connectivity.gallery',[
+                'galleryItems' => $finalOutput
+            ]);
+        }
     }
 
    static function sectionArray($array, $step)

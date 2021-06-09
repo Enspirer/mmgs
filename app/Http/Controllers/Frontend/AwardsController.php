@@ -11,12 +11,20 @@ class AwardsController extends Controller
         /**
      * @return \Illuminate\View\View
      */
-    public function index()
+    public function index(Request $request)
     {
         $awardsDetails = Awards::get();
-        return view('frontend.awards',[
-            'awardsDetails' => $awardsDetails
-        ]);
+
+        if (is_mobile($request->header('user-agent')) != true)
+        {
+            return view('frontend.awards');
+        }else{
+            return view('frontend.mobile_connectivity.awards',[
+                'awardsDetails' => $awardsDetails
+            ]);
+        }
+
+
         // return view('frontend.awards');
     }
 }

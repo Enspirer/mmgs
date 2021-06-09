@@ -57,55 +57,7 @@
 
 
 
-  @foreach($projects as $projt)
 
-  <div class="modal-project-center modal fade bd-example-modal-lg" style="display: block;padding-left: 9px;width: 220vh;height: 100vh;" id="exampleModalCenter{{$projt->id}}" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-centered" style=" width: 150vh;height: 90vh;">
-      <div class="modal-content" style="width: 150vh;height: 90vh;">
-        <div class="wrap-modal-slider">
-          <div class="your-class">
-            @if($projt->images == 'null')
-
-            @else
-              @foreach(json_decode($projt->images) as $prject_img)
-                <div>
-                  <img src="{{file_manager_get_url($prject_img)}}" style="height: 80vh;" class="modal-image-project"  alt="">
-                </div>
-              @endforeach
-            @endif
-
-          </div>
-          <div class="dark-layer" >
-            <div class="b-text">
-              <div class="row b-text-row">
-                <div class="col-md-11">
-                  <p>
-                    <span class="title-project">{{$projt->project_name}}</span><br />
-                    <br>
-                    <!-- {{$projt->description}} -->
-                    @if(strlen($projt->description) > 200)
-                    <span id="short-text"> {{ substr($projt->description, 0, 200)}}</span>
-                    <span id="dots">... </span><span onclick="myFunction()" id="myBtn" class="btn-read-more"> &nbsp; Read More</span>
-                    <span id="long-text" class="d-none"> {{$projt->description}}</span>
-                    <span onclick="myFunction()" id="myBtnLess" class="btn-read-more d-none"> &nbsp; Read Less</span>
-                    <!-- <span onclick="myFunction()" id="myBtn" class="btn-read-more"> &nbsp; Read Less</span></span> -->
-                    @else
-
-                    @endif
-
-                  </p>
-                </div>
-                <div class="col-md-1">
-                  <i class="fa fa-times" aria-hidden="true" data-dismiss="modal"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  @endforeach
 
 
 </section>
