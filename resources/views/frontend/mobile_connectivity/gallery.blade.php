@@ -47,8 +47,9 @@
           <div class="modal fade" id="exampleModal{{$itemS['image_id']}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document" style="">
               <div class="modal-content">
-                <img src="{{url('files/'.$itemS['image_name'])}}"  alt="" style="height: 600px;object-fit: cover;">
-                <!-- <div class="" style="background-image: url('{{url('files/'.$itemS['image_name'])}}');height: 600px;background-size: contain;background-position: center;"> -->
+
+                {{--<img src="{{url('files/'.$itemS['image_name'])}}"  alt="" style="height: 600px;object-fit: cover;">--}}
+                 <div class="" style="background-image: url('{{url('files/'.$itemS['image_name'])}}');height: 600px;background-size: contain;background-position: center;">
               </div>
 
             </div>
@@ -64,8 +65,8 @@
           <div class="modal fade" id="exampleModalM{{$itemS['image_id']}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document" style="">
               <div class="modal-content">
-                <img src="{{url('files/'.$itemS['image_name'])}}" alt="" style="object-fit: cover;/* width: 340px; */">
-              <!-- <div class="" style="background-image: url('{{url('files/'.$itemS['image_name'])}}');height: 600px;background-size: contain;background-position: center;"> -->
+{{--                <img src="{{url('files/'.$itemS['image_name'])}}" alt="" style="object-fit: cover;/* width: 340px; */">--}}
+                <div class="" style="background-image: url('{{url('files/'.$itemS['image_name'])}}');height: 600px;background-size: contain;background-position: center;">
               </div>
 
             </div>
