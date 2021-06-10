@@ -6,7 +6,8 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\Frontend\Contact\SendContactRequest;
 use App\Mail\Frontend\Contact\SendContact;
 use Illuminate\Support\Facades\Mail;
-
+use Illuminate\Http\Response;
+use Illuminate\Http\Request;
 /**
  * Class ContactController.
  */
@@ -15,9 +16,16 @@ class ContactController extends Controller
     /**
      * @return \Illuminate\View\View
      */
-    public function index()
+    public function index(Request $request)
     {
-        return view('frontend.contact');
+        if (is_mobile($request->header('user-agent')) != true)
+        {
+            return view('frontend.contact');
+        }else{
+            return view('frontend.mobile_connectivity.contact');
+
+        }
+
     }
 
     /**

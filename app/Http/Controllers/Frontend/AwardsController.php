@@ -14,7 +14,6 @@ class AwardsController extends Controller
     public function index(Request $request)
     {
         $awardsDetails = Awards::get();
-
         if (is_mobile($request->header('user-agent')) != true)
         {
             return view('frontend.awards');
@@ -23,8 +22,5 @@ class AwardsController extends Controller
                 'awardsDetails' => $awardsDetails
             ]);
         }
-
-
-        // return view('frontend.awards');
     }
 }

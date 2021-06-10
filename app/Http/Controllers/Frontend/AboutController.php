@@ -19,6 +19,5 @@ class AboutController extends Controller
             return view('frontend.mobile_connectivity.about');
 
         }
-
     }
 }
