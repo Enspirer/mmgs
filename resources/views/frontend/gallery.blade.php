@@ -21,10 +21,10 @@
                                                 @foreach($items as $itemS)
                                                     <div class="col-md-4" style="" data-toggle="modal" data-target="#exampleModal{{$itemS['image_id']}}">
                                                         @if($itemS['effect'] == 'black_and_white')
-                                                            <img src="{{url('files/'.$itemS['image_name'])}}" class="gray" style="height: 20vh;object-fit: cover;" alt="">
+                                                            <img src="{{url('files/'.$itemS['image_name'])}}" class="gray" style="object-fit: cover;" alt="">
                                                         <!-- <div class="" style="background-image: url('{{url('files/'.$itemS['image_name'])}}');height: 150px;background-position: center;background-size: contain;filter: grayscale(1)"></div> -->
                                                         @else
-                                                            <img src="{{url('files/'.$itemS['image_name'])}}" class="gray" style="height: 25vh;object-fit: cover;" alt="">
+                                                            <img src="{{url('files/'.$itemS['image_name'])}}" class="gray" style="object-fit: cover;" alt="">
                                                         <!-- <div class="" style="background-image: url('{{url('files/'.$itemS['image_name'])}}');height: 150px;background-position: center;background-size: contain"></div> -->
                                                         @endif
                                                     </div>
@@ -56,7 +56,7 @@
                     @foreach($items as $itemS)
                         <!-- Modal -->
                             <div class="modal fade" id="exampleModal{{$itemS['image_id']}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                                <div class="modal-dialog modal-dialog-centered" role="document" style="width: 950px;max-width: none;margin-left: 42vh;margin-right: 42vh;margin-top: 2vh;margin-bottom: 2vh;">
+                                <div class="modal-dialog modal-dialog-centered" role="document" style="max-width: none;margin-left: 42vh;margin-right: 42vh;margin-top: 2vh;margin-bottom: 2vh;">
                                     <div class="modal-content">
                                         <img src="{{url('files/'.$itemS['image_name'])}}" alt="" style="height: 77vh;object-fit: cover;width: 100%">
                                     <!-- <div class="" style="background-image: url('{{url('files/'.$itemS['image_name'])}}');height: 600px;background-size: contain;background-position: center;"> -->
