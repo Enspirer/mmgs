@@ -56,9 +56,9 @@
                     @foreach($items as $itemS)
                         <!-- Modal -->
                             <div class="modal fade" id="exampleModal{{$itemS['image_id']}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                                <div class="modal-dialog modal-dialog-centered" role="document" style="width: 950px;max-width: none;">
+                                <div class="modal-dialog modal-dialog-centered" role="document" style="width: 950px;max-width: none;margin-left: 42vh;margin-right: 42vh;margin-top: 2vh;margin-bottom: 2vh;">
                                     <div class="modal-content">
-                                        <img src="{{url('files/'.$itemS['image_name'])}}" alt="" style="height: 600px;object-fit: cover;">
+                                        <img src="{{url('files/'.$itemS['image_name'])}}" alt="" style="height: 77vh;object-fit: cover;width: 130vh;">
                                     <!-- <div class="" style="background-image: url('{{url('files/'.$itemS['image_name'])}}');height: 600px;background-size: contain;background-position: center;"> -->
                                     </div>
 

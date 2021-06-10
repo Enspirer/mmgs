@@ -104,17 +104,13 @@
                       <span style="display: block;letter-spacing: -0.3px;">godridge@gmail.com </span>
                       <span style="letter-spacing: 0.4px;">godridge@mmgs.lk </span>
                   </p>
-                  <br />
+                  <br/>
                   <br>
                   <br>
                   <div class="social-icon">
                     <div class="row">
-                      <a href="#"
-                        ><i class="fa fa-facebook" aria-hidden="true"></i
-                      ></a>
-                      <a href="#"
-                        ><i class="fa fa-instagram" aria-hidden="true"></i
-                      ></a>
+                      <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                      <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
                     </div>
                   </div>
                 </div>

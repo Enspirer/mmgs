@@ -24,7 +24,7 @@
                     <a class="nav-link" style="{{ Request::segment(1) === 'awards' ? 'font-weight: 600;' : null }}" href="{{route('frontend.awards')}}">Awards</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" style="{{ Request::segment(1) === 'contact' ? 'font-weight: 600;' : null }}" href="#">Contact</a>
+                    <a class="nav-link" style="{{ Request::segment(1) === 'contact' ? 'font-weight: 600;' : null }}" href="{{route('frontend.contact')}}">Contact</a>
                 </li>
             </ul>
         </div>

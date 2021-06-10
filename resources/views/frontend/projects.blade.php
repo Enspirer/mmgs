@@ -49,32 +49,30 @@
                                     @else
                                         @foreach(json_decode($projt->images) as $prject_img)
                                             <div>
-                                                <img src="{{file_manager_get_url($prject_img)}}" class="modal-image-project"  alt="">
+                                                <img src="{{file_manager_get_url($prject_img)}}" class="modal-image-project" style="height: 80vh"  alt="">
                                             </div>
                                         @endforeach
                                     @endif
 
                                 </div>
-                                <div class="dark-layer" >
+                                <div class="dark-layer" style="width: 186vh;height: 21vh;">
                                     <div class="b-text">
                                         <div class="row b-text-row">
                                             <div class="col-md-11">
-                                                <p>
-                                                    <span class="title-project">{{$projt->project_name}}</span><br />
+                                                <p style="font-size: 1vh;padding: 2vh;margin-bottom: 1vh;">
+                                                    <span class="title-project" style="font-size: 4vh;">{{$projt->project_name}}</span><br />
                                                     <br>
                                                 <!-- {{$projt->description}} -->
                                                     @if(strlen($projt->description) > 200)
-                                                        <span id="short-text"> {{ substr($projt->description, 0, 200)}}</span>
-                                                        <span id="dots">... </span><span onclick="myFunction()" id="myBtn" class="btn-read-more"> &nbsp; Read More</span>
+                                                        <span id="short-text" style="font-size: 3vh;"> {{ substr($projt->description, 0, 200)}}</span>
                                                         <span id="long-text" class="d-none"> {{$projt->description}}</span>
-                                                        <span onclick="myFunction()" id="myBtnLess" class="btn-read-more d-none"> &nbsp; Read Less</span>
                                                     @else
 
                                                     @endif
                                                 </p>
                                             </div>
                                             <div class="col-md-1">
-                                                <i class="fa fa-times" aria-hidden="true" data-dismiss="modal"></i>
+                                                <i class="fa fa-times" style="font-size: 3vh;" aria-hidden="true" data-dismiss="modal"></i>
                                             </div>
                                         </div>
                                     </div>
