@@ -49,7 +49,7 @@
               <div class="modal-content">
 
                 {{--<img src="{{url('files/'.$itemS['image_name'])}}"  alt="" style="height: 600px;object-fit: cover;">--}}
-                 <div class="" style="background-image: url('{{url('files/'.$itemS['image_name'])}}');height: 600px;background-size: contain;background-position: center;">
+                 <div class="" style="background-image: url('{{url('files/'.$itemS['image_name'])}}');height: 600px;background-size: contain;background-position: center;background-repeat: no-repeat;background-color: black;">
               </div>
 
             </div>
@@ -66,7 +66,7 @@
             <div class="modal-dialog modal-dialog-centered" role="document" style="">
               <div class="modal-content">
 {{--                <img src="{{url('files/'.$itemS['image_name'])}}" alt="" style="object-fit: cover;/* width: 340px; */">--}}
-                <div class="" style="background-image: url('{{url('files/'.$itemS['image_name'])}}');height: 600px;background-size: contain;background-position: center;">
+                <div class="" style="background-image: url('{{url('files/'.$itemS['image_name'])}}');height: 600px;background-size: contain;background-position: center;background-repeat: no-repeat;background-color: black;">
               </div>
 
             </div>
