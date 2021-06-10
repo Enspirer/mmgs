@@ -55,7 +55,7 @@
                                     @endif
 
                                 </div>
-                                <div class="dark-layer" style="width: 186vh;height: 21vh;">
+                                <div class="dark-layer" style="width: 100%;height: 21vh;">
                                     <div class="b-text">
                                         <div class="row b-text-row">
                                             <div class="col-md-11">
