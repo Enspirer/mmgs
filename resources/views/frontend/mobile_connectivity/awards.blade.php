@@ -3,6 +3,8 @@
 @section('title', app_name() . ' | ' . __('navs.general.home'))
 
 @section('content')
+
+
 <section id="awards-section">
   <div class="container">
     @include('frontend.layouts.menu')
@@ -79,4 +81,11 @@
     </div>
   </div>
 </section>
+
+@push('after=scripte')
+<script>
+    $('body').delay(50).css({'overflow':'visible'});
+</script>
+@endpush
+
 @endsection

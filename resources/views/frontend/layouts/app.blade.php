@@ -179,6 +179,11 @@
     </script>
 
 
+    @stack('after=scripte')
+
+    @endstack
+
+
 
 
     </body>
