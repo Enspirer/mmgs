@@ -62,8 +62,8 @@
 <script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js'></script>
 <script src='https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js'></script>
 
-<script    type="text/javascript">
-    setTimeout(preloaderfunc, 3000)
+<script type="text/javascript">
+    setTimeout(preloaderfunc, 3000);
 
     function preloaderfunc() {
         $('#preimage').hide(); // will first fade out the loading animation
