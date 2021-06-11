@@ -154,12 +154,11 @@
 
 
 
-    <script>
-
-    </script>
 
     <script>
         var swiper = new Swiper(".swiper-container5", {
+            slidesPerView: 1,
+            spaceBetween: 8,
             navigation: {
                 nextEl: ".swiper-button-next3",
                 prevEl: ".swiper-button-prev3",

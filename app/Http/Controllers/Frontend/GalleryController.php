@@ -26,15 +26,17 @@ class GalleryController extends Controller
             ];
             array_push($finalOutArray,$stap);
         }
-        $finalOutput = self::sectionArray($finalOutArray,9);
+
 
 
         if (is_mobile($request->header('user-agent')) != true)
         {
+            $finalOutput = self::sectionArray($finalOutArray,9);
             return view('frontend.gallery',[
                 'galleryItems' => $finalOutput
             ]);
         }else{
+            $finalOutput = self::sectionArray($finalOutArray,8);
             return view('frontend.mobile_connectivity.gallery',[
                 'galleryItems' => $finalOutput
             ]);
