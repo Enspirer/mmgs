@@ -66,10 +66,15 @@
 
 
 <script    type="text/javascript">
-    $('#preimage').hide(); // will first fade out the loading animation
-    $('#preloader').delay(50); // will fade out the white DIV that covers the website.
-    $('#preloader').hide(); // will fade out the white DIV that covers the website.
-    $('body').delay(50).css({'overflow':'visible'});
+    setTimeout(preloaderfunc, 3000)
+
+    function preloaderfunc() {
+        $('#preimage').hide(); // will first fade out the loading animation
+        $('#preloader').delay(50); // will fade out the white DIV that covers the website.
+        $('#preloader').hide(); // will fade out the white DIV that covers the website.
+        $('body').delay(50).css({'overflow':'visible'});
+    }
+
 </script>
 
 <script>
