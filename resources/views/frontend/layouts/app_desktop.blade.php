@@ -48,7 +48,7 @@
 </head>
 
 <div id="preloader" style="width: 100%;height: 100%;position: fixed;background: #fbfbfb;z-index: 9999999;">
-    <img id="preimage" src="{{url('assets/Comp 1_4.gif')}}" style="width: 100%;position: absolute;padding-top: 30vh;">
+    <img id="preimage" src="{{url('assets/Comp 1_4.gif')}}" style="width: 100%;position: absolute;padding-top: 40vh;object-fit: contain;height: 56vh;">
 </div>
 
 <body>
