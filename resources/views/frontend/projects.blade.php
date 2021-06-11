@@ -64,7 +64,7 @@
                                                     <br>
                                                 <!-- {{$projt->description}} -->
                                                     @if(strlen($projt->description) > 200)
-                                                        <span id="short-text" style="font-size: 3vh;"> {{ substr($projt->description, 0, 200)}}</span>
+                                                        <span id="short-text" style="font-size: 2vh;"> {{ $projt->description}}</span>
                                                         <span id="long-text" class="d-none"> {{$projt->description}}</span>
                                                     @else
 

@@ -21,10 +21,10 @@
                                                 @foreach($items as $itemS)
                                                     <div class="col-md-4" style="" data-toggle="modal" data-target="#exampleModal{{$itemS['image_id']}}">
                                                         @if($itemS['effect'] == 'black_and_white')
-                                                            <img src="{{url('files/'.$itemS['image_name'])}}" class="gray" style="object-fit: cover;" alt="">
+                                                            <img src="{{url('files/'.$itemS['image_name'])}}" class="gray" style="object-fit: cover;height: 24vh;" alt="">
                                                         <!-- <div class="" style="background-image: url('{{url('files/'.$itemS['image_name'])}}');height: 150px;background-position: center;background-size: contain;filter: grayscale(1)"></div> -->
                                                         @else
-                                                            <img src="{{url('files/'.$itemS['image_name'])}}" class="gray" style="object-fit: cover;" alt="">
+                                                            <img src="{{url('files/'.$itemS['image_name'])}}" class="gray" style="object-fit: cover;height: 24vh;" alt="">
                                                         <!-- <div class="" style="background-image: url('{{url('files/'.$itemS['image_name'])}}');height: 150px;background-position: center;background-size: contain"></div> -->
                                                         @endif
                                                     </div>
