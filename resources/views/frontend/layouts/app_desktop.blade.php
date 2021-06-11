@@ -46,6 +46,11 @@
         }
     </style>
 </head>
+
+<div id="preloader" style="width: 100%;height: 100%;position: fixed;background: #fbfbfb;z-index: 9999999;">
+    <img id="preimage" src="{{url('assets/Comp 1_4.gif')}}" style="width: 100%;position: absolute;padding-top: 30vh;">
+</div>
+
 <body>
 
 
@@ -59,6 +64,13 @@
 <script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js'></script>
 <script src='https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js'></script>
 
+
+<script    type="text/javascript">
+    $('#preimage').hide(); // will first fade out the loading animation
+    $('#preloader').delay(50); // will fade out the white DIV that covers the website.
+    $('#preloader').hide(); // will fade out the white DIV that covers the website.
+    $('body').delay(50).css({'overflow':'visible'});
+</script>
 
 <script>
     var swiper = new Swiper(".swiper-container3", {
@@ -148,8 +160,6 @@
         $('.wrap-modal-slider').addClass('open');
     })
 </script>
-
-
 
 <script>
     function hidenav() {
