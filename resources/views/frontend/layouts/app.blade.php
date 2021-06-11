@@ -35,7 +35,7 @@
 
 </head>
 
-    <body id="boyd_elem">
+    <body id="boyd_elem" style="overflow: hidden;">
     @yield('content')
     <!-- Optional JavaScript -->
     <!-- Swiper JS -->
