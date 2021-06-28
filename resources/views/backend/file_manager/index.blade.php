@@ -3,6 +3,14 @@
 @section('title', app_name() . ' | ' . __('strings.backend.dashboard.title'))
 
 @section('content')
+    <style>
+        td {
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            -o-text-overflow: ellipsis;
+        }
+    </style>
     <div class="row">
         <div class="col">
             <div class="card" style="">
@@ -15,14 +23,14 @@
                 <div class="card-body">
                     <table class="table table-hover" id="villadatatable">
                         <thead>
-                        <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">File</th>
-                            <th scope="col">File Name</th>
-                            <th scope="col">File Path</th>
-                            <th scope="col">Created At</th>
-                            <th scope="col">Actions</th>
-                        </tr>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">File</th>
+                                <th scope="col">File Name</th>
+                                <th scope="col">File Path</th>
+                                <th scope="col">Created At</th>
+                                <th scope="col">Actions</th>
+                            </tr>
                         </thead>
                         <tbody>
 
