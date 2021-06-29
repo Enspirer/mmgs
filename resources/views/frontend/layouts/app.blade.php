@@ -31,16 +31,32 @@
             src: url("{{url('img/assets/font/Candara.ttf')}}") format("truetype");
             /* Safari, Android, iOS */
         }
+
+        #preloader {
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            background: #fbfbfb;
+            z-index: 9999999;
+        }
+        #preimage {
+            width: 100%;
+            position: absolute;
+            padding-top: 40vh;
+            object-fit: contain;
+            height: 56vh;
+        }
     </style>
 
 </head>
 
-
-<div id="preloader" style="width: 100%;height: 100%;position: fixed;background: #fbfbfb;z-index: 9999999;">
-    <img id="preimage" src="{{url('assets/Comp 1_4.gif')}}" style="width: 100%;position: absolute;padding-top: 40vh;object-fit: contain;height: 56vh;">
-</div>
-
     <body id="boyd_elem" style="overflow: hidden;">
+
+    <div id="preloader">
+        <img id="preimage" src="{{url('assets/Comp 1_4.gif')}}">
+    </div>
+
+    
     @yield('content')
     <!-- Optional JavaScript -->
     <!-- Swiper JS -->
@@ -64,16 +80,12 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js'></script>
     <script src='https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js'></script>
 
-    <script type="text/javascript">
-        setTimeout(preloaderfunc, 3000);
+    <script>
+        $(window).on('load', function(){
+            $('#preloader').hide(); // preloader hide when all elements and contents fully loaded
+        });
 
-        function preloaderfunc() {
-            $('#preimage').hide(); // will first fade out the loading animation
-            $('#preloader').delay(50); // will fade out the white DIV that covers the website.
-            $('#preloader').hide(); // will fade out the white DIV that covers the website.
-        }
-
-    </script>
+    </script>   
 
     <script>
         var swiper = new Swiper(".swiper-container3", {

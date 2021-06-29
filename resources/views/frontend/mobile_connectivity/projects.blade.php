@@ -30,20 +30,23 @@
         </div>
 
         <div class="swiper-container swiper-container3 swiper-mobile d-none">
-          <div class="top-btn" style="padding: 0 0 20px 0;margin: auto;display: flex;justify-content: center;">
-            <i class="fa fa-angle-up swiper-button-prev3" aria-hidden="true" style="font-size: 40px; text-align: center"></i>
-          </div>
+          
+            <div class="top-btn" style="position:absolute; top:6.5rem; left:0.7rem; z-index: 999999">
+              <i class="fa fa-angle-left swiper-button-prev3" aria-hidden="true" style="font-size: 40px; text-align: center; color:yellow"></i>
+            </div>
+
           <div class="swiper-wrapper">
             @foreach($projects as $proj)
               <div class="swiper-slide">
-              <a href="project_item/{{$proj->id}}"><img src="{{url('files/'.$proj->feature_images)}}" alt="Image Slider" style="width: 100%"></a>  
+                <a href="project_item/{{$proj->id}}"><img src="{{url('files/'.$proj->feature_images)}}" alt="Image Slider" style="width: 100%"></a>  
               </div>
             @endforeach
+          </div>
 
+          <div class="top-btn" style="position:absolute; bottom:6.7rem; left: 20rem; z-index: 999999">
+              <i class="fa fa-angle-right swiper-button-next3" aria-hidden="true" style="font-size: 40px; text-align: center; color: yellow"></i>
           </div>
-          <div class="top-btn" style="padding: 20px 0 0 0;margin: auto; display: flex; justify-content: center;">
-            <i class="fa fa-angle-down swiper-button-next3" aria-hidden="true" style="font-size: 40px; text-align: center"></i>
-          </div>
+
         </div>
       </main>
 

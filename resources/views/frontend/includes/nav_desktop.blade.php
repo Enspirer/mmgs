@@ -1,7 +1,7 @@
 <nav style="padding: 2vh 10vh">
     <div class="row m-0">
         <div class="left-logo">
-            <a class="" href="#" style="padding: 0;margin: 0;">
+            <a class="" href="{{url('/')}}" style="padding: 0;margin: 0;">
                 <img src="{{url('desktop_res/assets/mmgs sm.png')}}" alt="" style="width: 33vh"/></a>
         </div>
         <div class="right-menu" style="margin-left: auto; padding: 2vh 0">

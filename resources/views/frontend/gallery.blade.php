@@ -4,6 +4,8 @@
 
 @section('content')
 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
     <section id="gallery-page">
         @include('frontend.includes.nav_desktop')
        <div style="padding: 2vh 10vh">
@@ -19,12 +21,12 @@
                                         <div class="swiper-slide" style="width: 100%;height: 78vh;">
                                             <div class="row">
                                                 @foreach($items as $itemS)
-                                                    <div class="col-md-4" style="" data-toggle="modal" data-target="#exampleModal{{$itemS['image_id']}}">
+                                                    <div class="col-md-4 image" style="" data-toggle="modal" data-target="#exampleModal{{$itemS['image_id']}}">
                                                         @if($itemS['effect'] == 'black_and_white')
-                                                            <img src="{{url('files/'.$itemS['image_name'])}}" class="gray" style="object-fit: cover;height: 24vh;" alt="">
+                                                            <img src="{{url('files/'.$itemS['image_name'])}}" class="gray" style="object-fit: cover;height: 24vh; zoom:150%" alt="">
                                                         <!-- <div class="" style="background-image: url('{{url('files/'.$itemS['image_name'])}}');height: 150px;background-position: center;background-size: contain;filter: grayscale(1)"></div> -->
                                                         @else
-                                                            <img src="{{url('files/'.$itemS['image_name'])}}" class="gray" style="object-fit: cover;height: 24vh;" alt="">
+                                                            <img src="{{url('files/'.$itemS['image_name'])}}" class="gray" style="object-fit: cover;height: 24vh; zoom:150%" alt="">
                                                         <!-- <div class="" style="background-image: url('{{url('files/'.$itemS['image_name'])}}');height: 150px;background-position: center;background-size: contain"></div> -->
                                                         @endif
                                                     </div>
@@ -52,21 +54,31 @@
                         </div>
                     </div>
 
-                @foreach($galleryItems as $items)
+                    <script>
+                        $(document).ready(function() {
+                            $('.image').hover(function(){
+                                $(this).children().removeClass('gray');
+                            }, function () {
+                                $(this).children().addClass('gray');
+                            });
+                        });
+                    </script>
+
+                <!-- @foreach($galleryItems as $items)
                     @foreach($items as $itemS)
-                        <!-- Modal -->
+                        Modal
                             <div class="modal fade" id="exampleModal{{$itemS['image_id']}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                                 <div class="modal-dialog modal-dialog-centered" role="document" style="max-width: none;margin-left: 42vh;margin-right: 42vh;margin-top: 2vh;margin-bottom: 2vh;">
                                     <div class="modal-content">
                                         <img src="{{url('files/'.$itemS['image_name'])}}" alt="" style="height: 77vh;object-fit: cover;width: 100%">
-                                    <!-- <div class="" style="background-image: url('{{url('files/'.$itemS['image_name'])}}');height: 600px;background-size: contain;background-position: center;"> -->
+                                    <div class="" style="background-image: url('{{url('files/'.$itemS['image_name'])}}');height: 600px;background-size: contain;background-position: center;">
                                     </div>
 
                                 </div>
                             </div>
                 </div>
                 @endforeach
-                @endforeach
+                @endforeach -->
 
 
 

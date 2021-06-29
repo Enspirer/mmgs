@@ -30,6 +30,9 @@
             max-width: 290px;
             margin: 0px 15px;
         }
+        .slick-lightbox-slick-item-inner img {
+            zoom: 150%;
+        }
     </style>
 
 
@@ -41,50 +44,30 @@
                     <div class="projects-content" style="padding: 0vh 10vh;">
                         <h1 style="font-size: 6vh; margin-top: 0vh">projects</h1>
                         <main class="main" style="margin-top: 3vh;">
-                           <div class="swiper-slide">
-                                    <div id="slick-demo">
-                                        @foreach($projects as $key=>$proj)
-                                            <div class="acco{{$key}}">
+                            <div class="swiper-container swiper-container1 swiper-web" >
+                                <div class="swiper-wrapper">
+                                    @foreach($projects as $key=>$proj)
+                                        <div class="swiper-slide">
+                                            <div class="card-image" id="main_item{{$key}}">
+                                                <img style="height: 53vh;" src="{{url('files/'.$proj->feature_images)}}">
 
-                                            </div>
-                                            <div id="main_item{{$key}}" class="item" style="margin-left: 10px">
-                                                <img src="{{url('files/'.$proj->feature_images)}}" alt="" width="480" height="300">
                                                 @if($proj->images == 'null')
 
                                                 @else
-                                                    @foreach(json_decode($proj->images) as $prject_img)
-                                                        <div>
-                                                            <img src="{{file_manager_get_url($prject_img)}}" class="modal-image-project" style="display: none" >
+                                                    @foreach(json_decode($proj->images) as $proj->images)
+                                                        <div class="item">
+                                                            <img src="{{file_manager_get_url($proj->images)}}" class="modal-image-project" style="display: none;" >
                                                         </div>
                                                     @endforeach
                                                 @endif
-
                                             </div>
-                                        @endforeach
-
-                                    </div>
-
-
-
-
-                                    <script type="text/javascript">
-                                        $('#slick-demo').slick({
-                                            infinite: true,
-                                            speed: 300,
-                                            slidesToShow: 20,
-                                            centerMode: true,
-                                            variableWidth: true,
-                                            arrows: true,
-                                        });
-
-                                        @foreach($projects as $key=>$proj)
-                                            $('#main_item{{$key}}').slickLightbox({
-                                                src: 'src',
-                                                itemSelector: 'img'
-                                            });
-                                        @endforeach
-                                    </script>
-                           </div>
+                                        </div>
+                                    @endforeach
+                                </div>
+                                <div class="swiper-pagination" style="padding-right: 33vh;"></div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                            </div>
                         </main>
                         <div class="project-bottum-text">
                             <h6 style="font-weight: 300;font-size: 3.5vh;">“simplicity is the ultimate sophistication”</h6>
@@ -93,22 +76,29 @@
                         <br><br><br><br>
                     </div>
                 </div>
-
-
-
-
             </section>
+
+            <script type="text/javascript">
+                $('.item').slick({
+                    infinite: true,
+                    speed: 300,
+                    slidesToShow: 20,
+                    centerMode: true,
+                    variableWidth: true,
+                    arrows: true,
+                });
+
+
+                @foreach($projects as $key=>$proj)
+                    $('#main_item{{$key}}').slickLightbox({
+                        src: 'src',
+                        itemSelector: 'img'
+                    });
+                @endforeach
+            </script>
+
         </div>
-
-
-
-
     </section>
-
-
-
-
-
 
 @endsection
 

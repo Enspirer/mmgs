@@ -31,12 +31,12 @@ class GalleryController extends Controller
 
         if (is_mobile($request->header('user-agent')) != true)
         {
-            $finalOutput = self::sectionArray($finalOutArray,9);
+            $finalOutput = self::sectionArray($finalOutArray,6);
             return view('frontend.gallery',[
                 'galleryItems' => $finalOutput
             ]);
         }else{
-            $finalOutput = self::sectionArray($finalOutArray,8);
+            $finalOutput = self::sectionArray($finalOutArray,6);
             return view('frontend.mobile_connectivity.gallery',[
                 'galleryItems' => $finalOutput
             ]);

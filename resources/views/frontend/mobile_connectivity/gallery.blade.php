@@ -41,10 +41,10 @@
         </div>
 
 
-        @foreach($galleryItems as $items)
-          @foreach($items as $itemS)
+        <!-- @foreach($galleryItems as $items)
+          @foreach($items as $itemS) -->
           <!-- Modal -->
-          <div class="modal fade" id="exampleModal{{$itemS['image_id']}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <!-- <div class="modal fade" id="exampleModal{{$itemS['image_id']}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document" style="">
               <div class="modal-content">
 
@@ -56,24 +56,8 @@
           </div>
         </div>
         @endforeach
-      @endforeach
+      @endforeach -->
 
-
-    @foreach($galleryItems as $items)
-      @foreach($items as $itemS)
-        <!-- Modal -->
-          <div class="modal fade" id="exampleModalM{{$itemS['image_id']}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document" style="">
-              <div class="modal-content">
-{{--                <img src="{{url('files/'.$itemS['image_name'])}}" alt="" style="object-fit: cover;/* width: 340px; */">--}}
-                <div class="" style="background-image: url('{{url('files/'.$itemS['image_name'])}}');height: 600px;background-size: contain;background-position: center;background-repeat: no-repeat;background-color: black;">
-              </div>
-
-            </div>
-          </div>
-    </div>
-    @endforeach
-    @endforeach
 
 
 
@@ -81,14 +65,10 @@
       <div class="row gallery-mobile d-none">
 
         <div class="swiper-container swiper-container5">
-          <div class="top-btn" style="
-                  padding: 0 0 20px 0;
-                  margin: auto;
-                  display: flex;
-                  justify-content: center;
-                ">
-            <i class="fa fa-angle-up swiper-button-prev3" aria-hidden="true" style="font-size: 40px; text-align: center"></i>
+          <div class="top-btn" style="position:absolute; top:7.5rem; z-index: 999999">
+            <i class="fa fa-angle-left swiper-button-prev3" aria-hidden="true" style="font-size: 40px; text-align: center;"></i>
           </div>
+
           <div class="swiper-wrapper">
             @foreach($galleryItems as $items)
             <div class="swiper-slide">
@@ -110,13 +90,8 @@
             @endforeach
           </div>
 
-          <div class="top-btn" style="
-                  padding: 20px 0 0 0;
-                  margin: auto;
-                  display: flex;
-                  justify-content: center;
-                ">
-            <i class="fa fa-angle-down swiper-button-next3" aria-hidden="true" style="font-size: 40px; text-align: center"></i>
+          <div class="top-btn" style="position:absolute; bottom: 7.45rem; left: 20.7rem; z-index: 999999">
+             <i class="fa fa-angle-right swiper-button-next3" aria-hidden="true" style="font-size: 40px; text-align: center;"></i>
           </div>
         </div>
       </div>
