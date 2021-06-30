@@ -131,13 +131,7 @@
                     $('#villadatatable').DataTable().ajax.reload();
                 });
             },
-            transformFile: function(file, done,aepsetrat) {
-                metFile = file;
-                donObj = done;
-                dropz = this;
-                // Create Dropzone reference for use in confirm button click handler
-                genearateEditor(file,done,this);
-            }
+           
         };
 
 
