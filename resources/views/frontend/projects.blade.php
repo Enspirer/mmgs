@@ -120,7 +120,7 @@
                         {
                             $('#project_name').html('<span style="color: #b0b0b0;text-align: center;padding-top: 110px;font-weight: 300;font-size: 4.5vh;">' + title + '</span>'+' <span style="color: #b0b0b0;text-align: center;padding-top: 110px;font-weight: 300;font-size: 3.5vh;padding-left: 30px;">' +  location + '</span>' );
                             $('.slick-lightbox-slick-item').css('height','auto !important')
-                        }, 1000);
+                        }, 100);
                 }
 
                 
