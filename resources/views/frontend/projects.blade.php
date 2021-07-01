@@ -48,7 +48,7 @@
                                 <div class="swiper-wrapper">
                                     @foreach($projects as $key=>$proj)
                                         <div class="swiper-slide">
-                                            <div class="card-image" onclick="appendTitle('{{$proj->project_name}}')" id="main_item{{$key}}">
+                                            <div class="card-image" onclick="appendTitle('{{$proj->project_name}}','{{$proj->location}}')" id="main_item{{$key}}">
                                                 <img style="height: 53vh;" src="{{url('files/'.$proj->feature_images)}}">
 
                                                 @if($proj->images == 'null')
@@ -113,14 +113,14 @@
                 //     console.log(title);
                 // });
 
-                function appendTitle(title) {
+                function appendTitle(title,location) {
                     
                     setTimeout(
                         function()
                         {
-                            $('#project_name').html(title);
+                            $('#project_name').html('<span style="color: #b0b0b0;text-align: center;padding-top: 110px;font-weight: 300;font-size: 4.5vh;">' + title + '</span>'+' <span style="color: #b0b0b0;text-align: center;padding-top: 110px;font-weight: 300;font-size: 3.5vh;padding-left: 30px;">' +  location + '</span>' );
                             $('.slick-lightbox-slick-item').css('height','auto !important')
-                        }, 1000);
+                        }, 100);
                 }
 
                 
