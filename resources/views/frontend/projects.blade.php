@@ -118,7 +118,7 @@
                     setTimeout(
                         function()
                         {
-                            $('#project_name').html('<span style="color: #b0b0b0;text-align: center;padding-top: 110px;font-weight: 300;font-size: 4.5vh;">' + title + '</span>'+' <span style="color: #b0b0b0;text-align: center;padding-top: 110px;font-weight: 300;font-size: 3.5vh;padding-left: 30px;">' +  location + '</span>' );
+                            $('#project_name').html('<div style="color: white;text-align: left;font-size: 30px;padding-top: 110px;padding-left: 150px;"><span style="color: #b0b0b0;text-align: center;padding-top: 110px;font-weight: 300;font-size: 4.5vh;">' + title + '</span>'+' <span style="color: #b0b0b0;text-align: center;padding-top: 110px;font-weight: 300;font-size: 3.5vh;padding-left: 30px;">' +  location + '</span></div>' );
                             $('.slick-lightbox-slick-item').css('height','auto !important')
                         }, 100);
                 }
