@@ -23,7 +23,7 @@
 
                         @else
                             @foreach(json_decode($projt->images) as $prject_img)
-                                <div class="swiper-slide">
+                                <div class="swiper-slide" style="filter: grayscale(0)!important;">
                                     <img src="{{file_manager_get_url($prject_img)}}" alt="Image Slider" style="width: 100%;height: 250px;object-fit: cover;" />
                                 </div>
                             @endforeach
