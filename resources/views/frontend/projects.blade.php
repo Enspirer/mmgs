@@ -48,7 +48,7 @@
                                 <div class="swiper-wrapper">
                                     @foreach($projects as $key=>$proj)
                                         <div class="swiper-slide">
-                                            <div class="card-image" id="main_item{{$key}}">
+                                            <div class="card-image" onclick="appendTitle('{{$proj->project_name}}')" id="main_item{{$key}}">
                                                 <img style="height: 53vh;" src="{{url('files/'.$proj->feature_images)}}">
 
                                                 @if($proj->images == 'null')
@@ -56,6 +56,7 @@
                                                 @else
                                                     @foreach(json_decode($proj->images) as $proj->images)
                                                         <div class="item">
+                                                            <!-- <div class="desc" style="display:none"><h3>{{ $proj->project_name }}</h3></div> -->
                                                             <img src="{{file_manager_get_url($proj->images)}}" class="modal-image-project" style="display: none;" >
                                                         </div>
                                                     @endforeach
@@ -88,13 +89,40 @@
                     arrows: true,
                 });
 
-
                 @foreach($projects as $key=>$proj)
                     $('#main_item{{$key}}').slickLightbox({
                         src: 'src',
-                        itemSelector: 'img'
+                        itemSelector: 'img',
+                        // caption:function(element, info) {
+                        //     var span = $(element).parent().find(".desc");
+                        //     return span.html(); }
                     });
                 @endforeach
+            </script>
+
+            <script defer>
+                // $(window).on('load', function(){
+                //     $('#project_name').click(function(){
+                //         alert('dfdsv');
+                //     });
+                // });
+
+                // $(document).ready(function() {
+
+                //     let title = <?php $proj->project_name; ?>
+                //     console.log(title);
+                // });
+
+                function appendTitle(title) {
+                    
+                    setTimeout(
+                        function()
+                        {
+                            $('#project_name').html(title);
+                        }, 1000);
+                }
+
+                
             </script>
 
         </div>

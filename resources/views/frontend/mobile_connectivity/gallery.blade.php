@@ -1,4 +1,4 @@
-@extends('frontend.layouts.app')
+<!-- @extends('frontend.layouts.app')
 
 @section('title', app_name() . ' | ' . __('navs.general.home'))
 
@@ -22,10 +22,10 @@
                     <div class="col-md-4" style="height: 150px;overflow: hidden;padding: 8px 5px;" data-toggle="modal" data-target="#exampleModal{{$itemS['image_id']}}">
                       @if($itemS['effect'] == 'black_and_white')
                       <img src="{{url('files/'.$itemS['image_name'])}}" class="gray" style="object-fit: cover;" alt="">
-                      <!-- <div class="" style="background-image: url('{{url('files/'.$itemS['image_name'])}}');height: 150px;background-position: center;background-size: contain;filter: grayscale(1)"></div> -->
+
                       @else
                       <img src="{{url('files/'.$itemS['image_name'])}}"  class="gray"  style="height: 150px; object-fit: cover;" alt="">
-                      <!-- <div class="" style="background-image: url('{{url('files/'.$itemS['image_name'])}}');height: 150px;background-position: center;background-size: contain"></div> -->
+
                       @endif
                     </div>
                     @endforeach
@@ -34,31 +34,13 @@
                 @endforeach
               </div>
 
-              <!-- Add Pagination -->
               <div class="swiper-pagination"></div>
             </div>
           </div>
         </div>
 
 
-        <!-- @foreach($galleryItems as $items)
-          @foreach($items as $itemS) -->
-          <!-- Modal -->
-          <!-- <div class="modal fade" id="exampleModal{{$itemS['image_id']}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document" style="">
-              <div class="modal-content">
-
-                {{--<img src="{{url('files/'.$itemS['image_name'])}}"  alt="" style="height: 600px;object-fit: cover;">--}}
-                 <div class="" style="background-image: url('{{url('files/'.$itemS['image_name'])}}');height: 600px;background-size: contain;background-position: center;background-repeat: no-repeat;background-color: black;">
-              </div>
-
-            </div>
-          </div>
-        </div>
-        @endforeach
-      @endforeach -->
-
-
+        
 
 
 
@@ -76,15 +58,13 @@
                 @foreach($items as $itemS)
                 @if($itemS['effect'] == 'black_and_white')
                 <img src="{{url('files/'.$itemS['image_name'])}}" class="gray" style="width: 50%;padding: 5px;" data-toggle="modal" data-target="#exampleModalM{{$itemS['image_id']}}"  alt="">
-                <!-- <div class="" style="background-image: url('{{url('files/'.$itemS['image_name'])}}');height: 150px;background-position: center;background-size: contain;filter: grayscale(1)"></div> -->
+
                 @else
                 <img  class="gray"  src="{{url('files/'.$itemS['image_name'])}}" style="width: 50%;padding: 5px;" alt="" data-toggle="modal" data-target="#exampleModalM{{$itemS['image_id']}}">
-                <!-- <div class="" style="background-image: url('{{url('files/'.$itemS['image_name'])}}');height: 150px;background-position: center;background-size: contain"></div> -->
+
                 @endif
                 @endforeach
-                <!-- @foreach($items as $itemS)
-                  <img src="{{url('files/'.$itemS['image_name'])}}" style="width: 50%;padding: 5px;" alt="">
-                     @endforeach -->
+
               </div>
             </div>
             @endforeach
@@ -99,4 +79,4 @@
   </div>
   </div>
 </section>
-@endsection
+@endsection -->

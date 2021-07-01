@@ -577,8 +577,31 @@ nav .nav-link {
   padding: 5px 10px;
 }
 
-#awards-section .awards-section ul li:hover {
+/* #awards-section .awards-section ul li:hover {
   color: #d3c441;
   cursor: pointer;
+} */
+
+/* .slick-lightbox-slick-caption {
+  margin: 10px 0 0;
+  color: white!important;
+  position: absolute;
+  top: 10rem;
 }
+.slick-lightbox-slick-caption h3 {
+  font-size: 3rem;
+}
+@media (max-width: 768px) {
+  .slick-lightbox-slick-caption {
+    top: -40rem!important;
+    position: relative;
+  }
+}
+
+@media (max-width: 1025px) {
+  .slick-lightbox-slick-caption {
+    top: -60rem!important;
+    position: relative;
+  }
+} */
 /*# sourceMappingURL=style.css.map */

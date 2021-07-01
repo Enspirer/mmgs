@@ -81,7 +81,7 @@
             /* Creates a `slick`-friendly modal. */
             var html, links;
             links = this.createModalItems();
-            html = '<div class="slick-lightbox slick-lightbox-hide-init' + (this.isIE ? ' slick-lightbox-ie' : '') + '" style="background: ' + this.options.background + ';">\n  <div class="slick-lightbox-inner">\n    <div class="slick-lightbox-slick slick-caption-' + this.options.captionPosition + '">' + links.join('') + '</div>\n  <div>\n<div>';
+            html = '<div class="slick-lightbox slick-lightbox-hide-init' + (this.isIE ? ' slick-lightbox-ie' : '') + '" style="background: ' + this.options.background + ';">\n  <div class="slick-lightbox-inner"><div id="project_name" style="color: white;text-align: center;font-size: 30px;padding-top: 110px;">Project Name</div> \n    <div class="slick-lightbox-slick slick-caption-' + this.options.captionPosition + '">' + links.join('') + '</div>\n  <div>\n<div>';
             this.$modalElement = $(html);
             this.$parts = {};
             this.$parts['closeButton'] = $(this.options.layouts.closeButton);
@@ -135,8 +135,8 @@
             var resizeSlides;
             resizeSlides = function (_this) {
                 return function () {
-                    var h;
-                    h = _this.$modalElement.find('.slick-lightbox-inner').height();
+                    var h = '650px';
+                    // h = _this.$modalElement.find('.slick-lightbox-inner').height();
                     _this.$modalElement.find('.slick-lightbox-slick-item').height(h);
                     return _this.$modalElement.find('.slick-lightbox-slick-img, .slick-lightbox-slick-item-inner').css('max-height', Math.round(_this.options.imageMaxHeight * h));
                 };

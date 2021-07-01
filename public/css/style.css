@@ -1293,8 +1293,8 @@ nav .nav-link {
   padding: 5px 10px;
 }
 
-#awards-section .awards-section ul li:hover {
-  color: #d3c441;
+/* #awards-section .awards-section ul li:hover {
+  color: red;
   cursor: pointer;
-}
+} */
 /*# sourceMappingURL=style.css.map */

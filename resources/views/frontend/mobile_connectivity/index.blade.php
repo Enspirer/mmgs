@@ -15,7 +15,7 @@
       </p>
 
       <p class="mobile-p" style="display: none;">
-        architecture is <br> my <span>PASSION;</span> <br />
+        architecture is my <span>PASSION;</span> <br />
         not just my profession.
       </p>
     </div>

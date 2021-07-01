@@ -17,9 +17,9 @@
                 <li class="nav-item">
                     <a class="nav-link" style="{{ Request::segment(1) === 'projects' ? 'font-weight: 600;' : null }}" href="{{route('frontend.projects')}}">Projects</a>
                 </li>
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                     <a class="nav-link" style="{{ Request::segment(1) === 'gallery' ? 'font-weight: 600;' : null }}" href="{{route('frontend.gallery')}}">Gallery</a>
-                </li>
+                </li> -->
                 <li class="nav-item">
                     <a class="nav-link" style="{{ Request::segment(1) === 'awards' ? 'font-weight: 600;' : null }}" href="{{route('frontend.awards')}}">Awards</a>
                 </li>

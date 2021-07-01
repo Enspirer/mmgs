@@ -12,9 +12,9 @@
         <li class="nav-item px-3">
             <a class="nav-link" href="{{url('/')}}">Home</a>
         </li>
-        <li class="nav-item px-3">
+        <!-- <li class="nav-item px-3">
             <a class="nav-link" href="{{ route('frontend.gallery') }}">Gallery</a>
-        </li>
+        </li> -->
         <li class="nav-item px-3">
             <a class="nav-link" href="{{ route('frontend.projects') }}">Projects</a>
         </li>
