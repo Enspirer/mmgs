@@ -119,6 +119,7 @@
                         function()
                         {
                             $('#project_name').html(title);
+                            $('.slick-lightbox-slick-item').css('height:auto !important;')
                         }, 1000);
                 }
 
