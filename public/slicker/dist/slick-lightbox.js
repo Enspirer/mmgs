@@ -135,9 +135,9 @@
             var resizeSlides;
             resizeSlides = function (_this) {
                 return function () {
-                    var h = '650px';
+                    // var h = '650px';
                     // h = _this.$modalElement.find('.slick-lightbox-inner').height();
-                    _this.$modalElement.find('.slick-lightbox-slick-item').height(h);
+                    // _this.$modalElement.find('.slick-lightbox-slick-item').height(h);
                     return _this.$modalElement.find('.slick-lightbox-slick-img, .slick-lightbox-slick-item-inner').css('max-height', Math.round(_this.options.imageMaxHeight * h));
                 };
             }(this);
