@@ -81,7 +81,7 @@
             /* Creates a `slick`-friendly modal. */
             var html, links;
             links = this.createModalItems();
-            html = '<div class="slick-lightbox slick-lightbox-hide-init' + (this.isIE ? ' slick-lightbox-ie' : '') + '" style="background: ' + this.options.background + ';">\n  <div class="slick-lightbox-inner"><div id="project_name" style="color: white;text-align: center;font-size: 30px;padding-top: 110px;">Project Name</div> \n    <div class="slick-lightbox-slick slick-caption-' + this.options.captionPosition + '">' + links.join('') + '</div>\n  <div>\n<div>';
+            html = '<div class="slick-lightbox slick-lightbox-hide-init' + (this.isIE ? ' slick-lightbox-ie' : '') + '" style="background: ' + this.options.background + ';">\n  <div class="slick-lightbox-inner"><div id="project_name" style="color: white;text-align: center;font-size: 30px;">Project Name</div> \n    <div class="slick-lightbox-slick slick-caption-' + this.options.captionPosition + '">' + links.join('') + '</div>\n  <div>\n<div>';
             this.$modalElement = $(html);
             this.$parts = {};
             this.$parts['closeButton'] = $(this.options.layouts.closeButton);
