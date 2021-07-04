@@ -10,7 +10,7 @@
             @foreach($project as $projt)
             <main class="main">
                 <div class="single-item-title d-none">
-                    <h2 style="font-size: 2rem;">{{$projt->project_name}}</h2>
+                    <h2 style="font-size: 2rem;">{{ str_replace("\\","",$projt->project_name) }}</h2>
                     <p>{{$projt->location}}</p>
                 </div>
                 <div class="swiper-container swiper-container3 swiper-mobile d-none">
