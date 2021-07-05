@@ -43,6 +43,11 @@
             content: "next" !important;
             margin-left: -2vh;
         }
+
+        #projects-page .projects-content .main .swiper-container .swiper-wrapper .swiper-slide {
+            -webkit-filter: grayscale(0%) !important;
+            filter: grayscale(0%) !important;
+        }
     </style>
 
 
@@ -59,6 +64,7 @@
                                     @foreach($projects as $key=>$proj)
                                         <div class="swiper-slide">
                                             <div class="card-image" onclick="appendTitle('{{$proj->project_name}}','{{$proj->location}}')" id="main_item{{$key}}">
+                                                <div style="position: absolute;z-index: 199999;left: 3vh;top: 46vh;color: #d3c441;font-size: 29px;">more photos >> </div>
                                                 <img style="height: 53vh;" src="{{url('files/'.$proj->feature_images)}}">
 
                                                 @if($proj->images == 'null')
