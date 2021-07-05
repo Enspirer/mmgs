@@ -20,14 +20,14 @@
 
                     <div class="swiper-wrapper">
                         <div class="swiper-slide" style="filter: grayscale(0)!important;">
-                            <img src="{{url('files/',$projt->feature_images)}}" alt="Image Slider" style="width: 100%;height: 250px;object-fit: cover;" />
+                            <img src="{{url('files/',$projt->feature_images)}}" alt="Image Slider" style="width: 100%;height: 250px;object-fit: contain;" />
                         </div>
                         @if($projt->images == 'null')
 
                         @else
                             @foreach(json_decode($projt->images) as $prject_img)
                                 <div class="swiper-slide" style="filter: grayscale(0)!important;">
-                                    <img src="{{file_manager_get_url($prject_img)}}" alt="Image Slider" style="width: 100%;height: 250px;object-fit: cover;" />
+                                    <img src="{{file_manager_get_url($prject_img)}}" alt="Image Slider" style="width: 100%;height: 250px;object-fit: contain;" />
                                 </div>
                             @endforeach
                         @endif
