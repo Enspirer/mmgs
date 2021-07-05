@@ -41,6 +41,7 @@
         .slick-next::before {
             font-family: swiper-icons!important;
             content: "next" !important;
+            margin-left: -2vh;
         }
     </style>
 
