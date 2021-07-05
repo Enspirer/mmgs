@@ -33,6 +33,15 @@
         .slick-lightbox-slick-item-inner img {
             zoom: 150%;
         }
+        .slick-prev::before {
+            font-family: swiper-icons!important;
+            content: "prev" !important;
+        }
+
+        .slick-next::before {
+            font-family: swiper-icons!important;
+            content: "next" !important;
+        }
     </style>
 
 
