@@ -50,7 +50,7 @@
                 } else {
                     imgSourceParams = ' src="' + source + '" ';
                 }
-                return '<div class="slick-lightbox-slick-item">\n  <div class="slick-lightbox-slick-item-inner">\n    <img class="slick-lightbox-slick-img" ' + imgSourceParams + ' />\n    ' + caption + '\n  </div>\n</div>';
+                return '<div class="slick-lightbox-slick-item">\n  <div class="slick-lightbox-slick-item-inner">\n    <img style="height: 40vh" class="slick-lightbox-slick-img" ' + imgSourceParams + ' />\n    ' + caption + '\n  </div>\n</div>';
             };
             if (this.options.images) {
                 links = $.map(this.options.images, function (_this) {
