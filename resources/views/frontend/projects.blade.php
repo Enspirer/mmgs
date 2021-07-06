@@ -65,7 +65,7 @@
                                         <div class="swiper-slide">
                                             <div class="card-image" onclick="appendTitle('{{$proj->project_name}}','{{$proj->location}}')" id="main_item{{$key}}">
                                                 <div style="position: absolute;z-index: 199999;left: 116vh;top: 44vh;color: #ffffff;font-size: 4vh;">>></div>
-                                                <img style="height: 51vh;" src="{{url('files/'.$proj->feature_images)}}">
+                                                <img id="img_tag{{$key}}" style="height: 51vh;" src="{{url('files/'.$proj->feature_images)}}">
 
                                                 @if($proj->images == 'null')
 
@@ -73,7 +73,7 @@
                                                     @foreach(json_decode($proj->images) as $proj->images)
                                                         <div class="item">
                                                             <!-- <div class="desc" style="display:none"><h3>{{ $proj->project_name }}</h3></div> -->
-                                                            <img src="{{file_manager_get_url($proj->images)}}" class="modal-image-project" style="display: none;" >
+                                                            <img id="item_projkey" src="{{file_manager_get_url($proj->images)}}" class="modal-image-project" style="display: none;" >
                                                         </div>
                                                     @endforeach
                                                 @endif
@@ -105,6 +105,8 @@
                     arrows: true,
                 });
 
+
+
                 @foreach($projects as $key=>$proj)
                     $('#main_item{{$key}}').slickLightbox({
                         src: 'src',
@@ -130,7 +132,7 @@
                 // });
 
                 function appendTitle(title,location) {
-                    
+
                     setTimeout(
                         function()
                         {
@@ -141,6 +143,12 @@
                 }
 
                 
+            </script>
+
+            <script>
+               var element_core =  $('.slick-lightbox-slick-item-inner').children();
+
+               console.log(element_core);
             </script>
 
         </div>
