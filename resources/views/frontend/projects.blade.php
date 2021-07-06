@@ -65,7 +65,7 @@
                                         <div class="swiper-slide">
                                             <div class="card-image" onclick="appendTitle('{{$proj->project_name}}','{{$proj->location}}')" id="main_item{{$key}}">
                                                 <div style="position: absolute;z-index: 199999;left: 126vh;top: 48vh;color: #ffffff;font-size: 4vh;">>></div>
-                                                <img style="height: 53vh;" src="{{url('files/'.$proj->feature_images)}}">
+                                                <img style="height: 51vh;" src="{{url('files/'.$proj->feature_images)}}">
 
                                                 @if($proj->images == 'null')
 
@@ -134,7 +134,7 @@
                     setTimeout(
                         function()
                         {
-                            $('#project_name').html('<div style="color: white;text-align: left;font-size: 30px;padding-top: 110px;padding-left: 150px;"><span style="color: #b0b0b0;text-align: center;padding-top: 110px;font-weight: 300;font-size: 4.5vh;">' + title + '</span>'+' <span style="color: #b0b0b0;text-align: center;padding-top: 110px;font-weight: 300;font-size: 3.5vh;padding-left: 30px;">' +  location + '</span></div>' );
+                            $('#project_name').html('<div style="color: white;text-align: left;font-size: 3vh;padding-top: 11vh;padding-left: 40vh;"><span style="color: #b0b0b0;text-align: center;padding-top: 110px;font-weight: 300;font-size: 4.5vh;">' + title + '</span>'+' <span style="color: #b0b0b0;text-align: center;padding-top: 110px;font-weight: 300;font-size: 3.5vh;padding-left: 30px;">' +  location + '</span></div>' );
                             $('.slick-lightbox-slick-item').css('height','auto !important')
                         }, 100);
                 }
