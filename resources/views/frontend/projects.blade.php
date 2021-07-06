@@ -64,7 +64,7 @@
                                     @foreach($projects as $key=>$proj)
                                         <div class="swiper-slide">
                                             <div class="card-image" onclick="appendTitle('{{$proj->project_name}}','{{$proj->location}}')" id="main_item{{$key}}">
-                                                <div style="position: absolute;z-index: 199999;left: 126vh;top: 44vh;color: #ffffff;font-size: 4vh;">>></div>
+                                                <div style="position: absolute;z-index: 199999;left: 116vh;top: 44vh;color: #ffffff;font-size: 4vh;">>></div>
                                                 <img style="height: 51vh;" src="{{url('files/'.$proj->feature_images)}}">
 
                                                 @if($proj->images == 'null')
