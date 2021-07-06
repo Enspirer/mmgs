@@ -44,7 +44,7 @@
           </div>
 
           <div class="top-btn" style="position:absolute; bottom:3rem; left: 20rem; z-index: 999999">
-              <i class="fa fa-angle-right swiper-button-next3" aria-hidden="true" style="font-size: 40px; text-align: center; color: yellow"></i>
+              <i class="fa fa-angle-right swiper-button-next3" aria-hidden="true" style="font-size: 40px;text-align: center;color: yellow;margin-bottom: 44px;"></i>
           </div>
 
         </div>

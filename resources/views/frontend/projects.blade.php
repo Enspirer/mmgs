@@ -115,6 +115,10 @@
                         //     var span = $(element).parent().find(".desc");
                         //     return span.html(); }
                     });
+
+                    $('#main_item{{$key}}').on('beforeChange', function(event, slickLightbox, currentSlide, nextSlide){
+                        console.log(nextSlide);
+                    });
                 @endforeach
             </script>
 
@@ -146,9 +150,16 @@
             </script>
 
             <script>
-               var element_core =  $('.slick-lightbox-slick-item-inner').children();
 
-               console.log(element_core);
+//                var parram =   $('.slick-active').attr('href');
+
+            function onbuttosn() {
+                alert('hello');
+            }
+
+
+
+
             </script>
 
         </div>
