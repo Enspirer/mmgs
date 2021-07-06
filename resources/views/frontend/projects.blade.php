@@ -134,7 +134,7 @@
                     setTimeout(
                         function()
                         {
-                            $('#project_name').html('<div style="color: white;text-align: left;font-size: 3vh;padding-top: 11vh;padding-left: 40vh;"><span style="color: #b0b0b0;text-align: center;padding-top: 110px;font-weight: 300;font-size: 4.5vh;">' + title + '</span>'+' <span style="color: #b0b0b0;text-align: center;padding-top: 110px;font-weight: 300;font-size: 3.5vh;padding-left: 30px;">' +  location + '</span></div>' );
+                            $('#project_name').html('<div style="color: white;text-align: left;font-size: 3vh;padding-top: 11vh;padding-left: 40vh;"><span style="color: #b0b0b0;text-align: center;padding-top: 110px;font-weight: 300;font-size: 3.5vh;">' + title + '</span>'+' <span style="color: #b0b0b0;text-align: center;padding-top: 110px;font-weight: 300;font-size: 2.5vh;padding-left: 30px;">' +  location + '</span></div>' );
                             $('.slick-lightbox-slick-item').css('height','auto !important')
                             $('.slick-lightbox-slick-item').css('width','230vh;')
                         }, 100);
