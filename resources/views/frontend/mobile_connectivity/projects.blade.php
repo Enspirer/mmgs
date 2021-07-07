@@ -31,9 +31,9 @@
 
         <div class="swiper-container swiper-container3 swiper-mobile d-none">
           
-            <div class="top-btn" style="position:absolute; top:3.05rem; left:0.7rem; z-index: 999999">
+            <!-- <div class="top-btn" style="position:absolute; top:3.05rem; left:0.7rem; z-index: 999999">
               <i class="fa fa-angle-left swiper-button-prev3" aria-hidden="true" style="font-size: 40px; text-align: center; color:yellow"></i>
-            </div>
+            </div> -->
 
           <div class="swiper-wrapper">
             @foreach($projects as $proj)
@@ -43,9 +43,12 @@
             @endforeach
           </div>
 
-          <div class="top-btn" style="position:absolute; bottom:3rem; left: 20rem; z-index: 999999">
+          <div class="swiper-button-next swiper-button-next3"></div>
+          <div class="swiper-button-prev swiper-button-prev3"></div>
+
+          <!-- <div class="top-btn" style="position:absolute; bottom:3rem; left: 20rem; z-index: 999999">
               <i class="fa fa-angle-right swiper-button-next3" aria-hidden="true" style="font-size: 40px;text-align: center;color: yellow;margin-bottom: 44px;"></i>
-          </div>
+          </div> -->
 
         </div>
       </main>

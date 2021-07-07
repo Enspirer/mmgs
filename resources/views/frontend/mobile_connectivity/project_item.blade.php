@@ -14,14 +14,14 @@
                     <p>{{$projt->location}}</p>
                 </div>
                 <div class="swiper-container swiper-container3 swiper-mobile d-none">
-                    <div class="top-btn" style="position:absolute; top:6.5rem; left:0.7rem; z-index: 999999">
+                    <!-- <div class="top-btn" style="position:absolute; top:6.5rem; left:0.7rem; z-index: 999999">
                         <i class="fa fa-angle-left swiper-button-prev3" aria-hidden="true" style="font-size: 40px; text-align: center; color:yellow"></i>
-                    </div>
+                    </div> -->
 
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide" style="filter: grayscale(0)!important;">
+                        <!-- <div class="swiper-slide" style="filter: grayscale(0)!important;">
                             <img src="{{url('files/',$projt->feature_images)}}" alt="Image Slider" style="width: 100%;height: 250px;object-fit: contain;" />
-                        </div>
+                        </div> -->
                         @if($projt->images == 'null')
 
                         @else
@@ -36,9 +36,13 @@
                     <p class="slider-text">
                     {{$projt->description}}
                     </p>
-                    <div class="top-btn" style="position:absolute; bottom:8rem; left: 20rem; z-index: 999999">
+
+                    <div class="swiper-button-next swiper-button-next3" style="margin-top:-1.6rem"></div>
+                    <div class="swiper-button-prev swiper-button-prev3" style="margin-top:-1.6rem"></div>
+
+                    <!-- <div class="top-btn" style="position:absolute; bottom:8rem; left: 20rem; z-index: 999999">
                         <i class="fa fa-angle-right swiper-button-next3" aria-hidden="true" style="font-size: 40px; text-align: center; color: yellow"></i>
-                    </div>
+                    </div> -->
                 </div>
             </main>
             @endforeach

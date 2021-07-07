@@ -1064,10 +1064,17 @@ nav .nav-link {
   background-size: 0;
   background-repeat: no-repeat;
   background-position: 0;
-  margin-top: -1rem;
+  margin-top: -1.2rem;
   color: #d3c441;
 }
-
+.swiper-button-prev:after, .swiper-container-rtl .swiper-button-prev:after {
+  content: 'prev';
+  font-size: 30px;
+}
+.swiper-button-next:after, .swiper-container-rtl .swiper-button-next:after {
+  content: 'next';
+  font-size: 30px;
+}
 #projects-page .projects-content .main .swiper-container .swiper-button-next .arrow-icon,
 #projects-page .projects-content .main .swiper-container .swiper-button-prev .arrow-icon {
   font-size: 2rem;
